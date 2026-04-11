@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MF_Settings_Group_General>Общие настройки</MF_Settings_Group_General>
+  <MF_Settings_Group_Random>Случайные фракции</MF_Settings_Group_Random>
+  <MF_Settings_Group_Independence>Независимость фракций (раскол)</MF_Settings_Group_Independence>
+
+  <MF_Setting_ShowDebugLogs>Показывать логи отладки</MF_Setting_ShowDebugLogs>
+  <MF_Setting_ShowDebugLogs_Tip>Включает подробные логи в консоли (Dev Mode).</MF_Setting_ShowDebugLogs_Tip>
+  <MF_OnlyExistingXenotypes>Только существующие ксенотипы</MF_OnlyExistingXenotypes>
+  <MF_OnlyExistingXenotypes_Desc>Если включено, новые фракции будут иметь только те ксенотипы, которые УЖЕ присутствуют хотя бы у одной фракции в игровом мире. Предотвращает появление видов, которых не существует в вашей партии.</MF_OnlyExistingXenotypes_Desc>
+  
+  <MF_GenerateHybrids>Генетическая эволюция (Гибриды)</MF_GenerateHybrids>
+  <MF_GenerateHybrids_Desc>Если включено, новые фракции при отделении или появлении будут мутировать, создавая свои уникальные ксенотипы. Если выключено — фракции будут использовать стандартные наборы ксенотипов из своих архетипов.</MF_GenerateHybrids_Desc>
+  
+  <MF_Setting_EnableUIPatch>Включить новый интерфейс фракций</MF_Setting_EnableUIPatch>
+  <MF_Setting_EnableUIPatch_Tip>Если включено, список фракций будет иметь расширенный вид с иконками врагов и идеологий. Отключите, если у вас конфликты с другими UI модами.</MF_Setting_EnableUIPatch_Tip>
+  <MF_Setting_HybridSpawnChance>Шанс мутации новой фракции: {0}%</MF_Setting_HybridSpawnChance>
+  <MF_Setting_HybridInheritanceMode>Режим генетической наследственности:</MF_Setting_HybridInheritanceMode>
+  <MF_HybridMode_OnlyInheritable>Наследовать только наследственные гены (баланс)</MF_HybridMode_OnlyInheritable>
+  <MF_HybridMode_SeparateCategories>Сохранять тип доминанта (насл. или ксено)</MF_HybridMode_SeparateCategories>
+  <MF_HybridMode_AllInheritable>Все гены становятся наследственными (хаос)</MF_HybridMode_AllInheritable>
+  <MF_Setting_MigrationChanceRandom>Шанс миграции гибридов (Случасйный спавн): {0}%</MF_Setting_MigrationChanceRandom>
+  <MF_Setting_MigrationChanceIndependence>Шанс миграции гибридов (При расколе): {0}%</MF_Setting_MigrationChanceIndependence>
+  
+  <MF_Setting_GeneticEvolution>Настройки генетической эволюции:</MF_Setting_GeneticEvolution>
+  <MF_Setting_AllowArchiteGenes>Разрешить архо-гены</MF_Setting_AllowArchiteGenes>
+  <MF_Setting_AllowArchiteGenes_Tip>Если включено, при мутациях могут случайно появляться архо-гены (требующие капсул). ВАЖНО: Это делает фракции значительно сильнее.</MF_Setting_AllowArchiteGenes_Tip>
+  <MF_Setting_MinMetabolism>Минимальный метаболизм: {0}</MF_Setting_MinMetabolism>
+  <MF_Setting_MaxNewGenes>Макс. новых генов за мутацию: {0}</MF_Setting_MaxNewGenes>
+  
+  <MF_Setting_WeightNeolithic>Шанс: Неолит (%)</MF_Setting_WeightNeolithic>
+  <MF_Setting_WeightMedieval>Шанс: Средневековье (%)</MF_Setting_WeightMedieval>
+  <MF_Setting_WeightIndustrial>Шанс: Индустриальное (%)</MF_Setting_WeightIndustrial>
+  <MF_Setting_WeightSpacer>Шанс: Космос (%)</MF_Setting_WeightSpacer>
+  <MF_Setting_WeightUltra>Шанс: Ультра (%)</MF_Setting_WeightUltra>
+  
+  <MF_RequireCommsForNews>Требовать связь для новостей</MF_RequireCommsForNews>
+  <MF_RequireCommsForNews_Tip>Если включено, уведомления о появлении фракций будут приходить только при наличии консоли связи.</MF_RequireCommsForNews_Tip>
+
+  <MF_Setting_TriggerIntervalHours>Интервал проверки (часов)</MF_Setting_TriggerIntervalHours>
+  <MF_Setting_MaxFactionsCount>Лимит фракций из мода:</MF_Setting_MaxFactionsCount>
+  <MF_Setting_RandomSettlementChance>Шанс спавна новой базы (%):</MF_Setting_RandomSettlementChance>
+  <MF_Setting_RandomSettlementChance_Value>{0}% (Независимый шанс спавна на свободном месте)</MF_Setting_RandomSettlementChance_Value>
+  <MF_Setting_SpawnOnRuinsChance>Шанс спавна на руинах (%):</MF_Setting_SpawnOnRuinsChance>
+  <MF_Setting_SpawnOnRuinsChance_Value>{0}% (Независимый шанс спавна именно на месте руин)</MF_Setting_SpawnOnRuinsChance_Value>
+  
+  <MF_Setting_HybridGroupsChance>Шанс смешанных групп (Гибридные отряды): {0}%</MF_Setting_HybridGroupsChance>
+  <MF_Setting_HybridGroupsMin>Минимум архетипов в одной фракции</MF_Setting_HybridGroupsMin>
+  <MF_Setting_HybridGroupsMax>Максимум архетипов в одной фракции</MF_Setting_HybridGroupsMax>
+  <MF_Setting_HybridGroupsCount_Value>{0} (от {1} до {2})</MF_Setting_HybridGroupsCount_Value>
+  
+  <MF_Setting_IndependenceSpawnChance>Шанс объявления независимости (%):</MF_Setting_IndependenceSpawnChance>
+  <MF_Setting_MinSettlementsForIndependence>Минимум поселений для отделения:</MF_Setting_MinSettlementsForIndependence>
+  <MF_Setting_ChanceTechAdvance>Шанс технологического прорыва (%):</MF_Setting_ChanceTechAdvance>
+  <MF_Setting_ChanceTechAdvance_Tip>Шанс, что отделившаяся фракция получит снаряжение и архетип на один тех-уровень ВЫШЕ, чем у родителя.</MF_Setting_ChanceTechAdvance_Tip>
+  <MF_Setting_ChanceTechRegress>Шанс технологической деградации (%):</MF_Setting_ChanceTechRegress>
+  <MF_Setting_ChanceTechRegress_Tip>Шанс, что отделившаяся фракция потеряет знания и получит снаряжение на один тех-уровень НИЖЕ, чем у родителя.</MF_Setting_ChanceTechRegress_Tip>
+  <MF_Setting_MaxTechLevelForIndependence>Макс. тех-уровень при отделении:</MF_Setting_MaxTechLevelForIndependence>
+  
+  <MF_Setting_HybridIndependenceChance>Шанс на гибридные отряды при расколе: {0}%</MF_Setting_HybridIndependenceChance>
+  <MF_Setting_HybridIndependenceCount>Количество архетипов при расколе (гибрид):</MF_Setting_HybridIndependenceCount>
+  
+  <MF_Setting_RelationsChances>Шансы отношений после отделения:</MF_Setting_RelationsChances>
+  <MF_Setting_RelationsHostileChance>Враждебные</MF_Setting_RelationsHostileChance>
+  <MF_Setting_RelationsHostileChance_Tip>Шансы веры: 50% Правила / 40% Рандом / 10% Копия.</MF_Setting_RelationsHostileChance_Tip>
+  <MF_Setting_RelationsNeutralChance>Нейтральные</MF_Setting_RelationsNeutralChance>
+  <MF_Setting_RelationsNeutralChance_Tip>Шансы веры: 50% Правила / 30% Копия / 20% Рандом.</MF_Setting_RelationsNeutralChance_Tip>
+  <MF_Setting_RelationsAllyChance>Союзные</MF_Setting_RelationsAllyChance>
+  <MF_Setting_RelationsAllyChance_Tip>Шансы веры: 50% Копия / 40% Правила / 10% Рандом.</MF_Setting_RelationsAllyChance_Tip>
+
+  <MF_Setting_PlayerRelationChances>Шансы отношений с ИГРОКОМ при спавне:</MF_Setting_PlayerRelationChances>
+  <MF_Setting_PlayerRelationNeutralChance>Нейтральные</MF_Setting_PlayerRelationNeutralChance>
+  <MF_Setting_PlayerRelationHostileChance>Враждебные</MF_Setting_PlayerRelationHostileChance>
+  <MF_Setting_PlayerRelationPermHostileChance>Вечно враждебные</MF_Setting_PlayerRelationPermHostileChance>
+
+
+  <MF_Setting_ResetButton>Сбросить настройки</MF_Setting_ResetButton>
+  <MF_Setting_Archetypes_Title>Донорские фракции (Выбор шаблонов)</MF_Setting_Archetypes_Title>
+  <MF_Setting_BaseTemplate_Label>Базовый шаблон фракции</MF_Setting_BaseTemplate_Label>
+  <MF_Setting_BaseTemplate_Desc>Позволяет фракции использовать свои собственные изначальные спавн-настройки (пустые xml дефы без архетипов) наравне с другими модами.\n\nВАЖНО: Это может генерировать средневековые фракции, вооруженные индустриальным оружием, так как в базовой игре нет строгих классических фракций средневековья.</MF_Setting_BaseTemplate_Desc>
+  <MF_Setting_IdeoInheritChance_Random>Наследование идеалогии по архетипу (%)</MF_Setting_IdeoInheritChance_Random>
+
+  <MF_Setting_Xenotypes_Title>Доступные ксенотипы</MF_Setting_Xenotypes_Title>
+  <MF_Setting_Xenotypes_ByTech>По уровням технологий</MF_Setting_Xenotypes_ByTech>
+  <MF_Setting_GlobalOff> [ВЫКЛ ГЛОБАЛЬНО]</MF_Setting_GlobalOff>
+
+  <MF_HybridDescriptionBase>Уникальная линия с неясными корнями. В облике этих существ смешалось слишком многое, чтобы можно было с уверенностью судить об их истинном происхождении.</MF_HybridDescriptionBase>
+
+  <MF_HybridDescriptionSingle>В основе этих существ явно узнаются черты типа {0}, однако наблюдаются существенные перемены, которые сделали их облик и природу самобытными.</MF_HybridDescriptionSingle>
+
+  <MF_HybridDescriptionPartial>Смешанная форма, объединившая в себе признаки разных кровей. Прослеживается явное родство с типом {0}, которое дополняют характерные особенности типа {1}.</MF_HybridDescriptionPartial>
+
+  <MF_HybridDescriptionFull>Сложное переплетение множества разных черт. В этом облике видны признаки типов {0} и {1}, а также едва уловимые следы других линий: {2}.</MF_HybridDescriptionFull>
+
+  <MF_Setting_EnableFactionCulling>Включить автоматическую очистку мертвых фракций (Culling)</MF_Setting_EnableFactionCulling>
+  <MF_Setting_EnableFactionCulling_Tip>Если фракция полностью уничтожена, её ксенотип и данные будут автоматически стёрты из памяти спустя заданное количество дней.\n\nЭто возвращает "мёртвый" ксенотип обратно в свободный пул и предотвращает раздувание файла сохранения, но выжившие представители этой расы больше не появятся в мире.</MF_Setting_EnableFactionCulling_Tip>
+  <MF_Setting_FactionCullDays>Дней до очистки: {0}</MF_Setting_FactionCullDays>
+
+</LanguageData>

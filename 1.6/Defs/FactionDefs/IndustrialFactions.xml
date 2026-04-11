@@ -1,0 +1,2098 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ГЕНЕРАТОРЫ ИМЕН (ДОЛЖНЫ БЫТЬ ПЕРВЫМИ!) -->
+  <RulePackDef>
+    <defName>MF_NamerFactionIndustrial</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>r_name->Namebanks/Names/Industrial_Faction</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>MF_NamerSettlementIndustrial</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>r_name->Namebanks/Names/Industrial_Settlement</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <!-- ОСНОВНЫЕ ЦВЕТА RGB 255 → XML (каждый канал / 255) -->
+<!--
+Красный:     (255,0,0)   → <li>(1.0, 0.0, 0.0)</li>
+Зелёный:     (0,255,0)   → <li>(0.0, 1.0, 0.0)</li>
+Салатовый:  (56,231,100)   → <li>(0.21, 0.9, 0.39)</li>
+Синий:       (0,0,255)   → <li>(0.0, 0.0, 1.0)</li>
+Белый:       (255,255,255) → <li>(1.0, 1.0, 1.0)</li>
+Чёрный:      (0,0,0)     → <li>(0.0, 0.0, 0.0)</li>
+Серый:       (128,128,128) → <li>(0.5, 0.5, 0.5)</li>
+Жёлтый:      (255,255,0) → <li>(1.0, 1.0, 0.0)</li>
+Оранжевый:   (255,165,0) → <li>(1.0, 0.65, 0.0)</li>
+Фиолетовый:  (128,0,128) → <li>(0.5, 0.0, 0.5)</li>
+Фиолетово синий:  (47,61,198) → <li>(0.18, 0.24, 0.77)</li>
+Бирюзовый:  (47,196,197) → <li>(0.18, 0.76, 0.77)</li>
+КОРИЧНЕВЫЙ:  (139,69,19) → <li>(0.55, 0.27, 0.07)</li>
+СИНЕ-ГОЛУБОЙ:(0,191,255) → <li>(0.0, 0.75, 1.0)</li>
+РОЗОВЫЙ:    (255,192,203) → <li>(1.0, 0.75, 0.8)</li>
+ЗОЛОТОЙ:     (255,215,0)  → <li>(1.0, 0.84, 0.0)</li>
+МОРОЗНЫЙ:    (173,216,230) → <li>(0.68, 0.85, 0.9)</li>
+Лайм:        (50,205,50)  → <li>(0.2, 0.8, 0.2)</li>
+Бирюзовый:   (64,224,208) → <li>(0.25, 0.88, 0.82)</li>
+-->
+  
+
+  <!-- ФРАКЦИИ -->
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction01</defName>
+    <label>Industrial Faction 01</label>
+   <description>Industrial Faction 01</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_01</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <colorSpectrum>
+    <li>(0.18, 0.24, 0.77)</li> <!-- Фиолетово синий -->
+		    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(1.0, 0.0, 0.0)</li>      <!-- Красный -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>	   
+    <techLevel>Industrial</techLevel>  
+	
+  </FactionDef>
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction02</defName>
+    <label>Industrial Faction 02</label>
+  <description>Industrial Faction 02</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_02</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+	 <colorSpectrum>
+    <li>(0.18, 0.76, 0.77)</li> <!-- Бирюзовый -->
+		    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(1.0, 0.0, 0.0)</li>      <!-- Красный -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction03</defName>
+    <label>Industrial Faction 03</label>
+    <description>Industrial Faction 03</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_03</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+		 <colorSpectrum>
+   <li>(0.21, 0.9, 0.39)</li> <!-- Салатовый -->
+   	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(1.0, 0.0, 0.0)</li>      <!-- Красный -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+  </FactionDef>
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction04</defName>
+    <label>Industrial Faction 04</label>
+     <description>Industrial Faction 04</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_04</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+	  <colorSpectrum>
+    <li>(1.0, 0.84, 0.0)</li> <!-- ЗОЛОТОЙ -->
+		    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(1.0, 0.0, 0.0)</li>      <!-- Красный -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>	   
+  </FactionDef>
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction05</defName>
+    <label>Industrial Faction 05</label>
+   <description>Industrial Faction 05</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_05</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction06</defName>
+    <label>Industrial Faction 06</label>
+   <description>Industrial Faction 06</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_06</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction07</defName>
+    <label>Industrial Faction 07</label>
+   <description>Industrial Faction 07</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_07</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction08</defName>
+    <label>Industrial Faction 08</label>
+   <description>Industrial Faction 08</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_08</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction09</defName>
+    <label>Industrial Faction 09</label>
+   <description>Industrial Faction 09</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_09</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction10</defName>
+    <label>Industrial Faction 10</label>
+   <description>Industrial Faction 10</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_10</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction11</defName>
+    <label>Industrial Faction 11</label>
+   <description>Industrial Faction 11</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_11</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction12</defName>
+    <label>Industrial Faction 12</label>
+   <description>Industrial Faction 12</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_12</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction13</defName>
+    <label>Industrial Faction 13</label>
+   <description>Industrial Faction 13</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_13</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction14</defName>
+    <label>Industrial Faction 14</label>
+   <description>Industrial Faction 14</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_14</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction15</defName>
+    <label>Industrial Faction 15</label>
+   <description>Industrial Faction 15</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_15</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction16</defName>
+    <label>Industrial Faction 16</label>
+   <description>Industrial Faction 16</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_16</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction17</defName>
+    <label>Industrial Faction 17</label>
+   <description>Industrial Faction 17</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_17</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction18</defName>
+    <label>Industrial Faction 18</label>
+   <description>Industrial Faction 18</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_18</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction19</defName>
+    <label>Industrial Faction 19</label>
+   <description>Industrial Faction 19</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_19</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction20</defName>
+    <label>Industrial Faction 20</label>
+   <description>Industrial Faction 20</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_20</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+  
+  
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction21</defName>
+    <label>Industrial Faction 21</label>
+   <description>Industrial Faction 21</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_21</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+
+
+  <!-- ФРАКЦИЯ 22 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction22</defName>
+    <label>Industrial Faction 22</label>
+   <description>Industrial Faction 22</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_22</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>  
+  
+  <!-- ФРАКЦИЯ 23 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction23</defName>
+    <label>Industrial Faction 23</label>
+   <description>Industrial Faction 23</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_23</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 24 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction24</defName>
+    <label>Industrial Faction 24</label>
+   <description>Industrial Faction 24</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_24</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 25 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction25</defName>
+    <label>Industrial Faction 25</label>
+   <description>Industrial Faction 25</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_25</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 26 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction26</defName>
+    <label>Industrial Faction 26</label>
+   <description>Industrial Faction 26</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_26</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 27 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction27</defName>
+    <label>Industrial Faction 27</label>
+   <description>Industrial Faction 27</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_27</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 28 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction28</defName>
+    <label>Industrial Faction 28</label>
+   <description>Industrial Faction 28</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_28</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 29 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction29</defName>
+    <label>Industrial Faction 29</label>
+   <description>Industrial Faction 29</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_29</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 30 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction30</defName>
+    <label>Industrial Faction 30</label>
+   <description>Industrial Faction 30</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_30</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 31 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction31</defName>
+    <label>Industrial Faction 31</label>
+   <description>Industrial Faction 31</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_31</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 32 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction32</defName>
+    <label>Industrial Faction 32</label>
+   <description>Industrial Faction 32</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_32</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 33 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction33</defName>
+    <label>Industrial Faction 33</label>
+   <description>Industrial Faction 33</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_33</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 34 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction34</defName>
+    <label>Industrial Faction 34</label>
+   <description>Industrial Faction 34</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_34</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 35 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction35</defName>
+    <label>Industrial Faction 35</label>
+   <description>Industrial Faction 35</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_35</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 36 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction36</defName>
+    <label>Industrial Faction 36</label>
+   <description>Industrial Faction 36</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_36</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 37 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction37</defName>
+    <label>Industrial Faction 37</label>
+   <description>Industrial Faction 37</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_37</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 38 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction38</defName>
+    <label>Industrial Faction 38</label>
+   <description>Industrial Faction 38</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_38</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 39 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction39</defName>
+    <label>Industrial Faction 39</label>
+   <description>Industrial Faction 39</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_39</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 40 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction40</defName>
+    <label>Industrial Faction 40</label>
+   <description>Industrial Faction 40</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_40</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 41 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction41</defName>
+    <label>Industrial Faction 41</label>
+   <description>Industrial Faction 41</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_41</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 42 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction42</defName>
+    <label>Industrial Faction 42</label>
+   <description>Industrial Faction 42</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_42</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+
+  <!-- ФРАКЦИЯ 43 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction43</defName>
+    <label>Industrial Faction 43</label>
+   <description>Industrial Faction 43</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_43</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 44 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction44</defName>
+    <label>Industrial Faction 44</label>
+   <description>Industrial Faction 44</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_44</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 45 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction45</defName>
+    <label>Industrial Faction 45</label>
+   <description>Industrial Faction 45</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_45</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 46 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction46</defName>
+    <label>Industrial Faction 46</label>
+   <description>Industrial Faction 46</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_46</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 47 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction47</defName>
+    <label>Industrial Faction 47</label>
+   <description>Industrial Faction 47</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_47</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 48 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction48</defName>
+    <label>Industrial Faction 48</label>
+   <description>Industrial Faction 48</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_48</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef> 
+  <!-- ФРАКЦИЯ 49 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction49</defName>
+    <label>Industrial Faction 49</label>
+   <description>Industrial Faction 49</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_49</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>   
+  
+    <!-- ФРАКЦИЯ 50 --> 
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_IndustrialFaction50</defName>
+    <label>Industrial Faction 50</label>
+   <description>Industrial Faction 50</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Industrial/MF_Industrial_50</factionIconPath>
+    <factionNameMaker>MF_NamerFactionIndustrial</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementIndustrial</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+ 
+    <colorSpectrum>
+  <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+  	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>   
+
+</Defs>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MF_Settings_Group_General>General Settings</MF_Settings_Group_General>
+  <MF_Settings_Group_Random>Random Factions</MF_Settings_Group_Random>
+  <MF_Settings_Group_Independence>Faction Independence (Splitting)</MF_Settings_Group_Independence>
+
+  <MF_Setting_ShowDebugLogs>Show debug logs</MF_Setting_ShowDebugLogs>
+  <MF_Setting_ShowDebugLogs_Tip>Enables detailed logs in the console (Dev Mode).</MF_Setting_ShowDebugLogs_Tip>
+  <MF_OnlyExistingXenotypes>Only existing xenotypes</MF_OnlyExistingXenotypes>
+  <MF_OnlyExistingXenotypes_Desc>If enabled, new factions will only have xenotypes that are ALREADY present in at least one faction in the game world. Prevents the appearance of species that do not exist in your current playthrough.</MF_OnlyExistingXenotypes_Desc>
+  
+  <MF_GenerateHybrids>Genetic Evolution (Hybrids)</MF_GenerateHybrids>
+  <MF_GenerateHybrids_Desc>If enabled, new factions will mutate upon splitting or appearing, creating their own unique xenotypes. If disabled, factions will use standard xenotype sets from their archetypes.</MF_GenerateHybrids_Desc>
+
+  <MF_Setting_EnableUIPatch>Enable enhanced faction UI</MF_Setting_EnableUIPatch>
+  <MF_Setting_EnableUIPatch_Tip>If enabled, the faction list will show an enhanced view with enemy icons and ideologies. Disable this if you have conflicts with other UI mods.</MF_Setting_EnableUIPatch_Tip>
+  <MF_Setting_HybridSpawnChance>New faction mutation chance: {0}%</MF_Setting_HybridSpawnChance>
+  <MF_Setting_HybridInheritanceMode>Genetic inheritance mode:</MF_Setting_HybridInheritanceMode>
+  <MF_HybridMode_OnlyInheritable>Inherit only heritable genes (Balance)</MF_HybridMode_OnlyInheritable>
+  <MF_HybridMode_SeparateCategories>Keep dominant type (Heritable or Xeno)</MF_HybridMode_SeparateCategories>
+  <MF_HybridMode_AllInheritable>All genes become heritable (Chaos)</MF_HybridMode_AllInheritable>
+  <MF_Setting_MigrationChanceRandom>Hybrid migration chance (Random spawn): {0}%</MF_Setting_MigrationChanceRandom>
+  <MF_Setting_MigrationChanceIndependence>Hybrid migration chance (On split): {0}%</MF_Setting_MigrationChanceIndependence>
+  
+  <MF_Setting_GeneticEvolution>Genetic evolution settings:</MF_Setting_GeneticEvolution>
+  <MF_Setting_AllowArchiteGenes>Allow archite genes</MF_Setting_AllowArchiteGenes>
+  <MF_Setting_AllowArchiteGenes_Tip>If enabled, mutations may randomly produce archite genes (requiring capsules). IMPORTANT: This makes factions significantly stronger.</MF_Setting_AllowArchiteGenes_Tip>
+  <MF_Setting_MinMetabolism>Minimum metabolism: {0}</MF_Setting_MinMetabolism>
+  <MF_Setting_MaxNewGenes>Max new genes per mutation: {0}</MF_Setting_MaxNewGenes>
+  
+  <MF_Setting_WeightNeolithic>Chance: Neolithic (%)</MF_Setting_WeightNeolithic>
+  <MF_Setting_WeightMedieval>Chance: Medieval (%)</MF_Setting_WeightMedieval>
+  <MF_Setting_WeightIndustrial>Chance: Industrial (%)</MF_Setting_WeightIndustrial>
+  <MF_Setting_WeightSpacer>Chance: Spacer (%)</MF_Setting_WeightSpacer>
+  <MF_Setting_WeightUltra>Chance: Ultra (%)</MF_Setting_WeightUltra>
+  
+  <MF_RequireCommsForNews>Require comms for news</MF_RequireCommsForNews>
+  <MF_RequireCommsForNews_Tip>If enabled, notifications about faction appearances will only arrive if a comms console is present.</MF_RequireCommsForNews_Tip>
+
+  <MF_Setting_TriggerIntervalHours>Check interval (hours)</MF_Setting_TriggerIntervalHours>
+  <MF_Setting_MaxFactionsCount>Mod faction limit:</MF_Setting_MaxFactionsCount>
+  <MF_Setting_RandomSettlementChance>New base spawn chance (%):</MF_Setting_RandomSettlementChance>
+  <MF_Setting_RandomSettlementChance_Value>{0}% (Independent chance to spawn on an empty tile)</MF_Setting_RandomSettlementChance_Value>
+  <MF_Setting_SpawnOnRuinsChance>Spawn on ruins chance (%):</MF_Setting_SpawnOnRuinsChance>
+  <MF_Setting_SpawnOnRuinsChance_Value>{0}% (Independent chance to spawn specifically on ruin sites)</MF_Setting_SpawnOnRuinsChance_Value>
+  
+  <MF_Setting_HybridGroupsChance>Mixed groups chance (Hybrid squads): {0}%</MF_Setting_HybridGroupsChance>
+  <MF_Setting_HybridGroupsMin>Min archetypes per faction</MF_Setting_HybridGroupsMin>
+  <MF_Setting_HybridGroupsMax>Max archetypes per faction</MF_Setting_HybridGroupsMax>
+  <MF_Setting_HybridGroupsCount_Value>{0} (from {1} to {2})</MF_Setting_HybridGroupsCount_Value>
+  
+  <MF_Setting_IndependenceSpawnChance>Independence declaration chance (%):</MF_Setting_IndependenceSpawnChance>
+  <MF_Setting_MinSettlementsForIndependence>Min settlements required to split:</MF_Setting_MinSettlementsForIndependence>
+  <MF_Setting_ChanceTechAdvance>Technological breakthrough chance (%):</MF_Setting_ChanceTechAdvance>
+  <MF_Setting_ChanceTechAdvance_Tip>Chance that a breakaway faction will receive equipment and an archetype one tech-level HIGHER than the parent.</MF_Setting_ChanceTechAdvance_Tip>
+  <MF_Setting_ChanceTechRegress>Technological regression chance (%):</MF_Setting_ChanceTechRegress>
+  <MF_Setting_ChanceTechRegress_Tip>Chance that a breakaway faction will lose knowledge and receive equipment one tech-level LOWER than the parent.</MF_Setting_ChanceTechRegress_Tip>
+  <MF_Setting_MaxTechLevelForIndependence>Max tech-level upon splitting:</MF_Setting_MaxTechLevelForIndependence>
+  
+  <MF_Setting_HybridIndependenceChance>Hybrid squads chance on split: {0}%</MF_Setting_HybridIndependenceChance>
+  <MF_Setting_HybridIndependenceCount>Number of archetypes on split (hybrid):</MF_Setting_HybridIndependenceCount>
+  
+  <MF_Setting_RelationsChances>Relationship chances after splitting:</MF_Setting_RelationsChances>
+  <MF_Setting_RelationsHostileChance>Hostile</MF_Setting_RelationsHostileChance>
+  <MF_Setting_RelationsHostileChance_Tip>Weight chances: 50% Rule / 40% Random / 10% Copy.</MF_Setting_RelationsHostileChance_Tip>
+  <MF_Setting_RelationsNeutralChance>Neutral</MF_Setting_RelationsNeutralChance>
+  <MF_Setting_RelationsNeutralChance_Tip>Weight chances: 50% Rule / 30% Copy / 20% Random.</MF_Setting_RelationsNeutralChance_Tip>
+  <MF_Setting_RelationsAllyChance>Allied</MF_Setting_RelationsAllyChance>
+  <MF_Setting_RelationsAllyChance_Tip>Weight chances: 50% Copy / 40% Rule / 10% Random.</MF_Setting_RelationsAllyChance_Tip>
+
+  <MF_Setting_PlayerRelationChances>Relationship chances with PLAYER on spawn:</MF_Setting_PlayerRelationChances>
+  <MF_Setting_PlayerRelationNeutralChance>Neutral</MF_Setting_PlayerRelationNeutralChance>
+  <MF_Setting_PlayerRelationHostileChance>Hostile</MF_Setting_PlayerRelationHostileChance>
+  <MF_Setting_PlayerRelationPermHostileChance>Permanently Hostile</MF_Setting_PlayerRelationPermHostileChance>
+
+
+  <MF_Setting_ResetButton>Reset Settings</MF_Setting_ResetButton>
+  <MF_Setting_Archetypes_Title>Donor Factions (Template Selection)</MF_Setting_Archetypes_Title>
+  <MF_Setting_BaseTemplate_Label>Base Faction Template</MF_Setting_BaseTemplate_Label>
+  <MF_Setting_BaseTemplate_Desc>Allows the faction to use its own original spawn settings (empty xml defs without archetypes) on par with other mods.\n\nIMPORTANT: This may generate medieval factions that closely resemble industrial ones, as the vanilla game lacks strict classic medieval factions.</MF_Setting_BaseTemplate_Desc>
+  <MF_Setting_IdeoInheritChance_Random>Ideology inheritance by archetype (%)</MF_Setting_IdeoInheritChance_Random>
+
+  <MF_Setting_Xenotypes_Title>Available Xenotypes</MF_Setting_Xenotypes_Title>
+  <MF_Setting_Xenotypes_ByTech>By Tech Level</MF_Setting_Xenotypes_ByTech>
+  <MF_Setting_GlobalOff> [GLOBAL OFF]</MF_Setting_GlobalOff>
+
+  <MF_HybridDescriptionBase>A unique lineage with obscure roots. Too many elements have mixed within these beings to judge their true origin with certainty.</MF_HybridDescriptionBase>
+
+  <MF_HybridDescriptionSingle>These beings clearly show traits of the {0} type at their core, yet significant changes have occurred that made their appearance and nature distinct.</MF_HybridDescriptionSingle>
+
+  <MF_HybridDescriptionPartial>A mixed form combining features of different bloodlines. A clear kinship with the {0} type is evident, complemented by characteristic features of the {1} type.</MF_HybridDescriptionPartial>
+
+  <MF_HybridDescriptionFull>A complex intertwining of many different traits. This appearance reveals features of the {0} and {1} types, as well as faint traces of other lineages: {2}.</MF_HybridDescriptionFull>
+  <MF_Setting_EnableFactionCulling>Enable automatic dead faction culling</MF_Setting_EnableFactionCulling>
+  <MF_Setting_EnableFactionCulling_Tip>If a faction is completely destroyed, its xenotype and data will be automatically wiped from memory after a set number of days.\n\nThis returns the "dead" xenotype back into the free pool and prevents save bloat, but surviving members of this race will no longer appear in the world.</MF_Setting_EnableFactionCulling_Tip>
+  <MF_Setting_FactionCullDays>Days until cull: {0}</MF_Setting_FactionCullDays>
+
+</LanguageData>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MF_NeolithicFaction01.label>Kin</MF_NeolithicFaction01.label>
+  <MF_NeolithicFaction01.description>A small but strong community of blood-related people. For them, tradition and the memory of ancestors are more important than power or wealth.</MF_NeolithicFaction01.description>
+
+  <MF_NeolithicFaction02.label>Ancient Tribe</MF_NeolithicFaction02.label>
+  <MF_NeolithicFaction02.description>A community united by a common totem and legends. They live as one, following their leader and the spirits.</MF_NeolithicFaction02.description>
+
+  <MF_NeolithicFaction03.label>Clan</MF_NeolithicFaction03.label>
+  <MF_NeolithicFaction03.description>A stable structure with a clear hierarchy. Everyone knows their place, and the honor of the clan is above all else.</MF_NeolithicFaction03.description>
+
+  <MF_NeolithicFaction04.label>Commune</MF_NeolithicFaction04.label>
+  <MF_NeolithicFaction04.description>A group where equality and mutual aid rule. Decisions are made collectively, as in a family.</MF_NeolithicFaction04.description>
+
+  <MF_NeolithicFaction05.label>Gatherers</MF_NeolithicFaction05.label>
+  <MF_NeolithicFaction05.description>Nomads living on the gifts of nature. They believe that the world feeds those who are not greedy.</MF_NeolithicFaction05.description>
+
+  <MF_NeolithicFaction06.label>Hunters</MF_NeolithicFaction06.label>
+  <MF_NeolithicFaction06.description>Skilled trackers and fighters who honor the law of the prey. Their life is an eternal pursuit and waiting.</MF_NeolithicFaction06.description>
+
+  <MF_NeolithicFaction07.label>Keepers</MF_NeolithicFaction07.label>
+  <MF_NeolithicFaction07.description>Guardians of ancient knowledge, sacred places, and relics. They consider themselves the link between the past and the future.</MF_NeolithicFaction07.description>
+
+  <MF_NeolithicFaction08.label>Ancestors</MF_NeolithicFaction08.label>
+  <MF_NeolithicFaction08.description>Spirits or legendary founders of nations. Their names are spoken in rituals, asking for wisdom and protection.</MF_NeolithicFaction08.description>
+
+  <MF_NeolithicFaction09.label>Herd</MF_NeolithicFaction09.label>
+  <MF_NeolithicFaction09.description>A primitive union led by instincts. The strength of each lies in merging with the mass, with the rhythm of nature.</MF_NeolithicFaction09.description>
+
+  <MF_NeolithicFaction10.label>Wanderers</MF_NeolithicFaction10.label>
+  <MF_NeolithicFaction10.description>Eternal travelers who turned away from home for the sake of horizons. They carry the memory of foreign lands with them.</MF_NeolithicFaction10.description>
+
+  <MF_NeolithicFaction11.label>Tribesmen</MF_NeolithicFaction11.label>
+  <MF_NeolithicFaction11.description>Those bound not by blood, but by choice. They are united by a sense of a shared path and brotherhood.</MF_NeolithicFaction11.description>
+
+  <MF_NeolithicFaction12.label>Children of the Mist</MF_NeolithicFaction12.label>
+  <MF_NeolithicFaction12.description>Mysterious nomads appearing from nowhere and disappearing into the haze. It is said they see what is hidden from others.</MF_NeolithicFaction12.description>
+
+  <MF_NeolithicFaction13.label>Stone People</MF_NeolithicFaction13.label>
+  <MF_NeolithicFaction13.description>Strong, hardy highlanders. Their life is slow but unbreakable, like the rocks among which they live.</MF_NeolithicFaction13.description>
+
+  <MF_NeolithicFaction14.label>Battle Clan</MF_NeolithicFaction14.label>
+  <MF_NeolithicFaction14.description>A warrior brotherhood born of war. Their cult is honor, strength, and the memory of the fallen.</MF_NeolithicFaction14.description>
+
+  <MF_NeolithicFaction15.label>Wind Wanderers</MF_NeolithicFaction15.label>
+  <MF_NeolithicFaction15.description>Light-spirited travelers who value freedom above all laws. Their steps leave no tracks.</MF_NeolithicFaction15.description>
+
+  <MF_NeolithicFaction16.label>Ancient Commune</MF_NeolithicFaction16.label>
+  <MF_NeolithicFaction16.description>A group that has survived centuries, whose roots are lost in time. They preserve forgotten rituals.</MF_NeolithicFaction16.description>
+
+  <MF_NeolithicFaction17.label>Tree Tribe</MF_NeolithicFaction17.label>
+  <MF_NeolithicFaction17.description>A people living in unity with the forest. Their life is a cycle of growth, death, and rebirth.</MF_NeolithicFaction17.description>
+
+  <MF_NeolithicFaction18.label>Death Tribe</MF_NeolithicFaction18.label>
+  <MF_NeolithicFaction18.description>Somber servants of the transition between worlds. They do not fear the end, considering it part of the path.</MF_NeolithicFaction18.description>
+
+  <MF_NeolithicFaction19.label>Fate Tribe</MF_NeolithicFaction19.label>
+  <MF_NeolithicFaction19.description>Prophets and seers following the path written by the stars. They believe that every living being has a destiny.</MF_NeolithicFaction19.description>
+
+  <MF_NeolithicFaction20.label>Spirit Tribe</MF_NeolithicFaction20.label>
+  <MF_NeolithicFaction20.description>Beings living on the border of worlds. Their voice is the whisper of the wind, and their presence is felt when the darkness thickens.</MF_NeolithicFaction20.description>
+
+  <MF_NeolithicFaction21.label>Children of the Sun</MF_NeolithicFaction21.label>
+  <MF_NeolithicFaction21.description>A tribe that deifies the daylight. They believe every action is seen by the sky and strive to live in light and truth.</MF_NeolithicFaction21.description>
+
+  <MF_NeolithicFaction22.label>Shadow Tribe</MF_NeolithicFaction22.label>
+  <MF_NeolithicFaction22.description>Mysterious inhabitants of caves and thickets. They are masters of camouflage and silent movement, considering darkness their best friend.</MF_NeolithicFaction22.description>
+
+  <MF_NeolithicFaction23.label>Free Nomads</MF_NeolithicFaction23.label>
+  <MF_NeolithicFaction23.description>A group with no permanent home. They follow herds of animals and the signs of the stars, recognizing no borders or foreign laws.</MF_NeolithicFaction23.description>
+
+  <MF_NeolithicFaction24.label>Bear Clan</MF_NeolithicFaction24.label>
+  <MF_NeolithicFaction24.description>Mighty warriors whose totem is the master of the forest. They are distinguished by great strength, endurance, and rage in battle.</MF_NeolithicFaction24.description>
+
+  <MF_NeolithicFaction25.label>River People</MF_NeolithicFaction25.label>
+  <MF_NeolithicFaction25.description>Masters of boat building and fishing. Their entire life is connected to the water, which they revere as a nursing mother.</MF_NeolithicFaction25.description>
+
+  <MF_NeolithicFaction26.label>Fire Keepers</MF_NeolithicFaction26.label>
+  <MF_NeolithicFaction26.description>A tribe that considers fire a sacred gift from the gods. They never let their main campfire go out, believing that life will leave the kin with it.</MF_NeolithicFaction26.description>
+
+  <MF_NeolithicFaction27.label>Wolf Clan</MF_NeolithicFaction27.label>
+  <MF_NeolithicFaction27.description>A pack of hunters acting in coordination and without mercy. Their tactics are based on exhausting the enemy and striking a sudden blow at a weak point.</MF_NeolithicFaction27.description>
+
+  <MF_NeolithicFaction28.label>Sages of the Mountains</MF_NeolithicFaction28.label>
+  <MF_NeolithicFaction28.description>An isolated community living on cloud-piercing peaks. They spend their time in meditation and studying ancient petroglyphs.</MF_NeolithicFaction28.description>
+
+  <MF_NeolithicFaction29.label>Bone Tribe</MF_NeolithicFaction29.label>
+  <MF_NeolithicFaction29.description>Grim warriors who decorate themselves with the skulls of enemies. They believe that the strength of a killed opponent passes to the one who wears their remains.</MF_NeolithicFaction29.description>
+
+  <MF_NeolithicFaction30.label>Children of Thunder</MF_NeolithicFaction30.label>
+  <MF_NeolithicFaction30.description>A militant tribe that considers thunder to be the voice of the gods. In every peal, they hear a call to battle and new achievements.</MF_NeolithicFaction30.description>
+
+  <MF_NeolithicFaction31.label>Wasteland Nomads</MF_NeolithicFaction31.label>
+  <MF_NeolithicFaction31.description>Those who have learned to survive where others perish. They are content with little and know the value of every drop of water and handful of grain.</MF_NeolithicFaction31.description>
+
+  <MF_NeolithicFaction32.label>Root Tribe</MF_NeolithicFaction32.label>
+  <MF_NeolithicFaction32.description>A group practicing a deep connection with the earth's depths. They know the secret properties of plants and can find their way in the most tangled forests.</MF_NeolithicFaction32.description>
+
+  <MF_NeolithicFaction33.label>Falcon People</MF_NeolithicFaction33.label>
+  <MF_NeolithicFaction33.description>A proud tribe with a keen gaze. Their scouts see the enemy from miles away, and their archers strike without miss.</MF_NeolithicFaction33.description>
+
+  <MF_NeolithicFaction34.label>Turtle Clan</MF_NeolithicFaction34.label>
+  <MF_NeolithicFaction34.description>A peace-loving tribe that prefers strong defense over attack. They build reliable fortifications and value family comfort above all else.</MF_NeolithicFaction34.description>
+
+  <MF_NeolithicFaction35.label>Milky Way Wanderers</MF_NeolithicFaction35.label>
+  <MF_NeolithicFaction35.description>A mystical tribe whose legends tell of ancestors coming from the stars. They keep strange artifacts whose purpose is forgotten.</MF_NeolithicFaction35.description>
+
+  <MF_NeolithicFaction36.label>Wind Tribe</MF_NeolithicFaction36.label>
+  <MF_NeolithicFaction36.description>Fast and agile people living on the open plains. They believe the wind brings news from distant relatives and spirits.</MF_NeolithicFaction36.description>
+
+  <MF_NeolithicFaction37.label>Dream Keepers</MF_NeolithicFaction37.label>
+  <MF_NeolithicFaction37.description>A tribe of shamans who attach great importance to visions. Every important decision is made only after interpreting nocturnal dreams.</MF_NeolithicFaction37.description>
+
+  <MF_NeolithicFaction38.label>Snake Clan</MF_NeolithicFaction38.label>
+  <MF_NeolithicFaction38.description>Secretive and wise people who know much about poisons and healing. They prefer cunning over brute force and always have an escape plan.</MF_NeolithicFaction38.description>
+
+  <MF_NeolithicFaction39.label>Whispering Grass People</MF_NeolithicFaction39.label>
+  <MF_NeolithicFaction39.description>Herbalists and gatherers living in harmony with the meadow. They hear the music of nature where others see only thickets.</MF_NeolithicFaction39.description>
+
+  <MF_NeolithicFaction40.label>Fierce Face Tribe</MF_NeolithicFaction40.label>
+  <MF_NeolithicFaction40.description>A group that uses terrifying masks and paint. For them, war is primarily psychological pressure on the opponent.</MF_NeolithicFaction40.description>
+
+  <MF_NeolithicFaction41.label>Northern Hunters</MF_NeolithicFaction41.label>
+  <MF_NeolithicFaction41.description>Cold-hardened people living on the edge of glaciers. Their life is a constant struggle with the elements for meager prey.</MF_NeolithicFaction41.description>
+
+  <MF_NeolithicFaction42.label>Red Sand Tribe</MF_NeolithicFaction42.label>
+  <MF_NeolithicFaction42.description>Inhabitants of hot deserts, able to find water under the scorching sun. Their skin is dry as parchment, and their will is hard as flint.</MF_NeolithicFaction42.description>
+
+  <MF_NeolithicFaction43.label>Mist Nomads</MF_NeolithicFaction43.label>
+  <MF_NeolithicFaction43.description>A mysterious group whose camps are always shrouded in haze. It is said they know how to call the mist to hide from pursuers.</MF_NeolithicFaction43.description>
+
+  <MF_NeolithicFaction44.label>Lynx Clan</MF_NeolithicFaction44.label>
+  <MF_NeolithicFaction44.description>Solitary hunters who gather only to protect against a large threat. They value independence and personal skill.</MF_NeolithicFaction44.description>
+
+  <MF_NeolithicFaction45.label>Great Lake People</MF_NeolithicFaction45.label>
+  <MF_NeolithicFaction45.description>A settled tribe that has created a prosperous economy on fertile shores. They are hospitable to friends but harsh to uninvited guests.</MF_NeolithicFaction45.description>
+
+  <MF_NeolithicFaction46.label>Grotto Keepers</MF_NeolithicFaction46.label>
+  <MF_NeolithicFaction46.description>A tribe living in a system of natural caves. They have turned their dwellings into true underground fortresses.</MF_NeolithicFaction46.description>
+
+  <MF_NeolithicFaction47.label>Children of the Moon</MF_NeolithicFaction47.label>
+  <MF_NeolithicFaction47.description>Nocturnal inhabitants leading an active life under the silvery glow. They believe the moon gives them special wisdom and tranquility.</MF_NeolithicFaction47.description>
+
+  <MF_NeolithicFaction48.label>Clear Stream Tribe</MF_NeolithicFaction48.label>
+  <MF_NeolithicFaction48.description>A peace-loving community living in a picturesque valley. Their ideals are purity of thought and harmony with the surrounding world.</MF_NeolithicFaction48.description>
+
+  <MF_NeolithicFaction49.label>Thunder Nomads</MF_NeolithicFaction49.label>
+  <MF_NeolithicFaction49.description>Riders whose approach is heard long before they appear. They carry with them the energy of the storm and the unstoppable power of nature.</MF_NeolithicFaction49.description>
+
+  <MF_NeolithicFaction50.label>First Campfire Tribe</MF_NeolithicFaction50.label>
+  <MF_NeolithicFaction50.description>The oldest kin, claiming the right to be called the progenitors of all tribes. They preserve legends of the world's creation.</MF_NeolithicFaction50.description>
+
+</LanguageData>

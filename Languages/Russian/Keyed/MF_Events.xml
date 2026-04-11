@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Спавн случайных фракций -->
+  <MF_SpawnLetterTitle_Animal>Появление диких племён</MF_SpawnLetterTitle_Animal>
+  <MF_SpawnLetterTitle_Neolithic>Дикие племена</MF_SpawnLetterTitle_Neolithic>
+  <MF_SpawnLetterTitle_Medieval>Средневековая община</MF_SpawnLetterTitle_Medieval>
+  <MF_SpawnLetterTitle_Industrial>Осколки цивилизации</MF_SpawnLetterTitle_Industrial>
+  <MF_SpawnLetterTitle_Spacer>Падение космического корабля</MF_SpawnLetterTitle_Spacer>
+  <MF_SpawnLetterTitle_Ultra>Таинственная угроза</MF_SpawnLetterTitle_Ultra>
+  <MF_SpawnLetterTitle_Archotech>След Архотеков</MF_SpawnLetterTitle_Archotech>
+  <MF_SpawnLetterTitle_Default>Новое поселение</MF_SpawnLetterTitle_Default>
+
+  <MF_SpawnDescription_Neolithic>Слоняющиеся по миру изгнанники, выгнанные из старых племён или просто одиночки, решили объединиться. Их сила в сплочённости и знании диких земель.</MF_SpawnDescription_Neolithic>
+  <MF_SpawnDescription_Medieval>Выжившие организовали новую общину со строгими законами и стенами из обломков. Они отвергают хаос пустошей и строят порядок на своих условиях.</MF_SpawnDescription_Medieval>
+  <MF_SpawnDescription_Industrial>Разрозненные группы выживших, спаянные общим прошлым и знаниями индустриальных технологий. Осколки былой цивилизации объединены железной волей и одной целью — огнем и машинами проложить путь к возрождению.</MF_SpawnDescription_Industrial>
+  <MF_SpawnDescription_Spacer>Космические беженцы, чей корабль разбился на планете. Они цепляются за остатки цивилизации, используя обломки для выживания и возрождения.</MF_SpawnDescription_Spacer>
+  <MF_SpawnDescription_Ultra>Осколки некогда великой звездной империи. Их вера в собственное превосходство лишь окрепла в изоляции, действующие из тени, появившиеся на первый взгляд из неоткуда, их цели скрыты от нас.</MF_SpawnDescription_Ultra>
+  <MF_SpawnDescription_Default>неизвестная группа</MF_SpawnDescription_Default>
+  
+  <MF_SpawnDescription_WithName>{0}. Они назвали поселение '{1}'.</MF_SpawnDescription_WithName>
+
+  <!-- Случайные фразы -->
+  <MF_SpawnFlavor_1>Их намерения пока неясны.</MF_SpawnFlavor_1>
+  <MF_SpawnFlavor_2>Как это повлияет на баланс сил?</MF_SpawnFlavor_2>
+  <MF_SpawnFlavor_3>Разведка ведет наблюдение.</MF_SpawnFlavor_3>
+  <MF_SpawnFlavor_4>Торговцы уже интересуются ими.</MF_SpawnFlavor_4>
+  <MF_SpawnFlavor_5>Откуда эти чужаки?</MF_SpawnFlavor_5>
+  <MF_SpawnFlavor_6>Их технологии вызывают вопросы.</MF_SpawnFlavor_6>
+  <MF_SpawnFlavor_7>Что они ищут здесь?</MF_SpawnFlavor_7>
+  
+  <!-- Независимость (по типу отношений) -->
+  <MF_IndependenceLetterTitle_Hostile>Кровавый мятеж: {0}</MF_IndependenceLetterTitle_Hostile>
+  <MF_IndependenceLetterTitle_Neutral>Мирный раскол: {0}</MF_IndependenceLetterTitle_Neutral>
+  <MF_IndependenceLetterTitle_Ally>Новая коалиция: {0}</MF_IndependenceLetterTitle_Ally>
+
+  <MF_IndependenceLetterTitle_Advance>Технологический триумф: {0}</MF_IndependenceLetterTitle_Advance>
+  <MF_IndependenceLetterTitle_Regress>Упадок и хаос: {0}</MF_IndependenceLetterTitle_Regress>
+
+  <MF_IndependenceLetterText_Hostile_Advance>Взрывной рост силы! Во время восстания поселение {2} не только отделилось от фракции {1}, но и смогло заполучить редкое снаряжение и знания, совершив резкий скачок в своем развитии. Теперь новая группа {0} вооружена гораздо лучше своих бывших хозяев. Отношения: {3}.</MF_IndependenceLetterText_Hostile_Advance>
+  <MF_IndependenceLetterText_Neutral_Advance>Качественный скачок из тени. Поселение {2} мирно отделилось от фракции {1}, раскрыв свои новые возможности и скрытые ресурсы. Теперь это независимая и более развитая группа: {0}. Отношения: {3}.</MF_IndependenceLetterText_Neutral_Advance>
+  <MF_IndependenceLetterText_Ally_Advance>Эра процветания! Фракция {1} даровала автономию поселению {2}, которое совершило невероятный рывок в своем деле. Теперь {0} — это технологически окрепший союзник, готовый к покорению новых высот. Отношения: {3}.</MF_IndependenceLetterText_Ally_Advance>
+
+  <MF_IndependenceLetterText_Hostile_Regress>Потеря снабжения и хаос! После отделения от {1}, поселение {2} столкнулось с серьезным упадком. Лишенные поддержки и ресурсов своих бывших соратников, сепаратисты группы {0} были вынуждены упростить свой быт и перейти на более доступное снаряжение. Отношения: {3}.</MF_IndependenceLetterText_Hostile_Regress>
+  <MF_IndependenceLetterText_Neutral_Regress>Вынужденное упрощение. Мирный раскол с {1} дорого обошелся жителям поселения {2}. Без внешней поддержки они не смогли поддерживать сложный уклад жизни и перешли к более простым методам выживания: {0}. Отношения: {3}.</MF_IndependenceLetterText_Neutral_Regress>
+  <MF_IndependenceLetterText_Ally_Regress>Тяжелые времена. Хотя фракция {1} даровала независимость {2}, новые поселенцы {0} столкнулись с дефицитом ресурсов и потерей сложных технологий. Они перешли на более низкий уровень развития, но всё еще нуждаются в поддержке своих союзников. Отношения: {3}.</MF_IndependenceLetterText_Ally_Regress>
+
+  <MF_IndependenceLetterText_Hostile>Гражданская война! Поселение {2} взбунтовалось против влияния фракции {1} и провозгласило себя независимой силой: {0}.\n\nПереговоры провалились, и теперь бывшие соотечественники стали заклятыми врагами. Отношения: {3}.</MF_IndependenceLetterText_Hostile>
+  <MF_IndependenceLetterText_Neutral>Поселение {2} официально объявило о выходе из состава фракции {1}. Раздел территорий прошел без кровопролития, и теперь здесь базируется новая суверенная группа: {0}.\n\nОтношения между ними оцениваются как {3}.</MF_IndependenceLetterText_Neutral>
+  <MF_IndependenceLetterText_Ally>Дружественное разделение! Фракция {1} даровала полную автономию поселению {2}, чтобы оно могло развиваться самостоятельно как новая союзная фракция: {0}.\n\nОни продолжают поддерживать друг друга и остаются верными соратниками. Отношения: {3}.</MF_IndependenceLetterText_Ally>
+  <MF_IndependenceLetterTitle_Default>Объявление независимости</MF_IndependenceLetterTitle_Default>
+  <MF_IndependenceLetterText_Default>Поселение {2} фракции '{1}' объявило себя независимым государством под названием '{0}'.\n\nОтношения: {3}.</MF_IndependenceLetterText_Default>
+
+  <MF_Relation_Hostile>враждебные</MF_Relation_Hostile>
+  <MF_Relation_Neutral>нейтральные</MF_Relation_Neutral>
+  <MF_Relation_Ally>союзные</MF_Relation_Ally>
+
+</LanguageData>

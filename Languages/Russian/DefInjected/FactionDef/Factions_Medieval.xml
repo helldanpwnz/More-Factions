@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- ==================== СРЕДНЕВЕКОВЫЕ ФРАКЦИИ ==================== -->
+  
+  <MF_MedievalFaction01.label>Орден</MF_MedievalFaction01.label>
+  <MF_MedievalFaction01.description>Воинственное братство, посвящённое строгому кодексу чести и защите святынь. Рыцари в сияющих доспехах несут знамя веры и меча.</MF_MedievalFaction01.description>
+  
+  <MF_MedievalFaction02.label>Союз</MF_MedievalFaction02.label>
+  <MF_MedievalFaction02.description>Объединение городов и ремесленных гильдий, основанное на торговых договорах и взаимной защите. Богатство и дипломатия — их главные оружия.</MF_MedievalFaction02.description>
+  
+  <MF_MedievalFaction03.label>Династия</MF_MedievalFaction03.label>
+  <MF_MedievalFaction03.description>Древний род правителей, чья кровь правит веками. Интриги, династические браки и железная воля к власти определяют их историю.</MF_MedievalFaction03.description>
+  
+  <MF_MedievalFaction04.label>Княжество</MF_MedievalFaction04.label>
+  <MF_MedievalFaction04.description>Могучее княжество с богатой историей рыцарских турниров, торговли и завоеваний. Крепкие замки и верные вассалы охраняют их границы.</MF_MedievalFaction04.description>
+  
+  <MF_MedievalFaction05.label>Королевство</MF_MedievalFaction05.label>
+  <MF_MedievalFaction05.description>Великое королевство с пышным двором и мощной армией. Короли правят железной рукой, поддерживая баланс между знатью и церковью.</MF_MedievalFaction05.description>
+  
+  <MF_MedievalFaction06.label>Баронство</MF_MedievalFaction06.label>
+  <MF_MedievalFaction06.description>Воинственное баронство, где сила оружия важнее дипломатии. Бароны лично ведут отряды в бой, защищая свои земли от набегов.</MF_MedievalFaction06.description>
+  
+  <MF_MedievalFaction07.label>Герцогство</MF_MedievalFaction07.label>
+  <MF_MedievalFaction07.description>Богатое и культурное герцогство, славящееся искусством, архитектурой и тонкой дипломатией. Герцоги плетут сложные политические сети.</MF_MedievalFaction07.description>
+  
+  <MF_MedievalFaction08.label>Графство</MF_MedievalFaction08.label>
+  <MF_MedievalFaction08.description>Торговое графство на перекрёстке путей. Караваны, рынки и наёмные арбалетчики обеспечивают процветание и безопасность.</MF_MedievalFaction08.description>
+  
+  <MF_MedievalFaction09.label>Владение</MF_MedievalFaction09.label>
+  <MF_MedievalFaction09.description>Обширное владение, управляемое могучим лордом. Земли богаты ресурсами, а замки неприступны для врагов.</MF_MedievalFaction09.description>
+  
+  <MF_MedievalFaction10.label>Доминион</MF_MedievalFaction10.label>
+  <MF_MedievalFaction10.description>Агрессивный доминион, расширяющий границы за счёт соседей. Военная мощь и амбиции правителей не знают границ.</MF_MedievalFaction10.description>
+  
+  <MF_MedievalFaction11.label>Вассалитет</MF_MedievalFaction11.label>
+  <MF_MedievalFaction11.description>Сеть верных вассалов, связанных клятвами верности сюзерену. Честь и долг превыше личных амбиций.</MF_MedievalFaction11.description>
+  
+  <MF_MedievalFaction12.label>Протекторат</MF_MedievalFaction12.label>
+  <MF_MedievalFaction12.description>Протекторат под покровительством могущественной державы. Мир и стабильность в обмен на дань и войска.</MF_MedievalFaction12.description>
+  
+  <MF_MedievalFaction13.label>Боевой союз</MF_MedievalFaction13.label>
+  <MF_MedievalFaction13.description>Объединение воинственных кланов, закалённых постоянными войнами. Единство в бою — их главный принцип.</MF_MedievalFaction13.description>
+  
+  <MF_MedievalFaction14.label>Ковенант</MF_MedievalFaction14.label>
+  <MF_MedievalFaction14.description>Таинственный ковенант, связанный древними клятвами и ритуалами. Скрытность и преданность делу превыше всего.</MF_MedievalFaction14.description>
+  
+  <MF_MedievalFaction15.label>Конфедерация</MF_MedievalFaction15.label>
+  <MF_MedievalFaction15.description>Свободная конфедерация городов, управляющаяся советом старейшин. Каждый город сохраняет автономию.</MF_MedievalFaction15.description>
+  
+  <MF_MedievalFaction16.label>Деспотия</MF_MedievalFaction16.label>
+  <MF_MedievalFaction16.description>Жестокая деспотия, где воля одного правителя — закон для всех. Бунты подавляются беспощадно и быстро.</MF_MedievalFaction16.description>
+  
+  <MF_MedievalFaction17.label>Аббатство</MF_MedievalFaction17.label>
+  <MF_MedievalFaction17.description>Могущественное аббатство, чьи монахи сочетают молитву с искусством войны. Знания и вера — их сила.</MF_MedievalFaction17.description>
+  
+  <MF_MedievalFaction18.label>Империя</MF_MedievalFaction18.label>
+  <MF_MedievalFaction18.description>Многонациональная империя, объединяющая народы под властью императора. Величие и мощь не имеют границ.</MF_MedievalFaction18.description>
+  
+  <MF_MedievalFaction19.label>Конклав</MF_MedievalFaction19.label>
+  <MF_MedievalFaction19.description>Тайный конклав магов и учёных, управляющий из тени. Знания и магия — их главные инструменты власти.</MF_MedievalFaction19.description>
+  
+  <MF_MedievalFaction20.label>Гильдия</MF_MedievalFaction20.label>
+  <MF_MedievalFaction20.description>Могущественная гильдия ремесленников и торговцев, контролирующая экономику целого региона. Деньги правят миром.</MF_MedievalFaction20.description>
+
+  <MF_MedievalFaction21.label>Могучий орден</MF_MedievalFaction21.label>
+  <MF_MedievalFaction21.description>Сплоченное братство, объединенное общим уставом и верой. Для них железная дисциплина и защита общего дела важнее родовых земель и титулов.</MF_MedievalFaction21.description>
+
+  <MF_MedievalFaction22.label>Баронство</MF_MedievalFaction22.label>
+  <MF_MedievalFaction22.description>Малое, но гордое владение, где каждый холм увенчан башней. Бароны здесь постоянно спорят о границах, но объединяются перед лицом внешнего врага.</MF_MedievalFaction22.description>
+
+  <MF_MedievalFaction23.label>Маркграфство</MF_MedievalFaction23.label>
+  <MF_MedievalFaction23.description>Военный округ на границе цивилизации. Их жизнь — бесконечные дозоры и отражение набегов, что сделало местных жителей суровыми и недоверчивыми.</MF_MedievalFaction23.description>
+
+  <MF_MedievalFaction24.label>Вольное братство</MF_MedievalFaction24.label>
+  <MF_MedievalFaction24.description>Группа наемников или изгнанников, живущая по своим законам. Они не кланяются королям, признавая лишь авторитет лучшего бойца и звон монеты.</MF_MedievalFaction24.description>
+
+  <MF_MedievalFaction25.label>Епархия</MF_MedievalFaction25.label>
+  <MF_MedievalFaction25.description>Земли, находящиеся под прямым управлением церкви. Здесь слово клирика весит больше, чем сталь рыцаря, а жизнь подчинена строгому канону.</MF_MedievalFaction25.description>
+
+  <MF_MedievalFaction26.label>Сойм</MF_MedievalFaction26.label>
+  <MF_MedievalFaction26.description>Шляхетское объединение, где каждый полноправный член имеет право голоса. Постоянные споры и вето часто парализуют власть, но делают её уникальной.</MF_MedievalFaction26.description>
+
+  <MF_MedievalFaction27.label>Удел</MF_MedievalFaction27.label>
+  <MF_MedievalFaction27.description>Часть некогда великого царства, ныне живущая обособленно. Хранят древние обряды и надежду однажды восстановить былое величие.</MF_MedievalFaction27.description>
+
+  <MF_MedievalFaction28.label>Оплот</MF_MedievalFaction28.label>
+  <MF_MedievalFaction28.description>Город-крепость, построенный вокруг неприступной скалы. Жители считают себя щитом мира, преграждающим путь тьме.</MF_MedievalFaction28.description>
+
+  <MF_MedievalFaction29.label>Кочевье</MF_MedievalFaction29.label>
+  <MF_MedievalFaction29.description>Степные воители, признающие только власть неба и коня. Их замки — это юрты, а границы определяются дальностью полета стрелы.</MF_MedievalFaction29.description>
+
+  <MF_MedievalFaction30.label>Доминион</MF_MedievalFaction30.label>
+  <MF_MedievalFaction30.description>Завоеванные земли, удерживаемые лишь страхом перед иноземным владыкой. Здесь всегда зреет недовольство, подавляемое стальной рукой.</MF_MedievalFaction30.description>
+
+  <MF_MedievalFaction31.label>Ганза</MF_MedievalFaction31.label>
+  <MF_MedievalFaction31.description>Союз прибрежных торговых городов. Для них прибыль важнее титулов, а флот — надежнее любой каменной стены.</MF_MedievalFaction31.description>
+
+  <MF_MedievalFaction32.label>Надел</MF_MedievalFaction32.label>
+  <MF_MedievalFaction32.description>Земля, дарованная верному слуге за особые заслуги. Обычно это процветающая аграрная община, верная своему благодетелю.</MF_MedievalFaction32.description>
+
+  <MF_MedievalFaction33.label>Ковенант</MF_MedievalFaction33.label>
+  <MF_MedievalFaction33.description>Тайный союз мистиков и ученых, скрывающийся в отдаленных горах. Окружающие смотрят на них с суеверным страхом и почтением.</MF_MedievalFaction33.description>
+
+  <MF_MedievalFaction34.label>Натиск</MF_MedievalFaction34.label>
+  <MF_MedievalFaction34.description>Орден фанатичных воинов, смыслом существования которых является экспансия. Они не строят города, они захватывают их.</MF_MedievalFaction34.description>
+
+  <MF_MedievalFaction35.label>Вотчина</MF_MedievalFaction35.label>
+  <MF_MedievalFaction35.description>Наследственное владение старого боярского рода. Здесь чтят домострой, ненавидят новшества и верны памяти дедов.</MF_MedievalFaction35.description>
+
+  <MF_MedievalFaction36.label>Приход</MF_MedievalFaction36.label>
+  <MF_MedievalFaction36.description>Сельская община, сплоченная вокруг старой церкви. Простые люди, ищущие утешения в труде и вере среди сурового мира.</MF_MedievalFaction36.description>
+
+  <MF_MedievalFaction37.label>Цитадель</MF_MedievalFaction37.label>
+  <MF_MedievalFaction37.description>Место сосредоточения лучших мастеров осады и обороны. Их архитектура — это ода камню и инженерной мысли средневековья.</MF_MedievalFaction37.description>
+
+  <MF_MedievalFaction38.label>Лен</MF_MedievalFaction38.label>
+  <MF_MedievalFaction38.description>Феодальное владение, обязанное выставлять рыцарей по первому зову сюзерена. Классическая структура верности и вассалитета.</MF_MedievalFaction38.description>
+
+  <MF_MedievalFaction39.label>Курия</MF_MedievalFaction39.label>
+  <MF_MedievalFaction39.description>Совет высшей духовной и светской знати, принимающий решения поистине имперского масштаба. Здесь рождаются законы и проклятия.</MF_MedievalFaction39.description>
+
+  <MF_MedievalFaction40.label>Гвардия</MF_MedievalFaction40.label>
+  <MF_MedievalFaction40.description>Элитное подразделение, ставшее самостоятельной политической силой. Бывшие телохранители королей, теперь сами решающие, кому носить венец.</MF_MedievalFaction40.description>
+
+  <MF_MedievalFaction41.label>Воеводство</MF_MedievalFaction41.label>
+  <MF_MedievalFaction41.description>Административная единица, во главе которой стоит опытный военачальник. Порядок поддерживается патрулями и жесткими штрафами.</MF_MedievalFaction41.description>
+
+  <MF_MedievalFaction42.label>Подворье</MF_MedievalFaction42.label>
+  <MF_MedievalFaction42.description>Укрепленная усадьба, служащая торговым и дипломатическим представительством. Маленький островок одной культуры внутри другой.</MF_MedievalFaction42.description>
+
+  <MF_MedievalFaction43.label>Вече</MF_MedievalFaction43.label>
+  <MF_MedievalFaction43.description>Городское собрание, где решения принимаются звоном колокола и криками толпы. Демократия, часто переходящая в бунт.</MF_MedievalFaction43.description>
+
+  <MF_MedievalFaction44.label>Дружина</MF_MedievalFaction44.label>
+  <MF_MedievalFaction44.description>Верные спутники князя, связанные с ним не только клятвой, но и общей чашей. Это не просто армия, это одна большая семья воинов.</MF_MedievalFaction44.description>
+
+  <MF_MedievalFaction45.label>Поместье</MF_MedievalFaction45.label>
+  <MF_MedievalFaction45.description>Обширные угодья, живущие за счет крестьянского труда. Символ стабильности, достатка и неспешного течения жизни.</MF_MedievalFaction45.description>
+
+  <MF_MedievalFaction46.label>Легион</MF_MedievalFaction46.label>
+  <MF_MedievalFaction46.description>Попытка возродить античную дисциплину в эпоху рыцарства. Их стройные ряды и тактика часто застают врасплох неорганизованных феодалов.</MF_MedievalFaction46.description>
+
+  <MF_MedievalFaction47.label>Удел</MF_MedievalFaction47.label>
+  <MF_MedievalFaction47.description>Малое княжество, выделившееся из состава крупного. Гордится своей независимостью, несмотря на скромные размеры.</MF_MedievalFaction47.description>
+
+  <MF_MedievalFaction48.label>Аббатство</MF_MedievalFaction48.label>
+  <MF_MedievalFaction48.description>Монастырь, ставший центром просвещения и хозяйства. Здесь хранят древние манускрипты и делают лучшее вино в округе.</MF_MedievalFaction48.description>
+
+  <MF_MedievalFaction49.label>Ставка</MF_MedievalFaction49.label>
+  <MF_MedievalFaction49.description>Место расположения верховного командования кочевых или наемных армий. Центр принятия стратегических решений в полевых условиях.</MF_MedievalFaction49.description>
+
+  <MF_MedievalFaction50.label>Держава</MF_MedievalFaction50.label>
+  <MF_MedievalFaction50.description>Крупное государственное образование, претендующее на роль гегемона. Их амбиции велики, а ресурсы позволяют вести войны на нескольких фронтах.</MF_MedievalFaction50.description>
+
+</LanguageData>

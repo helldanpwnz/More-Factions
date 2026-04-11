@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MF_SpawnLetterTitle_Animal>Wild Tribes Appearance</MF_SpawnLetterTitle_Animal>
+  <MF_SpawnLetterTitle_Neolithic>Wild Tribes</MF_SpawnLetterTitle_Neolithic>
+  <MF_SpawnLetterTitle_Medieval>Medieval Community</MF_SpawnLetterTitle_Medieval>
+  <MF_SpawnLetterTitle_Industrial>Shards of Civilization</MF_SpawnLetterTitle_Industrial>
+  <MF_SpawnLetterTitle_Spacer>Starship Crash</MF_SpawnLetterTitle_Spacer>
+  <MF_SpawnLetterTitle_Ultra>Mysterious Threat</MF_SpawnLetterTitle_Ultra>
+  <MF_SpawnLetterTitle_Archotech>Archotech Trace</MF_SpawnLetterTitle_Archotech>
+  <MF_SpawnLetterTitle_Default>New Settlement</MF_SpawnLetterTitle_Default>
+
+  <MF_SpawnDescription_Neolithic>Exiles wandering the world, cast out from old tribes or simply loners, have decided to unite. Their strength lies in their cohesion and knowledge of the wild lands.</MF_SpawnDescription_Neolithic>
+  <MF_SpawnDescription_Medieval>Survivors have organized a new community with strict laws and walls made of debris. They reject the chaos of the wastes and build order on their own terms.</MF_SpawnDescription_Medieval>
+  <MF_SpawnDescription_Industrial>Scattered groups of survivors, bonded by a shared past and knowledge of industrial technologies. These shards of a former civilization are united by an iron will and a single goal — to forge a path to rebirth through fire and machines.</MF_SpawnDescription_Industrial>
+  <MF_SpawnDescription_Spacer>Space refugees whose ship crashed on the planet. They cling to the remnants of civilization, using wreckage for survival and recovery.</MF_SpawnDescription_Spacer>
+  <MF_SpawnDescription_Ultra>Shards of a once-great star empire. Their belief in their own superiority has only strengthened in isolation; acting from the shadows and appearing seemingly out of nowhere, their goals remain hidden from us.</MF_SpawnDescription_Ultra>
+  <MF_SpawnDescription_Default>unknown group</MF_SpawnDescription_Default>
+  
+  <MF_SpawnDescription_WithName>{0}. They named the settlement '{1}'.</MF_SpawnDescription_WithName>
+
+  <MF_SpawnFlavor_1>Their intentions are currently unclear.</MF_SpawnFlavor_1>
+  <MF_SpawnFlavor_2>How will this affect the balance of power?</MF_SpawnFlavor_2>
+  <MF_SpawnFlavor_3>Scouts are maintaining surveillance.</MF_SpawnFlavor_3>
+  <MF_SpawnFlavor_4>Traders are already showing interest in them.</MF_SpawnFlavor_4>
+  <MF_SpawnFlavor_5>Where did these outsiders come from?</MF_SpawnFlavor_5>
+  <MF_SpawnFlavor_6>Their technologies raise questions.</MF_SpawnFlavor_6>
+  <MF_SpawnFlavor_7>What are they looking for here?</MF_SpawnFlavor_7>
+  
+  <MF_IndependenceLetterTitle_Hostile>Bloody Rebellion: {0}</MF_IndependenceLetterTitle_Hostile>
+  <MF_IndependenceLetterTitle_Neutral>Peaceful Split: {0}</MF_IndependenceLetterTitle_Neutral>
+  <MF_IndependenceLetterTitle_Ally>New Coalition: {0}</MF_IndependenceLetterTitle_Ally>
+
+  <MF_IndependenceLetterTitle_Advance>Technological Triumph: {0}</MF_IndependenceLetterTitle_Advance>
+  <MF_IndependenceLetterTitle_Regress>Decline and Chaos: {0}</MF_IndependenceLetterTitle_Regress>
+
+  <MF_IndependenceLetterText_Hostile_Advance>An explosive growth in power! During the uprising, the settlement {2} not only broke away from faction {1}, but also managed to secure rare equipment and knowledge, making a sharp leap in its development. Now the new group {0} is much better armed than its former masters. Relations: {3}.</MF_IndependenceLetterText_Hostile_Advance>
+  <MF_IndependenceLetterText_Neutral_Advance>A qualitative leap from the shadows. The settlement {2} peacefully separated from faction {1}, revealing its new capabilities and hidden resources. It is now an independent and more advanced group: {0}. Relations: {3}.</MF_IndependenceLetterText_Neutral_Advance>
+  <MF_IndependenceLetterText_Ally_Advance>An era of prosperity! Faction {1} granted autonomy to settlement {2}, which has made an incredible breakthrough in its endeavors. Now {0} is a technologically strengthened ally, ready to conquer new heights. Relations: {3}.</MF_IndependenceLetterText_Ally_Advance>
+
+  <MF_IndependenceLetterText_Hostile_Regress>Loss of supply and chaos! After separating from {1}, settlement {2} faced a serious decline. Deprived of the support and resources of their former comrades, the separatists of group {0} were forced to simplify their way of life and switch to more accessible equipment. Relations: {3}.</MF_IndependenceLetterText_Hostile_Regress>
+  <MF_IndependenceLetterText_Neutral_Regress>Forced simplification. The peaceful split from {1} cost the residents of settlement {2} dearly. Without external support, they could not maintain a complex way of life and moved to simpler survival methods: {0}. Relations: {3}.</MF_IndependenceLetterText_Neutral_Regress>
+  <MF_IndependenceLetterText_Ally_Regress>Hard times. Although faction {1} granted independence to {2}, the new settlers of {0} faced a shortage of resources and the loss of complex technologies. They have moved to a lower level of development but still require the support of their allies. Relations: {3}.</MF_IndependenceLetterText_Ally_Regress>
+
+  <MF_IndependenceLetterText_Hostile>Civil war! Settlement {2} has rebelled against the influence of faction {1} and proclaimed itself an independent force: {0}.\n\nNegotiations failed, and now former compatriots have become sworn enemies. Relations: {3}.</MF_IndependenceLetterText_Hostile>
+  <MF_IndependenceLetterText_Neutral>Settlement {2} has officially announced its withdrawal from faction {1}. The division of territories took place without bloodshed, and a new sovereign group is now based here: {0}.\n\nRelations between them are assessed as {3}.</MF_IndependenceLetterText_Neutral>
+  <MF_IndependenceLetterText_Ally>Friendly separation! Faction {1} granted full autonomy to settlement {2} so that it could develop independently as a new allied faction: {0}.\n\nThey continue to support each other and remain loyal comrades. Relations: {3}.</MF_IndependenceLetterText_Ally>
+  <MF_IndependenceLetterTitle_Default>Declaration of Independence</MF_IndependenceLetterTitle_Default>
+  <MF_IndependenceLetterText_Default>Settlement {2} of faction '{1}' has declared itself an independent state named '{0}'.\n\nRelations: {3}.</MF_IndependenceLetterText_Default>
+
+  <MF_Relation_Hostile>hostile</MF_Relation_Hostile>
+  <MF_Relation_Neutral>neutral</MF_Relation_Neutral>
+  <MF_Relation_Ally>allied</MF_Relation_Ally>
+
+</LanguageData>

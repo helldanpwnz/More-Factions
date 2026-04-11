@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MF_SpacerFaction01.label>Astralis</MF_SpacerFaction01.label>
+  <MF_SpacerFaction01.description>A civilization of star navigators who have mastered paths between galaxies and view the cosmos as a single living organism.</MF_SpacerFaction01.description>
+  
+  <MF_SpacerFaction02.label>Quantorium</MF_SpacerFaction02.label>
+  <MF_SpacerFaction02.description>A society where science has become religion, and every atom is subject to the will of an analytical mind. Their technologies intertwine logic and faith.</MF_SpacerFaction02.description>
+
+  <MF_SpacerFaction03.label>Omnidex</MF_SpacerFaction03.label>
+  <MF_SpacerFaction03.description>An informational mind that has absorbed the knowledge of thousands of worlds. It manages civilizations like processes in a giant network.</MF_SpacerFaction03.description>
+
+  <MF_SpacerFaction04.label>Nexus</MF_SpacerFaction04.label>
+  <MF_SpacerFaction04.description>The central hub of interstellar connections. Here routes, trade, and consciousnesses converge — a place where everything connects with everything.</MF_SpacerFaction04.description>
+
+  <MF_SpacerFaction05.label>Helion</MF_SpacerFaction05.label>
+  <MF_SpacerFaction05.description>A people of energy engineers capable of managing stars. They build and extinguish suns, changing the balance of galaxies.</MF_SpacerFaction05.description>
+
+  <MF_SpacerFaction06.label>Echelon</MF_SpacerFaction06.label>
+  <MF_SpacerFaction06.description>A hierarchical technocracy where every level of society reflects a step of access to the abyss of cosmic secrets.</MF_SpacerFaction06.description>
+
+  <MF_SpacerFaction07.label>Archon</MF_SpacerFaction07.label>
+  <MF_SpacerFaction07.description>An empire of mental rulers who have merged their minds with machines. Their will controls armies of drones with a single thought.</MF_SpacerFaction07.description>
+
+  <MF_SpacerFaction08.label>Orbis</MF_SpacerFaction08.label>
+  <MF_SpacerFaction08.description>A civilization of ring worlds, creating artificial planets around dying stars. Aesthetes, engineers, and keepers of balance.</MF_SpacerFaction08.description>
+
+  <MF_SpacerFaction09.label>Hyperion</MF_SpacerFaction09.label>
+  <MF_SpacerFaction09.description>An ancient superstate that rose to the stars long before others. Their floating cities shine in clouds of light.</MF_SpacerFaction09.description>
+
+  <MF_SpacerFaction10.label>Altum</MF_SpacerFaction10.label>
+  <MF_SpacerFaction10.description>Ascended philosophers who rejected matter. Their presence is felt as a distortion of space and time.</MF_SpacerFaction10.description>
+
+  <MF_SpacerFaction11.label>Thermis</MF_SpacerFaction11.label>
+  <MF_SpacerFaction11.description>An industrial civilization of thermo-builders drawing energy from the very depths of planets. Their worlds are the forges of galaxies.</MF_SpacerFaction11.description>
+
+  <MF_SpacerFaction12.label>Continuum</MF_SpacerFaction12.label>
+  <MF_SpacerFaction12.description>A culture that merged time and space into a single thread. They live in all possible pasts and futures simultaneously.</MF_SpacerFaction12.description>
+
+  <MF_SpacerFaction13.label>Azuris</MF_SpacerFaction13.label>
+  <MF_SpacerFaction13.description>An oceanic race that settled liquid worlds. Their technologies are fluid and alive, as if water itself gained consciousness.</MF_SpacerFaction13.description>
+
+  <MF_SpacerFaction14.label>Etherium</MF_SpacerFaction14.label>
+  <MF_SpacerFaction14.description>A community of energy beings for whom matter is a form of signal. Light is their language, energy is their life.</MF_SpacerFaction14.description>
+
+  <MF_SpacerFaction15.label>Arcatum</MF_SpacerFaction15.label>
+  <MF_SpacerFaction15.description>Keepers of cosmic archives, collecting the history of stars. Their libraries shine in the sky like constellations of memory.</MF_SpacerFaction15.description>
+
+  <MF_SpacerFaction16.label>Egonia</MF_SpacerFaction16.label>
+  <MF_SpacerFaction16.description>A people who turned self-awareness into a source of power. Every mind here is a unique universe inside another mind.</MF_SpacerFaction16.description>
+
+  <MF_SpacerFaction17.label>Therax</MF_SpacerFaction17.label>
+  <MF_SpacerFaction17.description>Colonizers of barren planets who turn stone into life. Their artificial ecosystems grow like living worlds.</MF_SpacerFaction17.description>
+
+  <MF_SpacerFaction18.label>Panoptium</MF_SpacerFaction18.label>
+  <MF_SpacerFaction18.description>A network of observers spanning the entire galaxy. Their eyes are satellites, drones, and waves piercing time and darkness.</MF_SpacerFaction18.description>
+
+  <MF_SpacerFaction19.label>Omniline</MF_SpacerFaction19.label>
+  <MF_SpacerFaction19.description>A quantum structure of instant communication between worlds. Thought here moves faster than light and creates worlds in the moment of intent.</MF_SpacerFaction19.description>
+
+  <MF_SpacerFaction20.label>Metatron</MF_SpacerFaction20.label>
+  <MF_SpacerFaction20.description>Creator-minds who manage the laws of physics as code. Their speech shapes galaxies, and their will creates space itself.</MF_SpacerFaction20.description>
+
+  <MF_SpacerFaction21.label>Astra-Corp</MF_SpacerFaction21.label>
+  <MF_SpacerFaction21.description>An interstellar corporation specializing in the extraction of rare isotopes. Their stations are masterpieces of engineering floating in the coronas of stars.</MF_SpacerFaction21.description>
+
+  <MF_SpacerFaction22.label>Stellaris</MF_SpacerFaction22.label>
+  <MF_SpacerFaction22.description>A scientific consortium studying black hole anomalies. They believe that the answers to all questions of existence are hidden beyond the event horizon.</MF_SpacerFaction22.description>
+
+  <MF_SpacerFaction23.label>Orion</MF_SpacerFaction23.label>
+  <MF_SpacerFaction23.description>A military alliance of frontier systems. Their fleet is the only barrier against threats coming from deep space.</MF_SpacerFaction23.description>
+
+  <MF_SpacerFaction24.label>Quantum</MF_SpacerFaction24.label>
+  <MF_SpacerFaction24.description>A society whose economy is built on calculations. Every transaction here is the solution to a complex equation.</MF_SpacerFaction24.description>
+
+  <MF_SpacerFaction25.label>Galactic-Union</MF_SpacerFaction25.label>
+  <MF_SpacerFaction25.description>An attempt to create a unified government for scattered colonies. Bureaucracy here has reached cosmic proportions.</MF_SpacerFaction25.description>
+
+  <MF_SpacerFaction26.label>Zenith</MF_SpacerFaction26.label>
+  <MF_SpacerFaction26.description>A cult of technological superiority. They consider those who do not use cybernetic implants to be relics of the past.</MF_SpacerFaction26.description>
+
+  <MF_SpacerFaction27.label>Nova</MF_SpacerFaction27.label>
+  <MF_SpacerFaction27.description>A faction of terraformers turning dead rocks into blooming gardens. Their work takes centuries, but the result is worth it.</MF_SpacerFaction27.description>
+
+  <MF_SpacerFaction28.label>Pulsar</MF_SpacerFaction28.label>
+  <MF_SpacerFaction28.description>A community of hermits living on beacon stations. They provide navigation through dangerous sectors of the galaxy.</MF_SpacerFaction28.description>
+
+  <MF_SpacerFaction29.label>Digital Nation</MF_SpacerFaction29.label>
+  <MF_SpacerFaction29.description>A grouping whose citizens spend most of their time in virtual worlds. Reality for them is merely an annoying necessity.</MF_SpacerFaction29.description>
+
+  <MF_SpacerFaction30.label>Spacefleet</MF_SpacerFaction30.label>
+  <MF_SpacerFaction30.description>Remnants of the old imperial fleet, now living as free mercenaries or explorers without a homeland.</MF_SpacerFaction30.description>
+
+  <MF_SpacerFaction31.label>Techno-Horde</MF_SpacerFaction31.label>
+  <MF_SpacerFaction31.description>An aggressive group of cyborgs constantly seeking new spare parts and technologies for their endless upgrades.</MF_SpacerFaction31.description>
+
+  <MF_SpacerFaction32.label>Luminaries</MF_SpacerFaction32.label>
+  <MF_SpacerFaction32.description>A mystical brotherhood using starlight to transmit information and energy. Their philosophy is complex and inaccessible to the uninitiated.</MF_SpacerFaction32.description>
+
+  <MF_SpacerFaction33.label>Mars-Project</MF_SpacerFaction33.label>
+  <MF_SpacerFaction33.description>A conservative group striving to preserve the old ideals of the first Earth colonists in the conditions of new worlds.</MF_SpacerFaction33.description>
+
+  <MF_SpacerFaction34.label>Spectrum</MF_SpacerFaction34.label>
+  <MF_SpacerFaction34.description>A faction of scouts and spies specializing in information management and covert operations on a system-wide scale.</MF_SpacerFaction34.description>
+
+  <MF_SpacerFaction35.label>Core</MF_SpacerFaction35.label>
+  <MF_SpacerFaction35.description>A grouping that controls the central supercomputer of the sector. They manage logistics and the distribution of resources on planets.</MF_SpacerFaction35.description>
+
+  <MF_SpacerFaction36.label>Atlant</MF_SpacerFaction36.label>
+  <MF_SpacerFaction36.description>Builders of giant orbital megastructures. Their motto is to build higher and stronger, despite the laws of gravity.</MF_SpacerFaction36.description>
+
+  <MF_SpacerFaction37.label>Null-System</MF_SpacerFaction37.label>
+  <MF_SpacerFaction37.description>Radical scientists experimenting with vacuum energy. Their laboratories are the most dangerous places in the known universe.</MF_SpacerFaction37.description>
+
+  <MF_SpacerFaction38.label>Cyber-Raid</MF_SpacerFaction38.label>
+  <MF_SpacerFaction38.description>Mobile groups of hackers capable of breaking the defenses of an entire city. They live through informational theft and blackmail.</MF_SpacerFaction38.description>
+
+  <MF_SpacerFaction39.label>Solaris</MF_SpacerFaction39.label>
+  <MF_SpacerFaction39.description>An organization exploiting the energy of suns through a system of giant mirrors. Suppliers of light and heat for the cold outskirts.</MF_SpacerFaction39.description>
+
+  <MF_SpacerFaction40.label>Titan</MF_SpacerFaction40.label>
+  <MF_SpacerFaction40.description>A heavy machinery faction. Their factories produce everything from pocket lasers to Star Destroyer class battleships.</MF_SpacerFaction40.description>
+
+  <MF_SpacerFaction41.label>Echo</MF_SpacerFaction41.label>
+  <MF_SpacerFaction41.description>A group engaged in collecting "digital footprints" of long-dead civilizations. Keepers of the ghosts of the past.</MF_SpacerFaction41.description>
+
+  <MF_SpacerFaction42.label>Prism</MF_SpacerFaction42.label>
+  <MF_SpacerFaction42.description>A society where social status is determined by the frequency of one's personal energy spectrum. Haughty aesthetes of the high worlds.</MF_SpacerFaction42.description>
+
+  <MF_SpacerFaction43.label>Frontier</MF_SpacerFaction43.label>
+  <MF_SpacerFaction43.description>Pioneers living on the very edge of unexplored space. Life here is simple, dangerous, and full of hope.</MF_SpacerFaction43.description>
+
+  <MF_SpacerFaction44.label>Neuro-Alliance</MF_SpacerFaction44.label>
+  <MF_SpacerFaction44.description>A civilization that has united the minds of its citizens into a single mental network. Individuality here has given way to collective will.</MF_SpacerFaction44.description>
+
+  <MF_SpacerFaction45.label>Vector-6</MF_SpacerFaction45.label>
+  <MF_SpacerFaction45.description>A secret project to create superhumans. Their representatives rarely make contact but always leave a deep mark.</MF_SpacerFaction45.description>
+
+  <MF_SpacerFaction46.label>Orbit Steel</MF_SpacerFaction46.label>
+  <MF_SpacerFaction46.description>Masters of the debris rings around planets. They recycle the remains of old ships into new weapons and modules.</MF_SpacerFaction46.description>
+
+  <MF_SpacerFaction47.label>Plasma-Collective</MF_SpacerFaction47.label>
+  <MF_SpacerFaction47.description>A group of engineers specializing in high-temperature technologies. Their worlds are hot, bright, and life-threatening.</MF_SpacerFaction47.description>
+
+  <MF_SpacerFaction48.label>Sirius</MF_SpacerFaction48.label>
+  <MF_SpacerFaction48.description>An elite community whose ancestors were show business and political stars of old Earth. They maintain the most opulent hotels in the galaxy.</MF_SpacerFaction48.description>
+
+  <MF_SpacerFaction49.label>Chronos</MF_SpacerFaction49.label>
+  <MF_SpacerFaction49.description>A faction attempting to manage time at a quantum level. Their ships sometimes disappear for decades, returning unchanged.</MF_SpacerFaction49.description>
+
+  <MF_SpacerFaction50.label>Omega-Point</MF_SpacerFaction50.label>
+  <MF_SpacerFaction50.description>The final colony at the edge of the universe. The place where progress meets the void, and where a new beginning is born.</MF_SpacerFaction50.description>
+
+</LanguageData>

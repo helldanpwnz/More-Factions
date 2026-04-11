@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Базовый инцидент для появления новой фракции -->
+  <IncidentDef>
+    <defName>MF_RandomSettlement</defName>
+    <label>new settlement</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>World</li>
+    </targetTags>
+    <workerClass>MoreFactions.IncidentWorker_GenericMF</workerClass>
+    <letterLabel>New Settlement Appearance</letterLabel>
+    <letterText>A new settlement has appeared on the map.</letterText>
+    <letterDef>NeutralEvent</letterDef>
+    <baseChance>0</baseChance> <!-- Вызывается кодом вручную по таймеру -->
+    <minRefireDays>0</minRefireDays>
+  </IncidentDef>
+
+</Defs>

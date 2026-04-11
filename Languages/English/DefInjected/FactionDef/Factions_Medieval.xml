@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MF_MedievalFaction01.label>Order</MF_MedievalFaction01.label>
+  <MF_MedievalFaction01.description>A militant brotherhood dedicated to a strict code of honor and the protection of shrines. Knights in shining armor carry the banner of faith and the sword.</MF_MedievalFaction01.description>
+  
+  <MF_MedievalFaction02.label>Union</MF_MedievalFaction02.label>
+  <MF_MedievalFaction02.description>An association of cities and craft guilds based on trade agreements and mutual defense. Wealth and diplomacy are their primary weapons.</MF_MedievalFaction02.description>
+  
+  <MF_MedievalFaction03.label>Dynasty</MF_MedievalFaction03.label>
+  <MF_MedievalFaction03.description>An ancient lineage of rulers whose blood has governed for centuries. Intrigue, dynastic marriages, and an iron will to power define their history.</MF_MedievalFaction03.description>
+  
+  <MF_MedievalFaction04.label>Principality</MF_MedievalFaction04.label>
+  <MF_MedievalFaction04.description>A mighty principality with a rich history of knightly tournaments, trade, and conquests. Strong castles and loyal vassals guard their borders.</MF_MedievalFaction04.description>
+  
+  <MF_MedievalFaction05.label>Kingdom</MF_MedievalFaction05.label>
+  <MF_MedievalFaction05.description>A great kingdom with a lavish court and a powerful army. Kings rule with an iron fist, maintaining a balance between the nobility and the church.</MF_MedievalFaction05.description>
+  
+  <MF_MedievalFaction06.label>Barony</MF_MedievalFaction06.label>
+  <MF_MedievalFaction06.description>A militant barony where the strength of arms is more important than diplomacy. Barons personally lead detachments into battle, protecting their lands from raids.</MF_MedievalFaction06.description>
+  
+  <MF_MedievalFaction07.label>Duchy</MF_MedievalFaction07.label>
+  <MF_MedievalFaction07.description>A wealthy and cultured duchy, famous for its art, architecture, and subtle diplomacy. Dukes weave complex political networks.</MF_MedievalFaction07.description>
+  
+  <MF_MedievalFaction08.label>County</MF_MedievalFaction08.label>
+  <MF_MedievalFaction08.description>A merchant county at the crossroads of paths. Caravans, markets, and mercenary crossbowmen ensure prosperity and security.</MF_MedievalFaction08.description>
+  
+  <MF_MedievalFaction09.label>Domain</MF_MedievalFaction09.label>
+  <MF_MedievalFaction09.description>An extensive domain ruled by a powerful lord. The lands are rich in resources, and the castles are impregnable to enemies.</MF_MedievalFaction09.description>
+  
+  <MF_MedievalFaction10.label>Dominion</MF_MedievalFaction10.label>
+  <MF_MedievalFaction10.description>An aggressive dominion expanding its borders at the expense of neighbors. Military power and the ambitions of its rulers know no bounds.</MF_MedievalFaction10.description>
+  
+  <MF_MedievalFaction11.label>Vassalage</MF_MedievalFaction11.label>
+  <MF_MedievalFaction11.description>A network of loyal vassals bound by oaths of fealty to a liege. Honor and duty stand above personal ambitions.</MF_MedievalFaction11.description>
+  
+  <MF_MedievalFaction12.label>Protectorate</MF_MedievalFaction12.label>
+  <MF_MedievalFaction12.description>A protectorate under the patronage of a powerful state. Peace and stability in exchange for tribute and troops.</MF_MedievalFaction12.description>
+  
+  <MF_MedievalFaction13.label>War Alliance</MF_MedievalFaction13.label>
+  <MF_MedievalFaction13.description>A union of militant clans hardened by constant wars. Unity in battle is their main principle.</MF_MedievalFaction13.description>
+  
+  <MF_MedievalFaction14.label>Covenant</MF_MedievalFaction14.label>
+  <MF_MedievalFaction14.description>A mysterious covenant bound by ancient oaths and rituals. Secrecy and devotion to the cause are above all else.</MF_MedievalFaction14.description>
+  
+  <MF_MedievalFaction15.label>Confederation</MF_MedievalFaction15.label>
+  <MF_MedievalFaction15.description>A free confederation of cities governed by a council of elders. Each city maintains its autonomy.</MF_MedievalFaction15.description>
+  
+  <MF_MedievalFaction16.label>Despotism</MF_MedievalFaction16.label>
+  <MF_MedievalFaction16.description>A brutal despotism where the will of a single ruler is law for all. Rebellions are suppressed mercilessly and quickly.</MF_MedievalFaction16.description>
+  
+  <MF_MedievalFaction17.label>Abbey</MF_MedievalFaction17.label>
+  <MF_MedievalFaction17.description>A powerful abbey whose monks combine prayer with the art of war. Knowledge and faith are their strength.</MF_MedievalFaction17.description>
+  
+  <MF_MedievalFaction18.label>Empire</MF_MedievalFaction18.label>
+  <MF_MedievalFaction18.description>A multi-ethnic empire uniting peoples under the rule of an emperor. Grandeur and power have no limits.</MF_MedievalFaction18.description>
+  
+  <MF_MedievalFaction19.label>Conclave</MF_MedievalFaction19.label>
+  <MF_MedievalFaction19.description>A secret conclave of mages and scholars ruling from the shadows. Knowledge and magic are their primary tools of power.</MF_MedievalFaction19.description>
+  
+  <MF_MedievalFaction20.label>Guild</MF_MedievalFaction20.label>
+  <MF_MedievalFaction20.description>A powerful guild of craftsmen and merchants controlling the economy of an entire region. Money rules the world.</MF_MedievalFaction20.description>
+
+  <MF_MedievalFaction21.label>Mighty Order</MF_MedievalFaction21.label>
+  <MF_MedievalFaction21.description>A close-knit brotherhood united by a common charter and faith. For them, iron discipline and the protection of a common cause are more important than ancestral lands and titles.</MF_MedievalFaction21.description>
+
+  <MF_MedievalFaction22.label>Barony</MF_MedievalFaction22.label>
+  <MF_MedievalFaction22.description>A small but proud domain where every hill is crowned with a tower. The barons here constantly dispute borders, but unite in the face of an external enemy.</MF_MedievalFaction22.description>
+
+  <MF_MedievalFaction23.label>Margraviate</MF_MedievalFaction23.label>
+  <MF_MedievalFaction23.description>A military district on the frontier of civilization. Their lives are endless watches and repelling raids, which has made the locals stern and distrustful.</MF_MedievalFaction23.description>
+
+  <MF_MedievalFaction24.label>Free Brotherhood</MF_MedievalFaction24.label>
+  <MF_MedievalFaction24.description>A group of mercenaries or exiles living by their own laws. They do not bow to kings, recognizing only the authority of the best fighter and the clink of coin.</MF_MedievalFaction24.description>
+
+  <MF_MedievalFaction25.label>Diocese</MF_MedievalFaction25.label>
+  <MF_MedievalFaction25.description>Lands under the direct administration of the church. Here, the word of a cleric weighs more than the steel of a knight, and life is subject to a strict canon.</MF_MedievalFaction25.description>
+
+  <MF_MedievalFaction26.label>Sejm</MF_MedievalFaction26.label>
+  <MF_MedievalFaction26.description>A noble assembly where every full member has the right to vote. Constant disputes and vetoes often paralyze power, but make it unique.</MF_MedievalFaction26.description>
+
+  <MF_MedievalFaction27.label>Appanage</MF_MedievalFaction27.label>
+  <MF_MedievalFaction27.description>A portion of a once-great kingdom, now living separately. They preserve ancient rites and the hope of one day restoring former greatness.</MF_MedievalFaction27.description>
+
+  <MF_MedievalFaction28.label>Stronghold</MF_MedievalFaction28.label>
+  <MF_MedievalFaction28.description>A fortress-city built around an impregnable rock. The inhabitants consider themselves the shield of the world, barring the way to darkness.</MF_MedievalFaction28.description>
+
+  <MF_MedievalFaction29.label>Nomad Camp</MF_MedievalFaction29.label>
+  <MF_MedievalFaction29.description>Steppe warriors recognizing only the power of the sky and the horse. Their castles are yurts, and borders are defined by the flight of an arrow.</MF_MedievalFaction29.description>
+
+  <MF_MedievalFaction30.label>Dominion</MF_MedievalFaction30.label>
+  <MF_MedievalFaction30.description>Conquered lands held only by fear of a foreign lord. Here, discontent always simmers, suppressed by a hand of steel.</MF_MedievalFaction30.description>
+
+  <MF_MedievalFaction31.label>Hansa</MF_MedievalFaction31.label>
+  <MF_MedievalFaction31.description>A union of coastal trading cities. For them, profit is more important than titles, and a fleet is more reliable than any stone wall.</MF_MedievalFaction31.description>
+
+  <MF_MedievalFaction32.label>Allotment</MF_MedievalFaction32.label>
+  <MF_MedievalFaction32.description>Land granted to a loyal servant for special merit. Usually, it is a prosperous agrarian community faithful to its benefactor.</MF_MedievalFaction32.description>
+
+  <MF_MedievalFaction33.label>Covenant</MF_MedievalFaction33.label>
+  <MF_MedievalFaction33.description>A secret alliance of mystics and scholars hiding in remote mountains. Those around them look upon them with superstitious fear and reverence.</MF_MedievalFaction33.description>
+
+  <MF_MedievalFaction34.label>Onslaught</MF_MedievalFaction34.label>
+  <MF_MedievalFaction34.description>An order of fanatical warriors whose purpose for existence is expansion. They do not build cities; they capture them.</MF_MedievalFaction34.description>
+
+  <MF_MedievalFaction35.label>Votchina</MF_MedievalFaction35.label>
+  <MF_MedievalFaction35.description>The hereditary estate of an old boyar family. Here they honor the household code, hate innovations, and are faithful to the memory of their grandfathers.</MF_MedievalFaction35.description>
+
+  <MF_MedievalFaction36.label>Parish</MF_MedievalFaction36.label>
+  <MF_MedievalFaction36.description>A rural community gathered around an old church. Simple folk seeking solace in labor and faith amidst a harsh world.</MF_MedievalFaction36.description>
+
+  <MF_MedievalFaction37.label>Citadel</MF_MedievalFaction37.label>
+  <MF_MedievalFaction37.description>A concentration of the best masters of siege and defense. Their architecture is an ode to stone and medieval engineering thought.</MF_MedievalFaction37.description>
+
+  <MF_MedievalFaction38.label>Fief</MF_MedievalFaction38.label>
+  <MF_MedievalFaction38.description>A feudal holding obligated to provide knights at the liege's first call. A classic structure of loyalty and vassalage.</MF_MedievalFaction38.description>
+
+  <MF_MedievalFaction39.label>Curia</MF_MedievalFaction39.label>
+  <MF_MedievalFaction39.description>A council of high spiritual and secular nobility, making decisions of truly imperial scale. Laws and curses are born here.</MF_MedievalFaction39.description>
+
+  <MF_MedievalFaction40.label>Guard</MF_MedievalFaction40.label>
+  <MF_MedievalFaction40.description>An elite unit that has become an independent political force. Former bodyguards of kings, they now decide for themselves who shall wear the crown.</MF_MedievalFaction40.description>
+
+  <MF_MedievalFaction41.label>Voivodeship</MF_MedievalFaction41.label>
+  <MF_MedievalFaction41.description>An administrative unit headed by an experienced military commander. Order is maintained by patrols and heavy fines.</MF_MedievalFaction41.description>
+
+  <MF_MedievalFaction42.label>Compound</MF_MedievalFaction42.label>
+  <MF_MedievalFaction42.description>A fortified manor serving as a trade and diplomatic mission. A small island of one culture within another.</MF_MedievalFaction42.description>
+
+  <MF_MedievalFaction43.label>Veche</MF_MedievalFaction43.label>
+  <MF_MedievalFaction43.description>A city assembly where decisions are made by the ringing of a bell and the shouts of the crowd. Democracy often turning into a riot.</MF_MedievalFaction43.description>
+
+  <MF_MedievalFaction44.label>Druzhina</MF_MedievalFaction44.label>
+  <MF_MedievalFaction44.description>Loyal companions of the prince, bound to him not only by oath but by a common cup. This is not just an army; it is one big family of warriors.</MF_MedievalFaction44.description>
+
+  <MF_MedievalFaction45.label>Manor</MF_MedievalFaction45.label>
+  <MF_MedievalFaction45.description>Extensive estates living off peasant labor. A symbol of stability, prosperity, and the slow flow of life.</MF_MedievalFaction45.description>
+
+  <MF_MedievalFaction46.label>Legion</MF_MedievalFaction46.label>
+  <MF_MedievalFaction46.description>An attempt to revive ancient discipline in the age of chivalry. Their orderly ranks and tactics often catch unorganized feudal lords by surprise.</MF_MedievalFaction46.description>
+
+  <MF_MedievalFaction47.label>Appanage</MF_MedievalFaction47.label>
+  <MF_MedievalFaction47.description>A small principality that has separated from a larger one. It takes pride in its independence despite its modest size.</MF_MedievalFaction47.description>
+
+  <MF_MedievalFaction48.label>Abbey</MF_MedievalFaction48.label>
+  <MF_MedievalFaction48.description>A monastery that has become a center of enlightenment and economy. Here they preserve ancient manuscripts and make the best wine in the area.</MF_MedievalFaction48.description>
+
+  <MF_MedievalFaction49.label>Headquarters</MF_MedievalFaction49.label>
+  <MF_MedievalFaction49.description>The location of the supreme command of nomadic or mercenary armies. The center for making strategic decisions in field conditions.</MF_MedievalFaction49.description>
+
+  <MF_MedievalFaction50.label>Power</MF_MedievalFaction50.label>
+  <MF_MedievalFaction50.description>A large state entity claiming the role of hegemon. Their ambitions are great, and their resources allow them to wage wars on several fronts.</MF_MedievalFaction50.description>
+
+</LanguageData>

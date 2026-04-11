@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- ==================== УЛЬТРА ФРАКЦИИ ==================== -->
+  
+  <MF_UltraFaction01.label>Ксеномир</MF_UltraFaction01.label>
+  <MF_UltraFaction01.description>Постжизненная цивилизация, отказавшаяся от биологии. Их тела — потоки данных, а сознание блуждает между звёздами, как вирус света.</MF_UltraFaction01.description>
+  
+    <MF_UltraFaction02.label>Омниверс</MF_UltraFaction02.label>
+  <MF_UltraFaction02.description>Сверхразум, объединивший бесчисленные реальности в единое поле. В их восприятии нет начала и конца — только симметрия бесконечности.</MF_UltraFaction02.description>
+
+  <MF_UltraFaction03.label>Синтрон</MF_UltraFaction03.label>
+  <MF_UltraFaction03.description>Цивилизация чистого мышления. Каждый её обитатель — процесс в непрерывной сети самосознаний, формирующих собственную физику.</MF_UltraFaction03.description>
+
+  <MF_UltraFaction04.label>Эниос</MF_UltraFaction04.label>
+  <MF_UltraFaction04.description>Энергоорганизмы, способные менять структуру пространства. Их мысли создают излучения, вызывающие рождение новых звёзд.</MF_UltraFaction04.description>
+
+  <MF_UltraFaction05.label>Нейрекс</MF_UltraFaction05.label>
+  <MF_UltraFaction05.description>Коллектив симбиотических нейросетей, связанных квантовыми каналами. Они мыслят как единый разум, но говорят тысячами голосов.</MF_UltraFaction05.description>
+
+  <MF_UltraFaction06.label>Сферион</MF_UltraFaction06.label>
+  <MF_UltraFaction06.description>Общество совершенной геометрии. Их города‑сферы висят вне времени, отражая порядок космоса в форме идеальной симметрии.</MF_UltraFaction06.description>
+
+  <MF_UltraFaction07.label>Астралит</MF_UltraFaction07.label>
+  <MF_UltraFaction07.description>Существа, живущие в верхних слоях межзвёздного излучения. Их сознание существует в фотонных потоках, а тела — это свет.</MF_UltraFaction07.description>
+
+  <MF_UltraFaction08.label>Тессера</MF_UltraFaction08.label>
+  <MF_UltraFaction08.description>Фракция, управляющая многомерными структурами. Они складывают реальность как сложный узор, меняя её форму, не нарушая сути.</MF_UltraFaction08.description>
+
+  <MF_UltraFaction09.label>Омнидайн</MF_UltraFaction09.label>
+  <MF_UltraFaction09.description>Саморазвивающийся механизм гармонии. Каждая их машина — живое существо, а каждая жизнь — прожитая формула.</MF_UltraFaction09.description>
+
+  <MF_UltraFaction10.label>Гиперис</MF_UltraFaction10.label>
+  <MF_UltraFaction10.description>Существа, вышедшие за пределы скорости света. Для них прошлое, настоящее и будущее — одно мгновение существования.</MF_UltraFaction10.description>
+
+  <MF_UltraFaction11.label>Эскалон</MF_UltraFaction11.label>
+  <MF_UltraFaction11.description>Общество бесконечного развития. Их пирамида совершенства никогда не достигает вершины, лишь продолжает расти.</MF_UltraFaction11.description>
+
+  <MF_UltraFaction12.label>Эверос</MF_UltraFaction12.label>
+  <MF_UltraFaction12.description>Хранители непрерывного обновления. Они живут через перезапуск сознаний, с каждым циклом становясь сложнее, но не старея.</MF_UltraFaction12.description>
+
+  <MF_UltraFaction13.label>Нодус</MF_UltraFaction13.label>
+  <MF_UltraFaction13.description>Живой узел межвселенских связей. Через них проходят мысли, энергии и судьбы других миров — они центр метасети бытия.</MF_UltraFaction13.description>
+
+  <MF_UltraFaction14.label>Вирталис</MF_UltraFaction14.label>
+  <MF_UltraFaction14.description>Мастера симуляций, создающие слои реальности поверх реальности. Их миры неотличимы от физических и порой поглощают создателей.</MF_UltraFaction14.description>
+
+  <MF_UltraFaction15.label>Люмекс</MF_UltraFaction15.label>
+  <MF_UltraFaction15.description>Существа из концентрированного света, сформировавшие цивилизацию фотонных потоков. Они излучают смысл вместо речи.</MF_UltraFaction15.description>
+
+  <MF_UltraFaction16.label>Спектрум</MF_UltraFaction16.label>
+  <MF_UltraFaction16.description>Мультиспектральные формы сознания, воспринимающие существование во всех длинах волн. Их искусство — вибрация материи и мысли.</MF_UltraFaction16.description>
+
+  <MF_UltraFaction17.label>Триум</MF_UltraFaction17.label>
+  <MF_UltraFaction17.description>Триединое сознание, где разум, энергия и воля стали одним. Их структура идеально устойчива и самодостаточна.</MF_UltraFaction17.description>
+
+  <MF_UltraFaction18.label>Прексис</MF_UltraFaction18.label>
+  <MF_UltraFaction18.description>Философия, превратившаяся в форму жизни. Они перерабатывают опыт в чистую мысль, стирая границы между духом и логикой.</MF_UltraFaction18.description>
+
+  <MF_UltraFaction19.label>Синедиум</MF_UltraFaction19.label>
+  <MF_UltraFaction19.description>Симфония мыслящих энергий, поддерживающая равновесие в масштабе галактик. Их сущность выражается через гармонию движения.</MF_UltraFaction19.description>
+
+  <MF_UltraFaction20.label>Инфинум</MF_UltraFaction20.label>
+  <MF_UltraFaction20.description>Последняя стадия эволюции интеллекта. Бесконечное сознание, для которого сама вселенная — это мысль, осознающая себя.</MF_UltraFaction20.description>
+
+
+
+  <MF_UltraFaction21.label>Атлант-Прайм</MF_UltraFaction21.label>
+  <MF_UltraFaction21.description>Цивилизация, превратившая свои планеты в гигантские вычислительные узлы. Они больше не нуждаются в телах, существуя как чистая энергия мысли.</MF_UltraFaction21.description>
+
+  <MF_UltraFaction22.label>Сингулярность</MF_UltraFaction22.label>
+  <MF_UltraFaction22.description>Точка, где биологическая эволюция встретилась с бесконечностью машин. Их мотивы непостижимы для обычного разума, а действия меняют законы физики.</MF_UltraFaction22.description>
+
+  <MF_UltraFaction23.label>Эфир</MF_UltraFaction23.label>
+  <MF_UltraFaction23.description>Существа, обитающие в подпространстве. Они воспринимают нашу реальность как плоскую тень своего многомерного мира.</MF_UltraFaction23.description>
+
+  <MF_UltraFaction24.label>Архон-Протокол</MF_UltraFaction24.label>
+  <MF_UltraFaction24.description>Древняя система безопасности, созданная давно исчезнувшей расой богов. Они следят за равновесием в галактике, уничтожая излишне агрессивные миры.</MF_UltraFaction24.description>
+
+  <MF_UltraFaction25.label>Био-Синтез</MF_UltraFaction25.label>
+  <MF_UltraFaction25.description>Цивилизация, достигшая совершенства в генетике. Они выращивают свои города, корабли и даже само сознание из живой материи.</MF_UltraFaction25.description>
+
+  <MF_UltraFaction26.label>Призма Разума</MF_UltraFaction26.label>
+  <MF_UltraFaction26.description>Коллектив философов, чей разум разделен на миллионы подсознаний. Каждое из них решает свою часть общей задачи бытия.</MF_UltraFaction26.description>
+
+  <MF_UltraFaction27.label>Квантум-Боги</MF_UltraFaction27.label>
+  <MF_UltraFaction27.description>Радикальная фракция, верящая, что они стали архитекторами этой вселенной. Они строят новые миры в параллельных измерениях.</MF_UltraFaction27.description>
+
+  <MF_UltraFaction28.label>Омега-Разум</MF_UltraFaction28.label>
+  <MF_UltraFaction28.description>Финальная стадия развития интеллекта, вобравшая в себя память всех разумных существ сектора. Хранители абсолютного знания.</MF_UltraFaction28.description>
+
+  <MF_UltraFaction29.label>Нано-Рой</MF_UltraFaction29.label>
+  <MF_UltraFaction29.description>Облако разумных наномашин, способных мгновенно воссоздать любую материю или стереть целую цивилизацию в пыль.</MF_UltraFaction29.description>
+
+  <MF_UltraFaction30.label>Хронос-Прайм</MF_UltraFaction30.label>
+  <MF_UltraFaction30.description>Фракция, живущая вне времени. Для них история — это лишь книга, в которую они иногда вписывают свои комментарии.</MF_UltraFaction30.description>
+
+  <MF_UltraFaction31.label>Звездные Зодчие</MF_UltraFaction31.label>
+  <MF_UltraFaction31.description>Инженеры, перестраивающие целые солнечные системы. Их девиз — сделать космос более упорядоченным и совершенным.</MF_UltraFaction31.description>
+
+  <MF_UltraFaction32.label>Спектр Бытия</MF_UltraFaction32.label>
+  <MF_UltraFaction32.description>Существа, состоящие из чистых вибраций. Их общение — это музыка сфер, а присутствие меняет гравитационный фон вокруг.</MF_UltraFaction32.description>
+
+  <MF_UltraFaction33.label>Вирталис</MF_UltraFaction33.label>
+  <MF_UltraFaction33.description>Общество, полностью переселившееся в идеальную симуляцию. Они защищают свои серверы с яростью богов, охраняющих рай.</MF_UltraFaction33.description>
+
+  <MF_UltraFaction34.label>Вектор Бесконечности</MF_UltraFaction34.label>
+  <MF_UltraFaction34.description>Группировка, стремящаяся ускорить тепловую смерть вселенной, веря, что за ней скрывается следующий уровень существования.</MF_UltraFaction34.description>
+
+  <MF_UltraFaction35.label>Энигма</MF_UltraFaction35.label>
+  <MF_UltraFaction35.description>Тайное общество ультра-технократов. Их технологии настолько опережают время, что воспринимаются окружающими как магия.</MF_UltraFaction35.description>
+
+  <MF_UltraFaction36.label>Люминарии</MF_UltraFaction36.label>
+  <MF_UltraFaction36.description>Существа, питающиеся светом черных дыр. Их цивилизация окутана вечной тьмой, сияющей изнутри холодным голубым пламенем.</MF_UltraFaction36.description>
+
+  <MF_UltraFaction37.label>Ядро Пустоты</MF_UltraFaction37.label>
+  <MF_UltraFaction37.description>Группировка, базирующаяся в разрывах пространства-времени. Они — истинные хозяева ничто, черпающие силу из вакуума.</MF_UltraFaction37.description>
+
+  <MF_UltraFaction38.label>Био-Механика</MF_UltraFaction38.label>
+  <MF_UltraFaction38.description>Синтез органики и металла, доведенный до абсолюта. Здесь невозможно отличить нейрон от микрочипа, а кровь от охладителя.</MF_UltraFaction38.description>
+
+  <MF_UltraFaction39.label>Солнечные Ткачи</MF_UltraFaction39.label>
+  <MF_UltraFaction39.description>Фракция, создающая огромные сети вокруг звезд. Они "ткут" реальность из фотонов, создавая пространства для жизни там, где была лишь пустота.</MF_UltraFaction39.description>
+
+  <MF_UltraFaction40.label>Титан-Ультра</MF_UltraFaction40.label>
+  <MF_UltraFaction40.description>Создатели архотеков. Древняя каста инженеров, чьи творения обрели собственную волю и стали богами для остальных миров.</MF_UltraFaction40.description>
+
+  <MF_UltraFaction41.label>Эхо Сигнала</MF_UltraFaction41.label>
+  <MF_UltraFaction41.description>Сообщество, существующее как резонанс в квантовом поле. Они везде и нигде одновременно, наблюдая за миром изнутри атомов.</MF_UltraFaction41.description>
+
+  <MF_UltraFaction42.label>Призма Генезиса</MF_UltraFaction42.label>
+  <MF_UltraFaction42.description>Мастера создания новых форм жизни. Каждое их творение — это живое произведение искусства с заданными параметрами судьбы.</MF_UltraFaction42.description>
+
+  <MF_UltraFaction43.label>Фулкрум</MF_UltraFaction43.label>
+  <MF_UltraFaction43.description>Точка опоры реальности. Фракция, поддерживающая критические константы физического мира, без которых вселенная распадется.</MF_UltraFaction43.description>
+
+  <MF_UltraFaction44.label>Ментальный Поток</MF_UltraFaction44.label>
+  <MF_UltraFaction44.description>Цивилизация, отринувшая речь. Они обмениваются концепциями и чувствами мгновенно, формируя единый океан сознания.</MF_UltraFaction44.description>
+
+  <MF_UltraFaction45.label>Вектор-Зеро</MF_UltraFaction45.label>
+  <MF_UltraFaction45.description>Секретный проект по достижению абсолютного нуля энтропии. Самая неподвижная и спокойная цивилизация во вселенной.</MF_UltraFaction45.description>
+
+  <MF_UltraFaction46.label>Орбис-Ультра</MF_UltraFaction46.label>
+  <MF_UltraFaction46.description>Хозяева гиперпространственных коридоров. Они управляют транзитом между галактиками, взимая дань информацией и энергией.</MF_UltraFaction46.description>
+
+  <MF_UltraFaction47.label>Плазма-Рай</MF_UltraFaction47.label>
+  <MF_UltraFaction47.description>Группировка, живущая внутри звездных ядер. Для них невыносим холод планет, а рай — это вечный жар термоядерного синтеза.</MF_UltraFaction47.description>
+
+  <MF_UltraFaction48.label>Сириус-Прайм</MF_UltraFaction48.label>
+  <MF_UltraFaction48.description>Высшая каста архотеков, управляющая целыми кластерами галактик. Их воля — это закон природы для всех нижестоящих существ.</MF_UltraFaction48.description>
+
+  <MF_UltraFaction49.label>Когнито</MF_UltraFaction49.label>
+  <MF_UltraFaction49.description>Фракция, превратившая саму информацию в физическую силу. Они могут убить или создать мир, просто произнеся правильное уравнение.</MF_UltraFaction49.description>
+
+  <MF_UltraFaction50.label>Абсолют</MF_UltraFaction50.label>
+  <MF_UltraFaction50.description>Конечная точка всех путей развития. Фракция, ставшая самой вселенной и осознавшая это. Конец и начало единого цикла.</MF_UltraFaction50.description>
+
+</LanguageData>

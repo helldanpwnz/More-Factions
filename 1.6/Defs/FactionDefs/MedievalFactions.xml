@@ -1,0 +1,2156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ГЕНЕРАТОРЫ ИМЕН (ДОЛЖНЫ БЫТЬ ПЕРВЫМИ!) -->
+  <RulePackDef>
+    <defName>MF_NamerFactionMedieval</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>r_name->Namebanks/Names/Medieval_Faction</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>MF_NamerSettlementMedieval</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>r_name->Namebanks/Names/Medieval_Settlement</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  
+    <!-- ОСНОВНЫЕ ЦВЕТА RGB 255 → XML (каждый канал / 255) -->
+<!--
+Красный:     (255,0,0)   → <li>(1.0, 0.0, 0.0)</li>
+Кровавый:    (153,22,22)   → <li>(0.6, 0.08, 0.08)</li>
+Зелёный:     (0,255,0)   → <li>(0.0, 1.0, 0.0)</li>
+Салатовый:  (56,231,100)   → <li>(0.21, 0.9, 0.39)</li>
+Синий:       (0,0,255)   → <li>(0.0, 0.0, 1.0)</li>
+Темно-синий  (22,40,153)   → <li>(0.08, 0.15, 0.6)</li>
+Белый:       (255,255,255) → <li>(1.0, 1.0, 1.0)</li>
+Чёрный:      (0,0,0)     → <li>(0.0, 0.0, 0.0)</li>
+Серый:       (128,128,128) → <li>(0.5, 0.5, 0.5)</li>
+Жёлтый:      (255,255,0) → <li>(1.0, 1.0, 0.0)</li>
+Оранжевый:   (255,165,0) → <li>(1.0, 0.65, 0.0)</li>
+Грязно оранжевый:   (181,74,26) → <li>(0.7, 0.29, 0.1)</li>
+Фиолетовый:  (128,0,128) → <li>(0.5, 0.0, 0.5)</li>
+Фиолетово синий:  (47,61,198) → <li>(0.18, 0.24, 0.77)</li>
+Темно-фиолетовый (85,28,115) → <li>(0.33, 0.1, 0.45)</li>
+Бирюзовый:  (47,196,197) → <li>(0.18, 0.76, 0.77)</li>
+КОРИЧНЕВЫЙ:  (139,69,19) → <li>(0.55, 0.27, 0.07)</li>
+СИНЕ-ГОЛУБОЙ:(0,191,255) → <li>(0.0, 0.75, 1.0)</li>
+РОЗОВЫЙ:    (255,192,203) → <li>(1.0, 0.75, 0.8)</li>
+ЗОЛОТОЙ:     (255,215,0)  → <li>(1.0, 0.84, 0.0)</li>
+МОРОЗНЫЙ:    (173,216,230) → <li>(0.68, 0.85, 0.9)</li>
+Лайм:        (50,205,50)  → <li>(0.2, 0.8, 0.2)</li>
+Бирюзовый:   (64,224,208) → <li>(0.25, 0.88, 0.82)</li>
+-->
+  
+  
+  
+  
+
+  <!-- ФРАКЦИИ -->
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction01</defName>
+    <label>Medieval Faction 01</label>
+    <description>Medieval Faction 01</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_01</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+<colorSpectrum>
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(1.0, 0.0, 0.0)</li>      <!-- Красный -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.6, 0.08, 0.08)</li>    <!-- Кровавый -->
+  <li>(0.03, 0.47, 0.52)</li>   <!-- Грязно-синий -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->
+</colorSpectrum>
+	
+  </FactionDef>
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction02</defName>
+    <label>Medieval Faction 02</label>
+    <description>Medieval Faction 02</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_02</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(1.0, 0.0, 0.0)</li>      <!-- Красный -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction03</defName>
+    <label>Medieval Faction 03</label>
+    <description>Medieval Faction 03</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_03</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+    <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(1.0, 0.0, 0.0)</li>      <!-- Красный -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->		
+    </colorSpectrum>
+	
+  </FactionDef>
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction04</defName>
+    <label>Medieval Faction 04</label>
+    <description>Medieval Faction 04</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_04</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+   <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	
+  </FactionDef>
+ 
+  <!-- ФРАКЦИЯ 5 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction05</defName>
+    <label>Medieval Faction 05</label>
+    <description>Medieval Faction 05</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_05</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+ </FactionDef>	
+  <!-- ФРАКЦИЯ 6 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction06</defName>
+    <label>Medieval Faction 06</label>
+    <description>Medieval Faction 06</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_06</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+  <!-- ФРАКЦИЯ 7 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction07</defName>
+    <label>Medieval Faction 07</label>
+    <description>Medieval Faction 07</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_07</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+  <!-- ФРАКЦИЯ 8 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction08</defName>
+    <label>Medieval Faction 08</label>
+    <description>Medieval Faction 08</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_08</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+  <!-- ФРАКЦИЯ 9 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction09</defName>
+    <label>Medieval Faction 09</label>
+    <description>Medieval Faction 09</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_09</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+  <!-- ФРАКЦИЯ 10 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction10</defName>
+    <label>Medieval Faction 10</label>
+    <description>Medieval Faction 10</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_10</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+  <!-- ФРАКЦИЯ 11 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction11</defName>
+    <label>Medieval Faction 11</label>
+    <description>Medieval Faction 11</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_11</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+  <!-- ФРАКЦИЯ 12 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction12</defName>
+    <label>Medieval Faction 12</label>
+    <description>Medieval Faction 12</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_12</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+  <!-- ФРАКЦИЯ 13 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction13</defName>
+    <label>Medieval Faction 13</label>
+    <description>Medieval Faction 13</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_13</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+  <!-- ФРАКЦИЯ 14 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction14</defName>
+    <label>Medieval Faction 14</label>
+    <description>Medieval Faction 14</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_14</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+  <!-- ФРАКЦИЯ 15 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction15</defName>
+    <label>Medieval Faction 15</label>
+    <description>Medieval Faction 15</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_15</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+  <!-- ФРАКЦИЯ 16 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction16</defName>
+    <label>Medieval Faction 16</label>
+    <description>Medieval Faction 16</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_16</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+  <!-- ФРАКЦИЯ 17 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction17</defName>
+    <label>Medieval Faction 17</label>
+    <description>Medieval Faction 17</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_17</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+  <!-- ФРАКЦИЯ 18 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction18</defName>
+    <label>Medieval Faction 18</label>
+    <description>Medieval Faction 18</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_18</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+  <!-- ФРАКЦИЯ 19 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction19</defName>
+    <label>Medieval Faction 19</label>
+    <description>Medieval Faction 19</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_19</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+  <!-- ФРАКЦИЯ 20 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction20</defName>
+    <label>Medieval Faction 20</label>
+    <description>Medieval Faction 20</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_20</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+<!-- ФРАКЦИЯ 21 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction21</defName>
+    <label>Medieval Faction 21</label>
+    <description>Medieval Faction 21</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_21</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 
+	 <!-- ФРАКЦИЯ 22 -->
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction22</defName>
+    <label>Medieval Faction 22</label>
+    <description>Medieval Faction 22</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_22</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 23 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction23</defName>
+    <label>Medieval Faction 23</label>
+    <description>Medieval Faction 23</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_23</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 24 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction24</defName>
+    <label>Medieval Faction 24</label>
+    <description>Medieval Faction 24</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_24</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 25 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction25</defName>
+    <label>Medieval Faction 25</label>
+    <description>Medieval Faction 25</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_25</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 26 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction26</defName>
+    <label>Medieval Faction 26</label>
+    <description>Medieval Faction 26</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_26</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 27 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction27</defName>
+    <label>Medieval Faction 27</label>
+    <description>Medieval Faction 27</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_27</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 28 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction28</defName>
+    <label>Medieval Faction 28</label>
+    <description>Medieval Faction 28</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_28</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 29 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction29</defName>
+    <label>Medieval Faction 29</label>
+    <description>Medieval Faction 29</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_29</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 30 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction30</defName>
+    <label>Medieval Faction 30</label>
+    <description>Medieval Faction 30</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_30</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 31 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction31</defName>
+    <label>Medieval Faction 31</label>
+    <description>Medieval Faction 31</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_31</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 32 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction32</defName>
+    <label>Medieval Faction 32</label>
+    <description>Medieval Faction 32</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_32</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 33 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction33</defName>
+    <label>Medieval Faction 33</label>
+    <description>Medieval Faction 33</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_33</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 34 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction34</defName>
+    <label>Medieval Faction 34</label>
+    <description>Medieval Faction 34</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_34</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 35 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction35</defName>
+    <label>Medieval Faction 35</label>
+    <description>Medieval Faction 35</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_35</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 36 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction36</defName>
+    <label>Medieval Faction 36</label>
+    <description>Medieval Faction 36</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_36</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 37 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction37</defName>
+    <label>Medieval Faction 37</label>
+    <description>Medieval Faction 37</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_37</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 38 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction38</defName>
+    <label>Medieval Faction 38</label>
+    <description>Medieval Faction 38</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_38</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 39 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction39</defName>
+    <label>Medieval Faction 39</label>
+    <description>Medieval Faction 39</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_39</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 40 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction40</defName>
+    <label>Medieval Faction 40</label>
+    <description>Medieval Faction 40</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_40</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 41 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction41</defName>
+    <label>Medieval Faction 41</label>
+    <description>Medieval Faction 41</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_41</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 42 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction42</defName>
+    <label>Medieval Faction 42</label>
+    <description>Medieval Faction 42</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_42</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 43 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction43</defName>
+    <label>Medieval Faction 43</label>
+    <description>Medieval Faction 43</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_43</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 44 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction44</defName>
+    <label>Medieval Faction 44</label>
+    <description>Medieval Faction 44</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_44</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 45 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction45</defName>
+    <label>Medieval Faction 45</label>
+    <description>Medieval Faction 45</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_45</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 46 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction46</defName>
+    <label>Medieval Faction 46</label>
+    <description>Medieval Faction 46</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_46</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 47 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction47</defName>
+    <label>Medieval Faction 47</label>
+    <description>Medieval Faction 47</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_47</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 48 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction48</defName>
+    <label>Medieval Faction 48</label>
+    <description>Medieval Faction 48</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_48</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 49 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction49</defName>
+    <label>Medieval Faction 49</label>
+    <description>Medieval Faction 49</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_49</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 <!-- ФРАКЦИЯ 50 -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_MedievalFaction50</defName>
+    <label>Medieval Faction 50</label>
+    <description>Medieval Faction 50</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Medieval/MF_Medieval_50</factionIconPath>
+    <factionNameMaker>MF_NamerFactionMedieval</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementMedieval</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+	
+	<colorSpectrum>
+  <li>(0.33, 0.1, 0.45)</li> <!-- Темно-фиолетовый  -->
+  <li>(1.0, 0.1, 0.1)</li>  <!-- Красный  -->
+  <li>(0.08, 0.15, 0.6)</li> <!-- Фиолетово синий  -->
+  <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.0, 0.0, 1.0)</li>      <!-- Синий -->  
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+    </colorSpectrum>
+	 </FactionDef>
+	 
+	 
+
+</Defs>

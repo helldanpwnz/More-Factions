@@ -1,0 +1,358 @@
+Steel Cartel
+Rusty Order
+Steam Guild
+Coal Barons
+Machinery Directorate
+Foundry Clan
+Gas Kings
+Mining Syndicate
+Oil Consortium
+Conveyor Brigade
+Boiler of Silence
+Turbine Cult
+Steelworkers
+Coal Barons
+Steam Guild
+Rusty Cartel
+Diesel Cult
+Forge Clan
+Pipefitters
+Conveyor Workers
+Factory Directorate
+Machine Brotherhood
+Deep Miners
+Oil Lords
+Founders
+Engineering Syndicate
+Mechanic Warlocks
+Locksmiths Guild
+Scrap Traders
+Cast Iron Rule
+Press Operators
+Boiler
+Rollers
+Rebar Workers
+Gearbox
+Turbine Council
+Welder Brigade
+Compressor
+Rolling Mill Workers
+Crane Operators
+Assemblers
+Hydraulic Technicians
+Pneumatic Technicians
+Lubricators
+Toolmakers
+Rate Fixers
+Shift Masters
+Shop Chiefs
+Smelters
+Coke Workers
+Open-Hearth Workers
+Milling Machine Operators
+Turners
+Stampers
+Riveters
+Insulation Workers
+Substation Electricians
+Stokers
+Ventilation Workers
+Tracklayers
+Concrete Workers
+Industrial Zone Masons
+Overpass Workers
+Warehouse Authorities
+Storekeepers
+Forwarders
+Truck Drivers
+Dispatchers
+Depot Duty Officers
+Repair Brigade
+Careerists / Quarrymen
+Bulldozer Operators
+Excavator Operators
+Dismantling Brigade
+Scrap Collectors
+Processors
+Slag Workers
+Waste Workers
+Dump Kings
+Pipe Sanitaries
+Cleaners
+Inspectors / Patrolmen
+Controllers
+Safety Inspectors
+Steelworkers Union
+Council of Old Masters
+Boilermaker Gang
+Foundry Family
+Pipe Bender Clan
+Bearing Brotherhood
+Railwaymen Union
+Crane Operators Association
+Rollers Fellowship
+Welders Alliance
+Electricians League
+Locksmith Syndicate
+Engineers Consortium
+Factory Architects Guild
+Adjustment Specialists Association
+Fuel Committee
+Water Supply Management
+Ventilation Department
+Power Engineering Service
+Blueprint Bureau
+Technology Archive
+Alloy Laboratory
+Proving Ground
+Experimental Shop
+Emergency Repair Brigade
+Emergency Squad
+Factory Security
+Factory Militia
+Tunnelers
+Bunker Builders
+Ore Diggers
+Miners
+Miners Artel
+Enrichers
+Melters
+Logistic Hub "Omega"
+
+"Black Shavings" Syndicate
+
+Cult of the Perpetual Motion Machine
+
+Heavy Synthesis Sector
+
+Rusty Skitarii / Rusty Wanderers
+
+Department of Planetary Dismantling
+
+Fuel Oil Kings
+
+Brotherhood of Steel Rhythm
+
+Outer Extraction Contour
+
+Apostles of Glowing Oil
+
+Mining Trust "Titan"
+
+Lead Faces
+
+Regional Sludge Supervision
+
+"Piston" Cartel
+
+Shop No. 0
+
+Deep Crushers
+
+Keepers of the Blue Spark
+
+Rebar Dogs
+
+Order of the Rusty Communion
+
+United Fuel Front
+
+Diesel Wolves
+
+Vacuum Melting Management
+
+Cobalt Committee
+
+"Dismantling" Brigade
+
+Gear Psalmists
+
+Lords of Slag Heaps
+
+Alloy of Madness
+
+Machine Brotherhood of the Ghetto
+
+"Exo-Tech" Group
+
+Scrap Eaters
+
+Automated Exodus
+
+Crankshaft Guild
+
+Lead Fist
+
+Archive of Lost Blueprints
+
+Supply Protocol
+
+Iron Department
+
+Whispering Hydraulics
+
+Union of the Leaded Sky
+
+Cable Cutters
+
+Scorched Earth Laboratory
+
+Conveyor of the Dead
+
+"Mazut" Syndicate
+
+Mining Shard 4-bis
+
+Steel Skins
+
+Void Rollers
+
+Techno-League "Port"
+
+Disposal Service "Vector"
+
+Chaos Engineers
+
+Free Steam Front
+
+Production Core
+
+Highway of Wear
+
+High Voltage Sect
+
+Barons of the Dump
+
+Dismantling Squad "Hook"
+
+Flesh Smelters
+
+Boiler Room of Death
+
+Gear Directorate
+
+Pipe Enclave
+
+Foundry Council
+
+Order of Overheat
+
+Iron Drones
+
+Deep Drilling Syndicate
+
+Rusty Fist
+
+Protectorate of Steel
+
+Cult of the Blue Flame
+
+Turbine Management
+
+Slag Block Brotherhood
+
+Copper Echo Collectors
+
+Chain Dogs of Industry
+
+Fuel Oil Prophecy
+
+Iridium Hunters
+
+Crushing Alliance
+
+Tunnelers Guild
+
+Reactor Shadows
+
+Steel Parasites
+
+Alloy Department
+
+Mind Junkyard
+
+Vacuum Pirates
+
+Heavy Oppression Artel
+
+Copper Covenant
+
+Diesel Synod
+
+Techno-Priests of Urbworld
+
+Supply Block "Beta"
+
+Outskirts Founders
+
+Rusty Ten
+
+Masters of Piston Oppression
+
+Union of Welding and Blood
+
+"Riveting" Syndicate
+
+Decay Operators
+
+Outer Enrichment Sector
+
+Miners' Wrath
+
+Turbine Lords
+
+Industrial Credo
+
+Keepers of Pressure
+
+"Armature" Group
+
+Iron Pilgrims
+
+Recycling Contour
+
+Depot of Forgotten Machines
+
+Stamping Shop No. 9
+
+Mining Division
+
+Wasteland Adjusters
+
+Lead Brotherhood
+
+"Slag Dump" Cartel
+
+Order of the Holy Valve
+
+Alloy Weavers
+
+Engineering Terror
+
+Rolling Vanguard
+
+Rift Mechanics
+
+Concrete Union
+
+Servants of the Mechanism
+
+Scrap Battalion
+
+"Tyazhmash" Faction
+
+Reality Insulators
+
+Fuel Oil Wanderers
+
+Bureau of Technical Executions
+
+Syndicate of Deep Darkness
+
+Steel Phantoms
+
+"Monolith" Brigade
+
+Cult of Soot
+
+The Last Conveyor

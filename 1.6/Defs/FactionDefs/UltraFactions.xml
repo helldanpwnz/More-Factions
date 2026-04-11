@@ -1,0 +1,2067 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ГЕНЕРАТОРЫ ИМЕН (ДОЛЖНЫ БЫТЬ ПЕРВЫМИ!) -->
+  <RulePackDef>
+    <defName>MF_NamerFactionUltra</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>r_name->Namebanks/Names/Ultra_Faction</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>MF_NamerSettlementUltra</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>r_name->Namebanks/Names/Ultra_Settlement</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+      <!-- ОСНОВНЫЕ ЦВЕТА RGB 255 → XML (каждый канал / 255) -->
+<!--
+Красный:     (255,0,0)   → <li>(1.0, 0.0, 0.0)</li>
+Приглушенный красный (210,31,31)   → <li>(0.82, 0.12, 0.12)</li> 
+Кровавый:    (153,22,22)   → <li>(0.6, 0.08, 0.08)</li>
+Зелёный:     (0,255,0)   → <li>(0.0, 1.0, 0.0)</li>
+Салатовый:  (56,231,100)   → <li>(0.21, 0.9, 0.39)</li>
+Синий:       (0,0,255)   → <li>(0.0, 0.0, 1.0)</li>
+Грязно-синий: (10,120,133)   → <li>(0.03, 0.47, 0.52)</li>
+Темно-синий  (22,40,153)   → <li>(0.08, 0.15, 0.6)</li>
+Белый:       (255,255,255) → <li>(1.0, 1.0, 1.0)</li>
+Чёрный:      (0,0,0)     → <li>(0.0, 0.0, 0.0)</li>
+Серый:       (128,128,128) → <li>(0.5, 0.5, 0.5)</li>
+Жёлтый:      (255,255,0) → <li>(1.0, 1.0, 0.0)</li>
+Оранжевый:   (255,165,0) → <li>(1.0, 0.65, 0.0)</li>
+Грязно оранжевый:   (181,74,26) → <li>(0.7, 0.29, 0.1)</li>
+Фиолетовый:  (128,0,128) → <li>(0.5, 0.0, 0.5)</li>
+Приглушенный Фиолетовый:  (174,45,179) → <li>(0.57, 0.17, 0.7)</li>
+Фиолетово синий:   (47,61,198) → <li>(0.18, 0.24, 0.77)</li>
+Строгий розовый (181,26,110) → <li>(0.7, 0.1, 0.43)</li>
+Темно-фиолетовый (85,28,115) → <li>(0.33, 0.1, 0.45)</li>
+Бирюзовый:  (47,196,197) → <li>(0.18, 0.76, 0.77)</li>
+КОРИЧНЕВЫЙ:  (139,69,19) → <li>(0.55, 0.27, 0.07)</li>
+СИНЕ-ГОЛУБОЙ:(0,191,255) → <li>(0.0, 0.75, 1.0)</li>
+РОЗОВЫЙ:    (255,192,203) → <li>(1.0, 0.75, 0.8)</li>
+ЗОЛОТОЙ:     (255,215,0)  → <li>(1.0, 0.84, 0.0)</li>
+МОРОЗНЫЙ:    (173,216,230) → <li>(0.68, 0.85, 0.9)</li>
+Лайм:        (50,205,50)  → <li>(0.2, 0.8, 0.2)</li>
+Бирюзовый:   (64,224,208) → <li>(0.25, 0.88, 0.82)</li>
+-->  
+
+  <!-- ФРАКЦИИ ULTRA (приоритет 55-59) -->
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction01</defName>
+    <label>Ultra Faction 01</label>
+    <description>Ultra Faction 01</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_01</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>
+    <techLevel>Ultra</techLevel>
+	   <colorSpectrum>
+	 <li>(0.7, 0.1, 0.43)</li> <!-- РОЗОВЫЙ -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(1.0, 0.0, 0.0)</li>      <!-- Красный -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	     </colorSpectrum>
+  </FactionDef>
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction02</defName>
+    <label>Ultra Faction 02</label>
+    <description>Ultra Faction 02</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_02</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(0.18, 0.24, 0.77)</li> <!-- Фиолетово синий -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(1.0, 0.0, 0.0)</li>      <!-- Красный -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	 </colorSpectrum>
+  </FactionDef>
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction03</defName>
+    <label>Ultra Faction 03</label>
+    <description>Ultra Faction 03</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_03</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	  </colorSpectrum>
+  </FactionDef>
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction04</defName>
+    <label>Ultra Faction 04</label>
+    <description>Ultra Faction 04</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_04</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(0.18, 0.76, 0.77)</li> <!-- Бирюзовый  -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(1.0, 0.0, 0.0)</li>      <!-- Красный -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction05</defName>
+    <label>Ultra Faction 05</label>
+    <description>Ultra Faction 05</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_05</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction06</defName>
+    <label>Ultra Faction 06</label>
+    <description>Ultra Faction 06</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_06</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction07</defName>
+    <label>Ultra Faction 07</label>
+    <description>Ultra Faction 07</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_07</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction08</defName>
+    <label>Ultra Faction 08</label>
+    <description>Ultra Faction 08</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_08</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction09</defName>
+    <label>Ultra Faction 09</label>
+    <description>Ultra Faction 09</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_09</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction10</defName>
+    <label>Ultra Faction 10</label>
+    <description>Ultra Faction 10</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_10</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction11</defName>
+    <label>Ultra Faction 11</label>
+    <description>Ultra Faction 11</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_11</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction12</defName>
+    <label>Ultra Faction 12</label>
+    <description>Ultra Faction 12</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_12</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction13</defName>
+    <label>Ultra Faction 13</label>
+    <description>Ultra Faction 13</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_13</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction14</defName>
+    <label>Ultra Faction 14</label>
+    <description>Ultra Faction 14</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_14</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction15</defName>
+    <label>Ultra Faction 15</label>
+    <description>Ultra Faction 15</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_15</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction16</defName>
+    <label>Ultra Faction 16</label>
+    <description>Ultra Faction 16</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_16</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction17</defName>
+    <label>Ultra Faction 17</label>
+    <description>Ultra Faction 17</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_17</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction18</defName>
+    <label>Ultra Faction 18</label>
+    <description>Ultra Faction 18</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_18</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction19</defName>
+    <label>Ultra Faction 19</label>
+    <description>Ultra Faction 19</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_19</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+  <!-- ФРАКЦИЯ 20 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction20</defName>
+    <label>Ultra Faction 20</label>
+    <description>Ultra Faction 20</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_20</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 21 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction21</defName>
+    <label>Ultra Faction 21</label>
+    <description>Ultra Faction 21</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_21</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 22 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction22</defName>
+    <label>Ultra Faction 22</label>
+    <description>Ultra Faction 22</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_22</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 23 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction23</defName>
+    <label>Ultra Faction 23</label>
+    <description>Ultra Faction 23</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_23</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 24 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction24</defName>
+    <label>Ultra Faction 24</label>
+    <description>Ultra Faction 24</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_24</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 25 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction25</defName>
+    <label>Ultra Faction 25</label>
+    <description>Ultra Faction 25</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_25</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 26 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction26</defName>
+    <label>Ultra Faction 26</label>
+    <description>Ultra Faction 26</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_26</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 27 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction27</defName>
+    <label>Ultra Faction 27</label>
+    <description>Ultra Faction 27</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_27</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 28 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction28</defName>
+    <label>Ultra Faction 28</label>
+    <description>Ultra Faction 28</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_28</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 29 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction29</defName>
+    <label>Ultra Faction 29</label>
+    <description>Ultra Faction 29</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_29</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 30 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction30</defName>
+    <label>Ultra Faction 30</label>
+    <description>Ultra Faction 30</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_30</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 31 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction31</defName>
+    <label>Ultra Faction 31</label>
+    <description>Ultra Faction 31</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_31</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 32 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction32</defName>
+    <label>Ultra Faction 32</label>
+    <description>Ultra Faction 32</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_32</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 33 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction33</defName>
+    <label>Ultra Faction 33</label>
+    <description>Ultra Faction 33</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_33</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 34 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction34</defName>
+    <label>Ultra Faction 34</label>
+    <description>Ultra Faction 34</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_34</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 35 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction35</defName>
+    <label>Ultra Faction 35</label>
+    <description>Ultra Faction 35</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_35</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 36 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction36</defName>
+    <label>Ultra Faction 36</label>
+    <description>Ultra Faction 36</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_36</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 37 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction37</defName>
+    <label>Ultra Faction 37</label>
+    <description>Ultra Faction 37</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_37</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 38 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction38</defName>
+    <label>Ultra Faction 38</label>
+    <description>Ultra Faction 38</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_38</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 39 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction39</defName>
+    <label>Ultra Faction 39</label>
+    <description>Ultra Faction 39</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_39</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 40 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction40</defName>
+    <label>Ultra Faction 40</label>
+    <description>Ultra Faction 40</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_40</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 41 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction41</defName>
+    <label>Ultra Faction 41</label>
+    <description>Ultra Faction 41</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_41</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 42 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction42</defName>
+    <label>Ultra Faction 42</label>
+    <description>Ultra Faction 42</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_42</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 43 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction43</defName>
+    <label>Ultra Faction 43</label>
+    <description>Ultra Faction 43</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_43</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 44 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction44</defName>
+    <label>Ultra Faction 44</label>
+    <description>Ultra Faction 44</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_44</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 45 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction45</defName>
+    <label>Ultra Faction 45</label>
+    <description>Ultra Faction 45</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_45</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 46 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction46</defName>
+    <label>Ultra Faction 46</label>
+    <description>Ultra Faction 46</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_46</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 47 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction47</defName>
+    <label>Ultra Faction 47</label>
+    <description>Ultra Faction 47</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_47</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 48 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction48</defName>
+    <label>Ultra Faction 48</label>
+    <description>Ultra Faction 48</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_48</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 49 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction49</defName>
+    <label>Ultra Faction 49</label>
+    <description>Ultra Faction 49</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_49</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef>
+  
+    <!-- ФРАКЦИЯ 50 -->
+  
+    <FactionDef ParentName="OutlanderFactionBase">
+    <defName>MF_UltraFaction50</defName>
+    <label>Ultra Faction 50</label>
+    <description>Ultra Faction 50</description>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>0</configurationListOrderPriority>
+    <factionIconPath>UI/FactionIcons/Ultra/MF_Ultra_50</factionIconPath>
+    <factionNameMaker>MF_NamerFactionUltra</factionNameMaker>
+    <settlementNameMaker>MF_NamerSettlementUltra</settlementNameMaker>	
+    <techLevel>Ultra</techLevel>
+	<colorSpectrum>
+	 <li>(1.0, 0.0, 0.0)</li> <!-- Красный -->
+	 	    <li>(0.03, 0.47, 0.52)</li> <!-- Грязно-синий -->
+	   <li>(0.6, 0.08, 0.08)</li> <!-- Кровавый -->
+  <li>(0.7, 0.29, 0.1)</li>  <!-- Грязно оранжевый -->
+  <li>(0.0, 1.0, 0.0)</li>      <!-- Зелёный -->
+  <li>(0.49, 0.98, 0.98)</li>   <!-- Голубой -->
+  <li>(1.0, 1.0, 0.0)</li>      <!-- Жёлтый -->
+  <li>(1.0, 0.65, 0.0)</li>     <!-- Оранжевый -->
+  <li>(0.5, 0.0, 0.5)</li>      <!-- Фиолетовый -->
+  <li>(0.5, 0.5, 0.5)</li>      <!-- Серый -->
+  <li>(1.0, 0.84, 0.0)</li>     <!-- Золотой -->
+  <li>(0.18, 0.76, 0.77)</li>   <!-- Бирюзовый -->
+  <li>(0.21, 0.9, 0.39)</li>    <!-- Салатовый -->
+  <li>(0.18, 0.24, 0.77)</li>   <!-- Фиолетово-синий -->
+  <li>(0.55, 0.27, 0.07)</li>   <!-- Коричневый -->
+  <li>(0.0, 0.75, 1.0)</li>     <!-- Сине-голубой -->
+  <li>(1.0, 0.75, 0.8)</li>     <!-- Розовый -->
+  <li>(0.68, 0.85, 0.9)</li>    <!-- Морозный -->
+  <li>(0.2, 0.8, 0.2)</li>      <!-- Лайм -->
+  <li>(0.82, 0.12, 0.12)</li>   <!-- Приглушённый красный -->
+  <li>(0.57, 0.17, 0.7)</li>    <!-- Фиолетовый приглушённый -->
+  <li>(0.7, 0.1, 0.43)</li>     <!-- Ярко-розовый -->
+  <li>(0.4, 0.8, 0.6)</li>      <!-- Мятный -->
+  <li>(0.9, 0.4, 0.7)</li>      <!-- Лавандовый -->
+  <li>(0.2, 0.6, 0.9)</li>      <!-- Небесный -->	
+	   </colorSpectrum>
+  </FactionDef> 
+
+</Defs>

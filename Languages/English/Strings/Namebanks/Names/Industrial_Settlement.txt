@@ -1,0 +1,233 @@
+Rock
+Pier
+Crossroads
+Canyon
+Barter Yard
+Outpost
+Shelter
+Hive
+Nest
+Parking Lot
+Farm
+Hamlet
+Remote Farmstead
+Campsite
+Aul
+Pipe Village
+Sloboda
+Outskirts
+Settlement
+Churchyard
+Fishing Village
+Forest Outpost
+Mountain Village
+Salt Village
+Trading Post
+Barracks
+Mining Village
+Sawmill
+Mill
+Wind Farm
+Solar Farm
+Hydropost
+Radio Base
+Weather Station
+Watchtower
+Chapel
+Monastery
+Hermitage
+Slum Hamlet
+Oasis
+Well
+Spring
+Swamp Village
+Floating Settlement
+Cave Town
+Bunker Settlement
+Wagon
+Trailer Park
+Elevator
+Warehouse Complex
+Garage Settlement
+Station
+Port
+Wharf
+Shipyard
+Docs
+Airfield
+Hangar
+Laboratory
+Clinic
+Library
+School
+Prison
+Fortress
+Redoubt
+Checkpoint
+Camp
+Caravan Site
+Station
+Depot
+Tunnel
+Bridge
+Dam
+Weir
+Reservoir
+Greenhouse
+Glasshouses
+Nursery
+Apiary
+Fort
+Bastion
+Citadel
+Acropolis
+Kremlin
+Town Hall
+City Hall
+Embassy Town
+Diplomatic Quarter
+University Campus
+Science Town
+Medical Town
+Sports Town
+Resort
+Sanatorium
+Rest House
+Canteen
+Cafe
+Bar
+Hotel
+Inn
+Tavern
+Alehouse
+Market
+Bazaar
+Fair
+Trading Square
+Kolkhoz
+Sovkhoz
+Commune
+Artel
+Brigade
+Unit
+
+Object "Rock"
+Scrap Pier
+Intersection Node
+Deep Rift
+Barter Hangar
+Outpost "Valve"
+Shelter No. 12
+Technician Swarm
+Drone Nest
+Tractor Parking
+Agro-Block
+Hydroponic Hamlet
+Allotment Sector
+Welder Campsite
+"Mazut" Settlement
+Pipe Main
+Worker Sloboda
+"Sludge" Outskirts
+Layover Point
+Ritual Dump
+Scrap Port
+Forest Cordon
+"Salt" Mine
+Trading Terminal
+Barracks Sector
+Mountain Workings
+"Tooth" Sawmill
+Grinding Aggregate
+Wind Stack
+Solar Cluster
+Hydro-Hub
+Radio Tower
+Meteo-Sensor
+Watch Citadel
+Temple of the Mechanism
+Abode of Steam
+Cell of the Spark
+Slum Block
+Chrome Oasis
+Artesian Drain
+Pumping Station
+Swamp Filter
+Mud Platform
+Cave Shop
+Bunker-7
+Living Container
+Trailer Sump
+Slag Elevator
+Warehouse Perimeter
+Garage Cooperative
+Freight Station
+Dry Dock
+Gear Wharf
+"Rust" Shipyard
+Unloading Sector
+Airfield
+Repair Hangar
+Alloy Laboratory
+"Radiation" Medblock
+Blueprint Archive
+Training Ground
+Containment Zone
+Bastion "Armature"
+Lead Redoubt
+Checkpoint "Steel"
+Scavenger Camp
+Caravan Lock
+Junction Station
+Wear Depot
+Tunneler Tract
+Welding Bridge
+Flow Dam
+Dam No. 9
+Tank Farm
+Bio-Dome
+Greenhouse Stack
+Flesh Incubator
+"Synthesis" Apiary
+Diesel Fort
+Gear Bastion
+Rolling Mill Citadel
+Directorate High-rise
+Municipal Block
+Embassy Contour
+Diplomatic Hub
+Science City "Vector"
+Technological Node
+Sanitary Corp
+Sports Proving Ground
+"Concrete" Recreation
+"Steam" Sanatorium
+Decompression Zone
+Food Block
+Diner "Piston"
+Bar "Overheat"
+Hostel "Beds"
+Inn Shop
+Tavern "Mazut"
+Rusty Shelter
+Trading Row B
+Alloy Market
+Metal Fair
+Exchange Point
+Agro-Commune
+Industrial Sovkhoz
+Worker Artel
+Dismantling Brigade
+Adjustment Unit
+Pressing Mill
+Foundry Yard
+Marshalling Hump
+Soot Collector
+Support EL-15
+Vacuum Compartment
+Well-8
+Processing Shop
+Void Quarry
+Stamping Post
+Drainage Node
+Final Conveyor

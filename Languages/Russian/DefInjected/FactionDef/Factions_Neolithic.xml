@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- ==================== Неолитические ФРАКЦИИ ==================== -->
+  
+  <MF_NeolithicFaction01.label>Род</MF_NeolithicFaction01.label>
+  <MF_NeolithicFaction01.description>Малая, но прочная общность связанных кровью людей. Для них важнее традиции и память предков, чем власть или богатство.</MF_NeolithicFaction01.description>
+
+  <MF_NeolithicFaction02.label>Древнее Племя</MF_NeolithicFaction02.label>
+  <MF_NeolithicFaction02.description>Сообщество, объединённое общим тотемом и преданиями. Они живут как единое целое, следуя за вождём и духами.</MF_NeolithicFaction02.description>
+
+  <MF_NeolithicFaction03.label>Клан</MF_NeolithicFaction03.label>
+  <MF_NeolithicFaction03.description>Устойчивая структура с чёткой иерархией. Каждый знает своё место, а честь клана — превыше всего.</MF_NeolithicFaction03.description>
+
+  <MF_NeolithicFaction04.label>Община</MF_NeolithicFaction04.label>
+  <MF_NeolithicFaction04.description>Группа, где правят равенство и взаимная помощь. Решения принимаются совместно, как в семье.</MF_NeolithicFaction04.description>
+
+  <MF_NeolithicFaction05.label>Собиратели</MF_NeolithicFaction05.label>
+  <MF_NeolithicFaction05.description>Кочевники, живущие дарами природы. Они верят, что мир сам кормит тех, кто не жаден.</MF_NeolithicFaction05.description>
+
+  <MF_NeolithicFaction06.label>Охотники</MF_NeolithicFaction06.label>
+  <MF_NeolithicFaction06.description>Искусные следопыты и бойцы, чтящие закон добычи. Их жизнь — вечное преследование и выжидание.</MF_NeolithicFaction06.description>
+
+  <MF_NeolithicFaction07.label>Хранители</MF_NeolithicFaction07.label>
+  <MF_NeolithicFaction07.description>Стражи древних знаний, священных мест и реликвий. Считают себя связующим звеном между прошлым и будущим.</MF_NeolithicFaction07.description>
+
+  <MF_NeolithicFaction08.label>Предки</MF_NeolithicFaction08.label>
+  <MF_NeolithicFaction08.description>Духи или легендарные основатели народов. Их имена произносят в ритуалах, прося мудрости и защиты.</MF_NeolithicFaction08.description>
+
+  <MF_NeolithicFaction09.label>Стадо</MF_NeolithicFaction09.label>
+  <MF_NeolithicFaction09.description>Примитивный союз, ведомый инстинктами. Сила каждого — в слиянии с массой, с ритмом природы.</MF_NeolithicFaction09.description>
+
+  <MF_NeolithicFaction10.label>Странники</MF_NeolithicFaction10.label>
+  <MF_NeolithicFaction10.description>Вечные путники, отвернувшиеся от дома ради горизонтов. Они несут с собой память чужих земель.</MF_NeolithicFaction10.description>
+
+  <MF_NeolithicFaction11.label>Соплеменники</MF_NeolithicFaction11.label>
+  <MF_NeolithicFaction11.description>Те, кто связан не кровью, а выбором. Их объединяет чувство общего пути и братства.</MF_NeolithicFaction11.description>
+
+  <MF_NeolithicFaction12.label>Дети Тумана</MF_NeolithicFaction12.label>
+  <MF_NeolithicFaction12.description>Загадочные кочевники, появляющиеся из ниоткуда и исчезающие в дымке. Говорят, они видят то, что скрыто от остальных.</MF_NeolithicFaction12.description>
+
+  <MF_NeolithicFaction13.label>Народ Камня</MF_NeolithicFaction13.label>
+  <MF_NeolithicFaction13.description>Крепкие, выносливые горцы. Их жизнь медленная, но несломимая, как скалы, среди которых они живут.</MF_NeolithicFaction13.description>
+
+  <MF_NeolithicFaction14.label>Клан Битвы</MF_NeolithicFaction14.label>
+  <MF_NeolithicFaction14.description>Воинское братство, рождённое войной. Их культ — честь, сила, и память павших.</MF_NeolithicFaction14.description>
+
+  <MF_NeolithicFaction15.label>Странники Ветра</MF_NeolithicFaction15.label>
+  <MF_NeolithicFaction15.description>Лёгкие духом путешественники, чтущие свободу выше всех законов. Их шаги не оставляют следов.</MF_NeolithicFaction15.description>
+
+  <MF_NeolithicFaction16.label>Древняя Община</MF_NeolithicFaction16.label>
+  <MF_NeolithicFaction16.description>Пережившая столетия группа, чьи корни теряются во времени. Они хранят забытые ритуалы.</MF_NeolithicFaction16.description>
+
+  <MF_NeolithicFaction17.label>Племя Дерева</MF_NeolithicFaction17.label>
+  <MF_NeolithicFaction17.description>Народ, живущий в единстве с лесом. Их жизнь — круговорот роста, смерти и возрождения.</MF_NeolithicFaction17.description>
+
+  <MF_NeolithicFaction18.label>Племя Смерти</MF_NeolithicFaction18.label>
+  <MF_NeolithicFaction18.description>Мрачные служители перехода между мирами. Они не страшатся конца, считая его частью пути.</MF_NeolithicFaction18.description>
+
+  <MF_NeolithicFaction19.label>Племя Судьбы</MF_NeolithicFaction19.label>
+  <MF_NeolithicFaction19.description>Пророки и провидцы, идущие по пути, начертанному звёздами. Считают, что у каждого живого есть предначертание.</MF_NeolithicFaction19.description>
+
+  <MF_NeolithicFaction20.label>Племя Духов</MF_NeolithicFaction20.label>
+  <MF_NeolithicFaction20.description>Существа, живущие на границе миров. Их голос — шёпот ветра, а присутствие ощущается, когда тьма сгущается.</MF_NeolithicFaction20.description>
+
+  <MF_NeolithicFaction21.label>Дети Солнца</MF_NeolithicFaction21.label>
+  <MF_NeolithicFaction21.description>Племя, обожествляющее дневное светило. Они верят, что каждый их поступок виден небу, и стремятся к жизни в свете и правде.</MF_NeolithicFaction21.description>
+
+  <MF_NeolithicFaction22.label>Племя Теней</MF_NeolithicFaction22.label>
+  <MF_NeolithicFaction22.description>Загадочные жители пещер и густых чащ. Они мастера маскировки и бесшумного передвижения, считающие тьму своим лучшим другом.</MF_NeolithicFaction22.description>
+
+  <MF_NeolithicFaction23.label>Вольные Кочевники</MF_NeolithicFaction23.label>
+  <MF_NeolithicFaction23.description>Группа, не имеющая постоянного дома. Они следуют за стадами животных и знаками звезд, не признавая границ и чужих законов.</MF_NeolithicFaction23.description>
+
+  <MF_NeolithicFaction24.label>Клан Медведя</MF_NeolithicFaction24.label>
+  <MF_NeolithicFaction24.description>Могучие воины, чьим тотемом является хозяин леса. Отличаются огромной силой, выносливостью и яростью в бою.</MF_NeolithicFaction24.description>
+
+  <MF_NeolithicFaction25.label>Народ Реки</MF_NeolithicFaction25.label>
+  <MF_NeolithicFaction25.description>Мастера строительства лодок и рыбной ловли. Вся их жизнь связана с водой, которую они почитают как мать-кормилицу.</MF_NeolithicFaction25.description>
+
+  <MF_NeolithicFaction26.label>Хранители Огня</MF_NeolithicFaction26.label>
+  <MF_NeolithicFaction26.description>Племя, считающее огонь священным даром богов. Они никогда не дают своему главному костру погаснуть, веря, что с ним уйдет жизнь рода.</MF_NeolithicFaction26.description>
+
+  <MF_NeolithicFaction27.label>Клан Волка</MF_NeolithicFaction27.label>
+  <MF_NeolithicFaction27.description>Стая охотников, действующих слаженно и беспощадно. Их тактика основана на изматывании врага и внезапном ударе в слабое место.</MF_NeolithicFaction27.description>
+
+  <MF_NeolithicFaction28.label>Мудрецы Гор</MF_NeolithicFaction28.label>
+  <MF_NeolithicFaction28.description>Изолированное сообщество, живущее на заоблачных пиках. Они проводят время в медитациях и изучении древних петроглифов.</MF_NeolithicFaction28.description>
+
+  <MF_NeolithicFaction29.label>Племя Костей</MF_NeolithicFaction29.label>
+  <MF_NeolithicFaction29.description>Мрачные воины, украшающие себя черепами врагов. Они верят, что сила убитого противника переходит к тому, кто носит его останки.</MF_NeolithicFaction29.description>
+
+  <MF_NeolithicFaction30.label>Дети Грома</MF_NeolithicFaction30.label>
+  <MF_NeolithicFaction30.description>Воинственное племя, считающее грозу голосом богов. В каждом раскате они слышат призыв к битве и новым свершениям.</MF_NeolithicFaction30.description>
+
+  <MF_NeolithicFaction31.label>Кочевники Пустоши</MF_NeolithicFaction31.label>
+  <MF_NeolithicFaction31.description>Те, кто научился выживать там, где другие гибнут. Они довольствуются малым и знают цену каждой капле воды и горсти зерна.</MF_NeolithicFaction31.description>
+
+  <MF_NeolithicFaction32.label>Племя Корней</MF_NeolithicFaction32.label>
+  <MF_NeolithicFaction32.description>Группа, практикующая глубокую связь с земными недрами. Они знают тайные свойства растений и могут находить путь в самых запутанных лесах.</MF_NeolithicFaction32.description>
+
+  <MF_NeolithicFaction33.label>Народ Сокола</MF_NeolithicFaction33.label>
+  <MF_NeolithicFaction33.description>Гордое племя с острым взором. Их разведчики видят врага за много миль, а лучники бьют без промаха.</MF_NeolithicFaction33.description>
+
+  <MF_NeolithicFaction34.label>Клан Черепахи</MF_NeolithicFaction34.label>
+  <MF_NeolithicFaction34.description>Миролюбивое племя, предпочитающее крепкую оборону нападению. Они строят надежные укрепления и ценят семейный уют превыше всего.</MF_NeolithicFaction34.description>
+
+  <MF_NeolithicFaction35.label>Странники Млечного Пути</MF_NeolithicFaction35.label>
+  <MF_NeolithicFaction35.description>Мистическое племя, чьи легенды повествуют о пришествии предков со звезд. Они хранят странные артефакты, назначение которых забыто.</MF_NeolithicFaction35.description>
+
+  <MF_NeolithicFaction36.label>Племя Ветров</MF_NeolithicFaction36.label>
+  <MF_NeolithicFaction36.description>Быстрые и ловкие люди, живущие на открытых равнинах. Они верят, что ветер приносит новости от далеких родственников и духов.</MF_NeolithicFaction36.description>
+
+  <MF_NeolithicFaction37.label>Хранители Снов</MF_NeolithicFaction37.label>
+  <MF_NeolithicFaction37.description>Племя шаманов, придающее огромное значение видениям. Каждое их важное решение принимается только после толкования ночных грез.</MF_NeolithicFaction37.description>
+
+  <MF_NeolithicFaction38.label>Клан Змеи</MF_NeolithicFaction38.label>
+  <MF_NeolithicFaction38.description>Скрытные и мудрые люди, знающие толк в ядах и исцелении. Они предпочитают хитрость грубой силе и всегда имеют план отступления.</MF_NeolithicFaction38.description>
+
+  <MF_NeolithicFaction39.label>Народ Шепчущих Трав</MF_NeolithicFaction39.label>
+  <MF_NeolithicFaction39.description>Травники и собиратели, живущие в гармонии с лугом. Они слышат музыку природы там, где другие видят лишь заросли.</MF_NeolithicFaction39.description>
+
+  <MF_NeolithicFaction40.label>Племя Грозного Лика</MF_NeolithicFaction40.label>
+  <MF_NeolithicFaction40.description>Группа, использующая устрашающие маски и раскраску. Для них война — это прежде всего психологическое давление на противника.</MF_NeolithicFaction40.description>
+
+  <MF_NeolithicFaction41.label>Северные Охотники</MF_NeolithicFaction41.label>
+  <MF_NeolithicFaction41.description>Закаленные холодом люди, живущие на краю ледников. Их жизнь — постоянная борьба со стихией за скудную добычу.</MF_NeolithicFaction41.description>
+
+  <MF_NeolithicFaction42.label>Племя Красного Песка</MF_NeolithicFaction42.label>
+  <MF_NeolithicFaction42.description>Жители жарких пустынь, умеющие находить воду под палящим солнцем. Их кожа суха, как пергамент, а воля тверда, как кремень.</MF_NeolithicFaction42.description>
+
+  <MF_NeolithicFaction43.label>Кочевники Тумана</MF_NeolithicFaction43.label>
+  <MF_NeolithicFaction43.description>Таинственная группа, чьи стоянки всегда окутаны дымкой. Говорят, они умеют призывать туман, чтобы скрыться от преследователей.</MF_NeolithicFaction43.description>
+
+  <MF_NeolithicFaction44.label>Клан Рыси</MF_NeolithicFaction44.label>
+  <MF_NeolithicFaction44.description>Охотники-одиночки, собирающиеся вместе только для защиты от большой угрозы. Ценят независимость и личное мастерство.</MF_NeolithicFaction44.description>
+
+  <MF_NeolithicFaction45.label>Народ Большого Озера</MF_NeolithicFaction45.label>
+  <MF_NeolithicFaction45.description>Оседлое племя, создавшее процветающее хозяйство на плодородных берегах. Они гостеприимны к друзьям, но суровы к незваным гостям.</MF_NeolithicFaction45.description>
+
+  <MF_NeolithicFaction46.label>Хранители Гротов</MF_NeolithicFaction46.label>
+  <MF_NeolithicFaction46.description>Племя, живущее в системе естественных пещер. Они превратили свои жилища в настоящие подземные крепости.</MF_NeolithicFaction46.description>
+
+  <MF_NeolithicFaction47.label>Дети Луны</MF_NeolithicFaction47.label>
+  <MF_NeolithicFaction47.description>Ночные жители, ведущие активную жизнь под серебристым сиянием. Они верят, что луна дает им особую мудрость и спокойствие.</MF_NeolithicFaction47.description>
+
+  <MF_NeolithicFaction48.label>Племя Ясного Ручья</MF_NeolithicFaction48.label>
+  <MF_NeolithicFaction48.description>Миролюбивая община, живущая в живописной долине. Их идеалы — чистота помыслов и гармония с окружающим миром.</MF_NeolithicFaction48.description>
+
+  <MF_NeolithicFaction49.label>Кочевники Грома</MF_NeolithicFaction49.label>
+  <MF_NeolithicFaction49.description>Всадники, чье приближение слышно задолго до появления. Они несут с собой энергию бури и неудержимую мощь природы.</MF_NeolithicFaction49.description>
+
+  <MF_NeolithicFaction50.label>Племя Первого Костра</MF_NeolithicFaction50.label>
+  <MF_NeolithicFaction50.description>Древнейший род, претендующий на право называться прародителями всех племен. Хранят легенды о сотворении мира.</MF_NeolithicFaction50.description>
+
+</LanguageData>

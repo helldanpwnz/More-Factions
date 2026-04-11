@@ -1,0 +1,499 @@
+Star Syndicate
+Galactic Directorate
+Omega Corporation
+Cult of Unity
+Cybernetic Legion
+Frontier Council
+Order of Heritage
+Skylord Dynasty
+Abyssal Cartographers
+Sun Eaters
+Brotherhood of Order
+Triumvirate of Eternity
+Pact of the Silent
+Techno-Mystic Adepts
+Free Colonies
+Independent Systems
+Empire of the Sun
+Humanity Protectorate
+Hypernet Keepers
+Void Trackers
+Armada of Light
+House of Lords
+Machine God
+Black Market
+House of Stars
+Congress of Nations
+Ark Horde
+Defenders of Reality
+Church of the Savior
+Star Swarm
+Bureau of Assimilation
+Academy of Technology
+Exile Fleet
+Council of Patriarchs
+Asteroid Miners
+Space Nomads
+Steel Monks
+Prophets of Gravity
+Belt Pirates
+Free Miners
+Intelligence Directorate
+Cult of the Precursors
+Legion "Shield"
+Frontier Worlds
+Rim Hegemony
+Renegade Scientists
+Gatekeepers
+Church of Harmony
+Genesis Corporation
+Slaver Syndicate
+House of Genetics
+Enlightened Congregations
+Trade Routes
+League of Worlds
+Shadow Empire
+AI Protectorate
+Keepers of Chronicles
+Reality Trackers
+Punisher Armada
+Chamber of Judgment
+Cult of Silence
+Tau Ceti Smugglers
+Solar Patricians
+Congress of Survivors
+Mutant Horde
+Knights of the Abyss
+Starfire
+Terraform Corporation
+Bureau of Contacts
+Academy of Xenobiology
+Liberator Fleet
+Ring Council
+Long-Range Pilots
+Abyssal Raiders
+Space Engineers
+Vacuum Ascetics
+Lost Colonies
+Adventure Seekers
+Security Directorate
+Dreamer Cult
+Legion of Conquerors
+Neutral Sectors
+Crystal Hegemony
+Alliance of Planet-Cities
+Heirs of the Ancients
+Church of Truth
+Orbital Gardens
+Information Brokers
+House of Valor
+Congregation of Peacemakers
+Sports Worlds
+League of Poets
+Empire of the Night
+Biomechanic Protectorate
+Antimatter Keepers
+Exodus Expedition
+Mercury Syndicate
+Order of the Phoenix
+Galactic Conclave
+Council of Nine
+Vector Corporation
+
+Orion Hegemony
+
+Symmetry Protocol
+
+Neuro-Shunt Directorate
+
+Shard of the Fallen Empire
+
+Cryo-Sleep Corporation
+
+White Dust Syndicate
+
+Machine Mind Cult
+
+Orbital Oppression Contour
+
+Void Aristocracy
+
+Bio-Code Department
+
+Fleet of Forgotten Contracts
+
+Panopticon AI Node
+
+Hibernation Enclave
+
+Heavy Vacuum Sector
+
+Glitter-World Emissaries
+
+Star Rot Brotherhood
+
+Black Hole Cartel
+
+Luminous Flux Operators
+
+Vacuum Vulture League
+
+Genesis Plus Corporation
+
+Xeno-Code Heirs
+
+Bio-Stasis Fraction
+
+Neural Whip Cult
+
+Sector 7 Automatons
+
+Dead Satellite Logistics
+
+Zenith Consortium
+
+Chamber of Eternal Oversight
+
+Sublimation Order
+
+Space Carvers
+
+Ether Main
+
+Flesh Assimilation Bureau
+
+Ark of Genetic Outcasts
+
+Blue Radiation Wanderers
+
+Chrome and Bone Syndicate
+
+Orbital Execution Directorate
+
+Digital Decay Legion
+
+Synthesis Core Keepers
+
+Xeno-Tech Group
+
+Cold Light Protectorate
+
+Isotope Eaters
+
+Omega-Zero Contour
+
+Ancestral Artifact Hunters
+
+Ultrafast Link Cult
+
+Star Crown Shard
+
+Genome-Factor Corporation
+
+Dark Matter Trackers
+
+Broken Bonds Armada
+
+Administrator Lords Chamber
+
+Machine Exodus
+
+Neuro-Tissue Black Market
+
+Star Rover House
+
+Cyber-Tribe Congress
+
+Orbital Scavenger Horde
+
+Survival Code Defenders
+
+Info-Savior Church
+
+Nano Star Swarm
+
+Synthetic Life Bureau
+
+Psi-Storm Academy
+
+Exiled Directors Fleet
+
+Vacuum Patriarchs Council
+
+Helium-3 Miners
+
+Scrapyard Space Nomads
+
+Steel Monks of Urb
+
+Gravity Well Prophets
+
+Orio Belt Pirates
+
+Free Asteroid Drillers
+
+Flesh Intelligence Directorate
+
+Mechanical Dream Cult
+
+Reality Shield Legion
+
+Brain Frontier Department
+
+Iron Sector Power
+
+Renegade Scientists of Glitter
+
+Jump Gate Keepers
+
+Program Harmony Church
+
+Neuro-Alloy Corporation
+
+Transhumanist Syndicate
+
+Digital Purity House
+
+Enlightened Circuits
+
+Exo Trading Hub
+
+High Frequency League
+
+Shadow Disk Empire
+
+Judge AI Protectorate
+
+System Chronicle Keepers
+
+Cryo-Track Finders
+
+Neuro-Punisher Armada
+
+Geneticists' Chamber of Judgment
+
+Vacuum Silence Cult
+
+Luciferium Smugglers
+
+Solar Cyborg Patricians
+
+Flux Survivor Congress
+
+Mutated Code Horde
+
+Knights of the Crystal Abyss
+
+Synthesis Starfire
+
+Terra-Corpse Corporation
+
+Interstellar Trauma Bureau
+
+Psycho-Surgery Academy
+
+Free Core Fleet
+
+Saturn's Ring Council
+
+Radiation Field Pilots
+
+Subatomic World Raiders
+
+Space Oppression Engineers
+
+Liquid Nitrogen Ascetics
+
+Sector B Lost Colonies
+
+Techno-Grail Seekers
+
+Network Security Directorate
+
+Cryo-Pod Dreamer Cult
+
+Genetic Conqueror Legion
+
+Neutral Exclusion Zones
+
+Crystal Radiation Syndicate
+
+Planet-Factory Alliance
+
+Ancient Circuit Heirs
+
+Eden-2 Orbital Gardens
+
+Information Executioners
+
+House of Valor and Implants
+
+Cryo-World Congregation
+
+Ultra-High Frequency Gladiators
+
+Decay Poets League
+
+Empire of Eternal Night
+
+Biomechanic Hound Protectorate
+
+Void Antimatter Keepers
+
+Last Pulse Expedition
+
+Mercury Star Syndicate
+
+Plasma Phoenix Order
+
+Slag Galactic Conclave
+
+Council of Nine AIs
+
+Vector-Death Corporation
+
+Neural Purge Contour
+
+Remote Access Sector
+
+Alpha-Rhythm Shard
+
+Heavy Element Syndicate
+
+Solar Wind Cult
+
+Iron Lung Brotherhood
+
+Vacuum Service Group
+
+Will Suppression Enclave
+
+Pure Mind Main
+
+Blood Synthesis Directorate
+
+Star Vulture League
+
+Placebo Group Corporation
+
+Mecha-Flesh Consortium
+
+Orbital Suture Department
+
+Void Light Operators
+
+Euphoria Glitter-Trust
+
+Digital Resurrection Sect
+
+Cryo-Activity Management
+
+Bio-Scrap Cartel
+
+Forgotten Key Keepers
+
+Clear Sky Protocol
+
+Neuro-Slavery Syndicate
+
+Butcher-Drone Armada
+
+Virtual Lords Chamber
+
+Station Zero Council
+
+Ether-Telecom Corporation
+
+Constellation Genetic Court
+
+Copper Thought Brotherhood
+
+Irradiated Cult
+
+Nano-Wrath Legion
+
+Free Decay Systems
+
+Crystal Hound Hegemony
+
+Empire of Forgotten Digits
+
+Cryo-Sleep Dynasty
+
+Magnetic Echo Syndicate
+
+Light Needle Order
+
+Fleet of Mutiny Suppression
+
+Transhumanism Bureau
+
+Black Hole Academy
+
+Glitter Architects Council
+
+Sensor Protectorate
+
+Machine Precursor Cult
+
+Orbital Careerist League
+
+Neuro-Pharm Group
+
+Genetic Oversight Sector
+
+Sigma-Nine Contour
+
+Orbital Rage Heirs
+
+Cold Pulse Syndicate
+
+Steel Cloud Directorate
+
+Quantum Rest Corporation
+
+Light Mark Keepers
+
+Electronic Shadow Brotherhood
+
+Singularity Cult
+
+System Crash Legion
+
+Free Shard Fleet
+
+Psi-Active Congress
+
+Archive World Alliance
+
+Cryo-Flux Operators
+
+Copper Contact Syndicate
+
+Neon Mask House
+
+Subatomic Execution Directorate
+
+Stasis-Pro Corporation
+
+Vacuum Sniper League
+
+Pure Glitter Sector
+
+Cyborg Lords Chamber
+
+Neuro-Archive Keepers
+
+Plasma Dew Brotherhood
+
+Ultimate Objective Cult
+
+Mechanical Servant Legion
+
+Synthesis-Paradise Syndicate
+
+Fleet of Lost Contracts
+
+Heavy Singularity Directorate
+
+Final AI Contour

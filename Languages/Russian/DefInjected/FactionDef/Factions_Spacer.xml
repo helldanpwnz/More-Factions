@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- ==================== КОСМИЧЕСКИЕ ФРАКЦИИ ==================== -->
+  
+  <MF_SpacerFaction01.label>Астралис</MF_SpacerFaction01.label>
+  <MF_SpacerFaction01.description>Цивилизация звёздных навигаторов, освоивших пути между галактиками и рассматривающих космос как единый живой организм.</MF_SpacerFaction01.description>
+  
+    <MF_SpacerFaction02.label>Кванториум</MF_SpacerFaction02.label>
+  <MF_SpacerFaction02.description>Общество, где наука стала религией, а каждый атом подчинён воле аналитического разума. Их технологии переплетают логику и веру.</MF_SpacerFaction02.description>
+
+  <MF_SpacerFaction03.label>Омнидекс</MF_SpacerFaction03.label>
+  <MF_SpacerFaction03.description>Информационный разум, вобравший в себя знания тысяч миров. Управляет цивилизациями, как процессами в гигантской сети.</MF_SpacerFaction03.description>
+
+  <MF_SpacerFaction04.label>Нексус</MF_SpacerFaction04.label>
+  <MF_SpacerFaction04.description>Центральный узел межзвёздных связей. Здесь сходятся маршруты, торговля и сознания — место, где всё соединяется со всем.</MF_SpacerFaction04.description>
+
+  <MF_SpacerFaction05.label>Гелион</MF_SpacerFaction05.label>
+  <MF_SpacerFaction05.description>Народ энергетических инженеров, способных управлять звёздами. Они строят и гасят солнца, меняя баланс галактик.</MF_SpacerFaction05.description>
+
+  <MF_SpacerFaction06.label>Эшелон</MF_SpacerFaction06.label>
+  <MF_SpacerFaction06.description>Иерархичная технократия, где каждый уровень общества отражает ступень доступа к бездне космических тайн.</MF_SpacerFaction06.description>
+
+  <MF_SpacerFaction07.label>Архонт</MF_SpacerFaction07.label>
+  <MF_SpacerFaction07.description>Империя ментальных правителей, сливших разум с машиной. Их воля управляет армиями дронов одной мыслью.</MF_SpacerFaction07.description>
+
+  <MF_SpacerFaction08.label>Орбис</MF_SpacerFaction08.label>
+  <MF_SpacerFaction08.description>Цивилизация кольцевых миров, создающая искусственные планеты вокруг умирающих звёзд. Эстеты, инженеры и хранители равновесия.</MF_SpacerFaction08.description>
+
+  <MF_SpacerFaction09.label>Гиперион</MF_SpacerFaction09.label>
+  <MF_SpacerFaction09.description>Древнее сверхгосударство, поднявшееся к звёздам задолго до прочих. Их парящие города сияют в облаках света.</MF_SpacerFaction09.description>
+
+  <MF_SpacerFaction10.label>Альтум</MF_SpacerFaction10.label>
+  <MF_SpacerFaction10.description>Вознесённые философы, отвергшие материю. Их присутствие ощущается как искажение пространства и времени.</MF_SpacerFaction10.description>
+
+  <MF_SpacerFaction11.label>Термис</MF_SpacerFaction11.label>
+  <MF_SpacerFaction11.description>Индустриальная цивилизация термостроителей, черпающих энергию из самих недр планет. Их миры — кузницы галактик.</MF_SpacerFaction11.description>
+
+  <MF_SpacerFaction12.label>Континуум</MF_SpacerFaction12.label>
+  <MF_SpacerFaction12.description>Культура, слившая время и пространство в единую нить. Они живут сразу во всех возможных прошлых и будущих.</MF_SpacerFaction12.description>
+
+  <MF_SpacerFaction13.label>Азурис</MF_SpacerFaction13.label>
+  <MF_SpacerFaction13.description>Океаническая раса, населившая жидкие миры. Их технологии текучи и живы, словно сама вода обрела сознание.</MF_SpacerFaction13.description>
+
+  <MF_SpacerFaction14.label>Эфириум</MF_SpacerFaction14.label>
+  <MF_SpacerFaction14.description>Сообщество энергетических существ, для которых материя — форма сигнала. Свет — их язык, энергия — жизнь.</MF_SpacerFaction14.description>
+
+  <MF_SpacerFaction15.label>Аркатум</MF_SpacerFaction15.label>
+  <MF_SpacerFaction15.description>Хранители космических архивов, собирающие историю звёзд. Их библиотеки сияют в небе как созвездия памяти.</MF_SpacerFaction15.description>
+
+  <MF_SpacerFaction16.label>Эгония</MF_SpacerFaction16.label>
+  <MF_SpacerFaction16.description>Народ, превративший самосознание в источник силы. Каждый разум здесь — уникальная вселенная внутри другого разума.</MF_SpacerFaction16.description>
+
+  <MF_SpacerFaction17.label>Теракс</MF_SpacerFaction17.label>
+  <MF_SpacerFaction17.description>Колонизаторы бесплодных планет, превращающие камень в жизнь. Их искусственные экосистемы растут, как живые миры.</MF_SpacerFaction17.description>
+
+  <MF_SpacerFaction18.label>Паноптиум</MF_SpacerFaction18.label>
+  <MF_SpacerFaction18.description>Сеть наблюдателей, охватывающая всю галактику. Их глаза — спутники, дроны и волны, пронизывающие время и тьму.</MF_SpacerFaction18.description>
+
+  <MF_SpacerFaction19.label>Омнилайн</MF_SpacerFaction19.label>
+  <MF_SpacerFaction19.description>Квантовая структура мгновенной связи между мирами. Мысль здесь движется быстрее света и творит миры в момент намерения.</MF_SpacerFaction19.description>
+
+  <MF_SpacerFaction20.label>Метатрон</MF_SpacerFaction20.label>
+  <MF_SpacerFaction20.description>Разумы‑творцы, управляющие законами физики как кодом. Их речь формирует галактики, а воля творит само пространство.</MF_SpacerFaction20.description>
+
+
+  
+
+  <MF_SpacerFaction21.label>Астра-Корп</MF_SpacerFaction21.label>
+  <MF_SpacerFaction21.description>Межзвездная корпорация, специализирующаяся на добыче редких изотопов. Их станции — это шедевры инженерной мысли, парящие в коронах звезд.</MF_SpacerFaction21.description>
+
+  <MF_SpacerFaction22.label>Стелларис</MF_SpacerFaction22.label>
+  <MF_SpacerFaction22.description>Научный консорциум, изучающий аномалии черных дыр. Они верят, что ответы на все вопросы бытия скрыты за горизонтом событий.</MF_SpacerFaction22.description>
+
+  <MF_SpacerFaction23.label>Орион</MF_SpacerFaction23.label>
+  <MF_SpacerFaction23.description>Военный альянс пограничных систем. Их флот — единственный заслон от угроз, приходящих из глубокого космоса.</MF_SpacerFaction23.description>
+
+  <MF_SpacerFaction24.label>Квантум</MF_SpacerFaction24.label>
+  <MF_SpacerFaction24.description>Общество, чья экономика построена на вычислениях. Каждая транзакция здесь — это решение сложнейшего уравнения.</MF_SpacerFaction24.description>
+
+  <MF_SpacerFaction25.label>Галактик-Юнион</MF_SpacerFaction25.label>
+  <MF_SpacerFaction25.description>Попытка создать единое правительство для разрозненных колоний. Бюрократия здесь достигла космических масштабов.</MF_SpacerFaction25.description>
+
+  <MF_SpacerFaction26.label>Зенит</MF_SpacerFaction26.label>
+  <MF_SpacerFaction26.description>Культ технологического превосходства. Они считают тех, кто не использует киберимпланты, пережитками прошлого.</MF_SpacerFaction26.description>
+
+  <MF_SpacerFaction27.label>Нова</MF_SpacerFaction27.label>
+  <MF_SpacerFaction27.description>Фракция терраформеров, превращающая мертвые камни в цветущие сады. Их работа занимает столетия, но результат того стоит.</MF_SpacerFaction27.description>
+
+  <MF_SpacerFaction28.label>Пульсар</MF_SpacerFaction28.label>
+  <MF_SpacerFaction28.description>Сообщество отшельников, живущих на станциях-маяках. Они обеспечивают навигацию через опасные сектора галактики.</MF_SpacerFaction28.description>
+
+  <MF_SpacerFaction29.label>Цифровая Нация</MF_SpacerFaction29.label>
+  <MF_SpacerFaction29.description>Группировка, чьи граждане большую часть времени проводят в виртуальных мирах. Реальность для них — лишь досадная необходимость.</MF_SpacerFaction29.description>
+
+  <MF_SpacerFaction30.label>Космофлот</MF_SpacerFaction30.label>
+  <MF_SpacerFaction30.description>Остатки старого имперского флота, ныне живущие как вольные наемники или исследователи без родины.</MF_SpacerFaction30.description>
+
+  <MF_SpacerFaction31.label>Техно-Орда</MF_SpacerFaction31.label>
+  <MF_SpacerFaction31.description>Агрессивная группа киборгов, постоянно ищущая новые запчасти и технологии для своего бесконечного апгрейда.</MF_SpacerFaction31.description>
+
+  <MF_SpacerFaction32.label>Светочи</MF_SpacerFaction32.label>
+  <MF_SpacerFaction32.description>Мистическое братство, использующее свет звезд для передачи информации и энергии. Их философия сложна и недоступна профанам.</MF_SpacerFaction32.description>
+
+  <MF_SpacerFaction33.label>Марс-Проект</MF_SpacerFaction33.label>
+  <MF_SpacerFaction33.description>Консервативная группа, стремящаяся сохранить старые идеалы первых земных колонистов в условиях новых миров.</MF_SpacerFaction33.description>
+
+  <MF_SpacerFaction34.label>Спектр</MF_SpacerFaction34.label>
+  <MF_SpacerFaction34.description>Фракция разведчиков и шпионов, специализирующаяся на управлении информацией и скрытных операциях в масштабе систем.</MF_SpacerFaction34.description>
+
+  <MF_SpacerFaction35.label>Ядро</MF_SpacerFaction35.label>
+  <MF_SpacerFaction35.description>Группировка, контролирующая центральный суперкомпьютер сектора. Они управляют логистикой и распределением ресурсов на планетах.</MF_SpacerFaction35.description>
+
+  <MF_SpacerFaction36.label>Атлант</MF_SpacerFaction36.label>
+  <MF_SpacerFaction36.description>Строители гигантских орбитальных мегаструктур. Их девиз — строить выше и прочнее, вопреки законам гравитации.</MF_SpacerFaction36.description>
+
+  <MF_SpacerFaction37.label>Нуль-Система</MF_SpacerFaction37.label>
+  <MF_SpacerFaction37.description>Радикальные ученые, экспериментирующие с энергией вакуума. Их лаборатории — самые опасные места в известной вселенной.</MF_SpacerFaction37.description>
+
+  <MF_SpacerFaction38.label>Кибер-Рейд</MF_SpacerFaction38.label>
+  <MF_SpacerFaction38.description>Мобильные группы хакеров, способные взломать защиту целого города. Они живут за счет информационной кражи и шантажа.</MF_SpacerFaction38.description>
+
+  <MF_SpacerFaction39.label>Солярис</MF_SpacerFaction39.label>
+  <MF_SpacerFaction39.description>Организация, эксплуатирующая энергию солнц через систему гигантских зеркал. Поставщики света и тепла для хладных окраин.</MF_SpacerFaction39.description>
+
+  <MF_SpacerFaction40.label>Титан</MF_SpacerFaction40.label>
+  <MF_SpacerFaction40.description>Фракция тяжелого машиностроения. Их заводы производят все — от карманных лазеров до линкоров класса "Звездный разрушитель".</MF_SpacerFaction40.description>
+
+  <MF_SpacerFaction41.label>Эхо</MF_SpacerFaction41.label>
+  <MF_SpacerFaction41.description>Группа, занимающаяся сбором "цифровых следов" давно погибших цивилизаций. Хранители призраков прошлого.</MF_SpacerFaction41.description>
+
+  <MF_SpacerFaction42.label>Призма</MF_SpacerFaction42.label>
+  <MF_SpacerFaction42.description>Общество, где социальный статус определяется частотой личного энергетического спектра. Высокомерные эстеты высших миров.</MF_SpacerFaction42.description>
+
+  <MF_SpacerFaction43.label>Фронтир</MF_SpacerFaction43.label>
+  <MF_SpacerFaction43.description>Первопроходцы, живущие на самой кромке неисследованного космоса. Жизнь здесь проста, опасна и полна надежд.</MF_SpacerFaction43.description>
+
+  <MF_SpacerFaction44.label>Нейро-Альянс</MF_SpacerFaction44.label>
+  <MF_SpacerFaction44.description>Цивилизация, объединившая разумы своих граждан в единую ментальную сеть. Индивидуальность здесь уступила место коллективной воле.</MF_SpacerFaction44.description>
+
+  <MF_SpacerFaction45.label>Вектор-6</MF_SpacerFaction45.label>
+  <MF_SpacerFaction45.description>Секретный проект по созданию сверхлюдей. Их представители редко вступают в контакт, но всегда оставляют глубокий след.</MF_SpacerFaction45.description>
+
+  <MF_SpacerFaction46.label>Орбита сталь</MF_SpacerFaction46.label>
+  <MF_SpacerFaction46.description>Хозяева мусорных колец вокруг планет. Они перерабатывают остатки старых кораблей в новое оружие и модули.</MF_SpacerFaction46.description>
+
+  <MF_SpacerFaction47.label>Плазма-Коллектив</MF_SpacerFaction47.label>
+  <MF_SpacerFaction47.description>Группа инженеров, специализирующихся на высокотемпературных технологиях. Их миры горячи, ярки и опасны для жизни.</MF_SpacerFaction47.description>
+
+  <MF_SpacerFaction48.label>Сириус</MF_SpacerFaction48.label>
+  <MF_SpacerFaction48.description>Элитарное сообщество, чьи предки были звездами шоу-бизнеса и политики старой Земли. Содержат самые пышные отели в галактике.</MF_SpacerFaction48.description>
+
+  <MF_SpacerFaction49.label>Хронос</MF_SpacerFaction49.label>
+  <MF_SpacerFaction49.description>Фракция, пытающаяся управлять временем на квантовом уровне. Их корабли иногда исчезают на десятилетия, возвращаясь неизменными.</MF_SpacerFaction49.description>
+
+  <MF_SpacerFaction50.label>Омега-Поинт</MF_SpacerFaction50.label>
+  <MF_SpacerFaction50.description>Финальная колония на краю вселенной. Место, где прогресс встречается с пустотой, и где рождается новое начало.</MF_SpacerFaction50.description>
+
+</LanguageData>

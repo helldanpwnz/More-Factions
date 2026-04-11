@@ -1,0 +1,306 @@
+Port "Sphere"
+Node "Omega"
+Outpost "Vega"
+Colony "Icarus"
+Station "Horizon"
+Dome "Helios"
+Labyrinth "Chronos"
+Abode "Eos"
+Citadel "Ares"
+Shelter "Cronus"
+Nest "Phoenix"
+Pier "Zenith"
+Mine "Hephaestus"
+Farm "Demeter"
+Laboratory "Artemis"
+Temple "Athena"
+Base "Odysseus"
+City "Uranus"
+Warehouse "Hermes"
+Mine "Pluto"
+Dock "Triton"
+Platform "Neptune"
+Academy "Prometheus"
+Sanctuary "Hestia"
+Arch "Janus"
+Cycle "Jupiter"
+Redoubt "Mars"
+Shelter "Vesta"
+Fortress "Saturn"
+Oracle "Themis"
+Beacon "Sirius"
+Noah's Ark
+Guild "Vulcan"
+Oasis "Ceres"
+Ark "Eden"
+Hive "Aphrodite"
+Arena "Hades"
+Market "Mercury"
+Bridge "Orion"
+Spire "Altair"
+Tomb "Tartarus"
+Limit "Phobos"
+Source "Leto"
+Rift "Chaos"
+Prism "Iris"
+Factory "Cyclops"
+Pulsar "Daedalus"
+Gate "Argo"
+Garden "Persephone"
+Silence "Chiron"
+Vortex "Aeolus"
+Seal "Pandora"
+Ring "Titan"
+Flow "Lethe"
+Crystal "Atlas"
+Cross "Castor"
+Chalice "Hebe"
+Shadow "Nyx"
+Mirror "Narcissus"
+Claw "Draco"
+Web "Arachne"
+Network "Antaeus"
+Vent "Typhon"
+Swarm "Moirai"
+Tabernacle "Selene"
+Flame "Hecate"
+Abyss "Ceto"
+Reef "Scylla"
+Call "Siren"
+Sleep "Morpheus"
+Song "Muse"
+Dance "Terpsichore"
+Gloom "Erebus"
+Flash "Nova"
+Andromeda Nebula
+Heart "Polaris"
+Eye "Argus"
+Fang "Leviathan"
+Cloak "Nibelung"
+Key "Enigma"
+Sentinel "Cerberus"
+Dawn "Aurora"
+Sunset "Hesperus"
+Milky Way Trail
+Barrier "Terminus"
+Cliff "Everest"
+Maelstrom "Charybdis"
+Echo "Narcissus"
+Sphere "Dionysus"
+Code "Enigma"
+Core "Galatea"
+Beam "Apollo"
+Vessel "Arcadia"
+Shroud "Neptune"
+Trace "Phoenix"
+Hand "Orion"
+Whisper "Echo"
+Canyon "Mars"
+Eye "Saturn"
+Crown "Sun"
+Birth "Nova"
+Death "Black Hole"
+Silence "Bacchus"
+Vector "Prime"
+Temple of Mists
+
+"Singularity" Node
+"Orion-B" Terminal
+Sector 7-Glitter
+Cryo-Storage No. 4
+"Chrome" Orbital Hub
+"Alpha-Neuro" Object
+"Vacuum-9" Station
+"Sludge" Disposal Block
+Protocol Citadel
+Pure Code Abode
+"Zenith" Matrix
+"Hephaestus-Iron" Workings
+Hydroponic Compartment 12
+"Xeno-Zero" Laboratory
+High Ones' Sanctum
+"Odysseus-Prime" Base
+"Uranus" Urban Core
+"Hermes" Warehouse Contour
+Deep Plutonium Mine
+"Triton-Industry" Dock
+"Neptune-Stasis" Platform
+Psi-Synthesis Academy
+Link Sanctuary
+"Janus-Logistics" Gate
+"Jupiter" Recycling Cycle
+"Mars-Strike" Redoubt
+"Vesta-Cryo" Shelter
+Steel Lords Fortress
+Network Oracle
+"Sirius-7" Beacon
+"Genesis-Code" Ark
+"Vulcan-Shop" Forge
+"Ceres-Bio" Oasis
+"Eden-Paradise" Module
+"Aphrodite-Farm" Hive
+Decompression Arena
+Tau Ceti Market
+"Orion-Shelf" Bridge
+Corporation Spire
+Cryo-Sleep Tomb
+"Phobos-Grunt" Limit
+"Leto-Biome" Source
+"Chaos-Interface" Rift
+Decay Prism
+"Cyclops-Tyazhmash" Factory
+Pulsar Station
+"Argo-Drift" Gate
+"Persephone-Voice" Garden
+Silence Sector
+Antimatter Vortex
+Control Seal
+"Titan-Prom" Ring
+"Lethe" Data Flow
+"Atlas" Crystal Hub
+Synchronization Cross
+Xeno-Alloy Chalice
+Orbital Shadow
+Neural Network Mirror
+System Claw
+Connection Web
+Bio-Monitoring Network
+Reactor Vent
+Nano-Bot Swarm
+Tabernacle of Light
+Synthesis Flame
+Vacuum Abyss
+Scrap Reef
+Call of the Void
+Machine Dream
+Ether Song
+Frequency Dance
+Radiation Gloom
+Nova Flash
+Andromeda-Hub
+System Heart
+Watcher's Eye
+Asteroid Fang
+Invisibility Cloak
+Encryption Key
+Perimeter Sentinel
+Glitter-World Dawn
+Empire's Sunset
+Settlers' Trail
+"Terminus" Barrier
+Reality Cliff
+Gravity Maelstrom
+Echo Signal
+Dionysian Sphere
+Enigma Code
+Galatea Core
+Apollo Beam
+"Arcadia" Vessel-Settlement
+Neptune Shroud
+Phoenix Trace
+Orion Hand
+Space Whisper
+Phobos Canyon
+Saturn Eye
+Sun Crown
+Point Zero
+Exodus Protocol
+Vector Prime
+Temple of Mists
+Firmament Support
+Void Anchor
+Breakthrough Needle
+World Junction
+Infinity Threshold
+Cyborg Nest
+Drone Stall
+Joy Chamber (Glitter-Prison)
+Resuscitation Shop
+Rhythm Abode
+Freedom Barrier
+Filter-Node
+Ether Well
+Ghetto Industrial Zone
+Bio-Reject Reservation
+Calculator-7
+Station Brain
+Psi-Hangar
+Orbital Bald Spot
+Radiation Stain
+Quarantine Zone
+Isolator X
+Genetic Stack
+Tissue Farm
+Isotope Collector
+Magma Boiler Room
+Moon Cooler
+System Valve
+Void Valve
+Directorate Piston
+Transmission Shaft
+Flywheel of History
+Light Condenser
+Diode-Post
+Data Bus
+Port-Replicator
+Prism-Shield
+Reflection Screen
+Silence Zone 404
+Observation Object
+"Wrath" Proving Ground
+"Beta" Trial
+Fear Module
+Happiness Room
+Pleasure Sector
+Broadcast Node
+Rust Arena
+Cryo-Sleep Club
+"Horizon" Hotel
+"Stasis" Boarding House
+"Radium" Resort
+Wreckage Beach
+Everest-2 Peak
+Chaos Abyss
+Glitter Valley
+Circuit Plain
+Transistor Mountain
+Antenna Forest
+Fuel Oil Sea
+Coolant River
+Plasma Waterfall
+Gas Geyser
+Diamond Crater
+Planet Scar
+Star Burn
+Sector Wound
+Satellite Corpse
+Shipyard Shard
+Cruiser Skeleton
+Titan Wreckage
+Ark Fragment
+Star Junk
+World Dust
+Orbital Mud
+Docking Slush
+Reactor Scale
+Engine Soot
+Space Grime
+System Rust
+Digital Decay
+Bios Decomposition
+Program Mold
+Virus-Node
+Network Worm
+Death Code
+Survivor Bias
+System Failure
+Failure Point
+End of Link
+Dark Zone
+Dead Spot
+Empty Sector
+Hole in Logs
+Trace of the Past
+Shadow of the Future
+Glimpse of the Present
+Protocol Finale

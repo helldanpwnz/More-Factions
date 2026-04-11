@@ -1,0 +1,604 @@
+Cult of the Blood Moon
+Legion of Broken Vows
+Order of Silent Bonds
+Church of the Black Flame
+Gathering of Dead Tongues
+Guild of Spectral Glands
+Clan of Shadow Bones
+Brotherhood of Cursed Steel
+Sect of Whispering Worms
+Union of Ash and Sorrow
+Temple of Fallen Angels
+Horde of Iron Phantoms
+Cult of the Last Gasp
+Legion of Eternal Anguish
+Church of the Blind God
+Gathering of Nightmare Keepers
+Guild of Dream Executioners
+Clan of Fear Drinkers
+Brotherhood of Rusty Tears
+Sect of the Plague Flower
+Union of Silent Daggers
+Temple of Sacred Boniness
+Horde of Children of Decay
+Cult of Scorched Flesh
+Legion of Riveted Sins
+Church of Rotting Grace
+Gathering of Debt Collectors
+Guild of Murky Mirrors
+Clan of Hellhounds
+Brotherhood of Iron Remorse
+Sect of Salted Wounds
+Union of Outcast Masters
+Temple of Broken Bells
+Horde of Shadows from Fire
+Cult of the Sleepless Eye
+Legion of Forgotten Names
+Church of Penitent Flesh
+Gathering of Pain Singers
+Guild of Eternal Debtors
+Clan of Hungry Spirits
+Brotherhood of Leaden Hearts
+Sect of the Quiet Plague
+Union of the Shadowless
+Temple of the Nail and Rags
+Horde of Dishonorable Blades
+Cult of Iron Sleep
+Legion of Chain Scars
+Church of Holy Rot
+Gathering of Fate-Thread Spinners
+Guild of Grave Bell-Ringers
+Clan of Sin Eaters
+Brotherhood of Cold Fire
+Sect of Whispers in the Blood
+Union of Blind Executioners
+Temple of Severed Hands
+Horde of Stone Hearts
+Cult of Impenetrable Darkness
+Legion of Battle Echoes
+Church of Martyrs of Flesh and Iron
+Gathering of Silence Wielders
+Guild of Shackle Smiths
+Clan of Poison Children
+Brotherhood of Last Hope
+Sect of Pain Worshipers
+Union of Cursed Relic Keepers
+Temple of the Breathless God
+Horde of Iron Silence
+Cult of the Forgotten Whisper
+Legion of Those Doomed to Remember
+Church of Holy Scars
+Gathering of Shroud Weavers
+Guild of Sorrow Alchemists
+Clan of Night Eaters
+Brotherhood of Bone Whispers
+Sect of the Black Grain
+Union of Threshold Guardians
+Temple of Scattered Dust
+Horde of Unresting Armor
+Cult of the Cracked Mask
+Legion of Cross-Bearers
+Church of the Extinguished Beacon
+Gathering of Those Feasting with Death
+Guild of Tombstone Singers
+Clan of Raven Judges
+Brotherhood of Steel Tempered in Suffering
+Sect of Oblivion Roots
+Union of Mute Confessors
+Temple of the God Who Sleeps in Ruins
+Horde of Iron Penitents
+Cult of Sorrow for Iron
+Legion of Dead Flame Keepers
+Church of Broken Vows
+Gathering of Bone Walkers
+Guild of Last Breath Thieves
+Clan of Cursed Smiths
+Brotherhood of the Memory-Devouring Flame
+Sect of Salt on Wounds
+Union of the Heaven-Rejected
+Temple of the Faceless
+Horde of Ghosts of Past Battles
+Cult of the Last Nail
+Legion of Sealed Lips
+Church of Grievous Sin
+Gathering of Children of the Abyss
+Order of the Cloak
+Duchy of Steel
+Brotherhood of the Blade
+Church of Unity
+Kingdom of Ash
+League of Cities
+Council of Ten
+Union of Artisans
+Merchants Guild
+Barony of Mists
+Order of the Dragon
+County of Stone
+Brotherhood of the Chalice
+Clan of Mountain Eagles
+Church of Holy Bones
+Kingdom of Northern Seas
+League of Free Lands
+Council of Elders
+Miners Union
+Cartographers Guild
+Barony of the Blood Rose
+Order of the Silver Hand
+Duchy of the Depths
+Brotherhood of the Hammer
+Church of Descending Flame
+Kingdom of Old Roads
+League of River Cities
+Trade Routes Council
+Woodcutters Union
+Alchemists Guild
+Barony of the Black Forest
+Order of the Burning Heart
+County of Vineyards
+Brotherhood of the Quill
+Church of the Incorruptible
+Kingdom of Bear Mountains
+League of Southern Ports
+Council of Magi
+Stonemasons Union
+Apothecaries Guild
+Barony of the White Rock
+Order of the Key Keepers
+Duchy of Autumn Leaves
+Brotherhood of Sentinels
+Church of the Quiet Whisper
+Kingdom of Salt Marshes
+League of Eastern Steppes
+Council of Mariners
+Hunters Union
+Armorers Guild
+Barony of Ash and Dust
+Order of Moonlight
+County of Golden Fields
+Brotherhood of the Chain
+Church of Sacred Fire
+Kingdom of Broken Towers
+League of Lake Settlements
+Council of Judges
+Plowmen Union
+Builders Guild
+Barony of Shadows
+Order of Iron Will
+Duchy of the Dawn
+Brotherhood of the Star Cloak
+Church of the Penitents
+Kingdom of Eternal Ice
+League of Mountain Passes
+Council of Chroniclers
+Fishermen Union
+Bakers Guild
+Barony of Flint Cliffs
+Order of the Right Hand
+County of Quiet Waters
+Brotherhood of the Oath
+Church of the Celestial Eye
+Kingdom of Blooming Valleys
+League of Desert Caravans
+Council of Heralds
+Lumberjacks Union
+Tanners Guild
+Barony of the Raven's Nest
+Order of the Sunset
+Duchy of Sorrowful Herbs
+Brotherhood of Old Blood
+Church of the First Stone
+Kingdom of Murky Forests
+League of Coastal Lands
+Council of Conquerors
+Border Guard Union
+Weavers Guild
+Barony of Rusty Swords
+Order of the Morning Dawn
+County of Apple Orchards
+Brotherhood of the Iron Mask
+Church of the Last Sacrament
+Kingdom of Smoking Mountains
+League of Free Mines
+Council of Inquisitors
+Union of Constables
+Glassblowers Guild
+Barony of the Field of Glory
+Covenant of Crimson Ice
+
+House of a Thousand Scars
+
+Flock of Iron Hunger
+
+Brotherhood of the Scorched Brand
+
+Clan of Black Tar
+
+County of Pale Shadows
+
+Order of the Nail and Thorn
+
+Church of the Mute Scream
+
+League of Bone Spokes
+
+Union of One-Eyed Kings
+
+Barony of the Ragged Sail
+
+Cult of Red Rain
+
+Guard of Doomed Debtors
+
+Sect of Grass Masks
+
+Guild of Bark Strippers
+
+Steppe Vulture Pack
+
+Brotherhood of Copper Skulls
+
+Duchy of the Extinguished Forge
+
+Council of Old Needles
+
+Kingdom of Buried Suns
+
+Clan of the Gnawed Knee
+
+Church of Glass Eyes
+
+League of Moldy Loaves
+
+Order of the Holy Burn
+
+Brotherhood of Cracked Shields
+
+Union of Toothless Dogs
+
+County of Wormwood Bitterness
+
+Cult of Living Stone
+
+Guild of Flesh Tanners
+
+Gathering of Whispering Masks
+
+Barony of Blue Flame
+
+Kingdom of Wild Thistles
+
+Sect of Salty Sweat
+
+Brotherhood of Blind Bows
+
+Duchy of Smoldering Embers
+
+Clan of Mountain Vultures
+
+Church of the Extinguished Spark
+
+League of Rotten Swamps
+
+Council of Copper Rings
+
+Covenant of Broken Arrows
+
+Order of the Stone Fast
+
+Gathering of Dry Wells
+
+Union of Bear Gall
+
+Barony of Dark Dew
+
+Brotherhood of the Leaden Shroud
+
+Cult of the Copper Worm
+
+County of Grey Herons
+
+Guild of Wind Trappers
+
+Sect of the Nail and Rag
+
+Kingdom of Frosty Breath
+
+Clan of Heather Wastelands
+
+Church of the Shattered Altar
+
+League of Stinking Marshes
+
+Brotherhood of Golden Pus
+
+Duchy of Old Bones
+
+Order of the Black Willow
+
+Union of Sleepless Guards
+
+Gathering of Rusty Chainmail
+
+Cult of the Moon Mushroom
+
+Barony of Iron Brushwood
+
+Kingdom of Thistle
+
+Clan of Singed Feathers
+
+Guild of Clover Collectors
+
+Sect of Eternal Fasting
+
+Brotherhood of Serrated Blades
+
+Church of Cold Sweat
+
+League of Hoarse Throats
+
+County of Spider Silk
+
+Council of Oldest Scars
+
+Covenant of Clay Hearts
+
+Order of the Blood Moth
+
+Gathering of Ash Wanderers
+
+Union of Tattered Flags
+
+Barony of Drunken Masters
+
+Cult of Sunstroke
+
+Brotherhood of Fox Holes
+
+Duchy of Leaky Roofs
+
+Clan of River Drowners
+
+Church of Holy Rubbish
+
+League of Battered Stones
+
+Guild of Bone Grinders
+
+Sect of Silk Nooses
+
+Kingdom of the Dead Forest
+
+Barony of Crooked Mirrors
+
+Brotherhood of Sheepskin
+
+Cult of Dancing Shadows
+
+County of Scorched Grass
+
+Council of Seven Gallows
+
+Clan of Stone Jaws
+
+Church of Morning Rot
+
+League of Homeless Lords
+
+Order of the Tin Rose
+
+Gathering of Marsh Will-o'-the-Wisps
+
+Union of Severed Bonds
+
+Duchy of Blue-Grey Mist
+
+Brotherhood of Iron Bars
+
+Guild of Lockbreakers
+
+Sect of Blue Ice
+
+Kingdom of the Falcon's Claw
+
+Barony of Eternal Drought
+
+Clan of the Dry Bed
+
+Church of Black Milk
+
+League of Sharp Tongues
+
+Brotherhood of Dirty Heels
+
+County of Golden Locusts
+
+Cult of the Great Grind
+
+Order of Pine Needles
+
+Gathering of Tattered Cloaks
+
+Union of Underground Crickets
+
+Duchy of the Steel Hoof
+
+Guild of Noose Weavers
+
+Sect of Bitter Root
+
+Kingdom of Copper Pence
+
+Barony of Empty Sockets
+
+Brotherhood of the Bone Flute
+
+Cult of Broken Shards
+
+Clan of Wolf's Satiety
+
+Church of the Silent Stone
+
+League of Wooden Masks
+
+Order of Glowing Chains
+
+Gathering of Ancient Knowledge
+
+Union of Mountain Echoes
+
+County of Dusty Roads
+
+Duchy of White Mold
+
+Brotherhood of the Owl's Gaze
+
+Poison Masters Guild
+
+Sect of the Rotten Apple
+
+Kingdom of Gnashing Teeth
+
+Barony of Salted Blood
+
+Clan of Ice Burns
+
+Church of Waiting for Thunder
+
+League of Broken Queens
+
+Order of Eternal Watch
+
+Gathering of Sleeping Snakes
+
+Union of Black Oats
+
+Duchy of Stone Bread
+
+Brotherhood of Leaden Rain
+
+Cult of the Branch Whisper
+
+County of Grey Wolves
+
+Scrap Seekers Guild
+
+Sect of the Sacred Itch
+
+Kingdom of Loud Cries
+
+Barony of Copper Keys
+
+Clan of Scorched Mountains
+
+Church of the Dusty Beam
+
+League of Silent Fishermen
+
+Order of the Heavy Boot
+
+Gathering of Grave Herbs
+
+Union of Cracked Pots
+
+Duchy of Sagging Skin
+
+Brotherhood of Old Nails
+
+Cult of Underground Knocking
+
+County of Frowning Faces
+
+Dream Sellers Guild
+
+Sect of Yellow Sand
+
+Kingdom of Broken Glass
+
+Barony of Blackbirds
+
+Clan of Bone Needles
+
+Church of Fallen Stars
+
+League of Wet Stones
+
+Order of the Steel Collar
+
+Gathering of Winter Bonfires
+
+Union of Rat Kings
+
+Duchy of Lost Strengths
+
+Brotherhood of River Silt
+
+Darkness Keepers Guild
+
+Sect of Flaming Sheaves
+
+Kingdom of the Rusty Sword
+
+Barony of Forgotten Songs
+
+Clan of Stone Hearts
+
+Church of Pale Grass
+
+League of Forest Outlaws
+
+Order of the Mountain Wind
+
+Gathering of Prophetic Dreams
+
+Union of Broken Wings
+
+Duchy of Copper Rain
+
+Brotherhood of Night Shadows
+
+Cult of First Snow
+
+County of Sharp Spears
+
+Guild of Sorrow Collectors
+
+Sect of Still Water
+
+Kingdom of Autumn Mists
+
+Barony of Solid Ground
+
+Clan of Blood Roots
+
+Church of Holy Patience
+
+League of Cold Hearths
+
+Order of the Old Outpost
+
+Gathering of Dead Names
+
+Union of Iron Rhythm
+
+Duchy of Songbirds
+
+Brotherhood of Morning Frost
+
+Cult of the Metal Maiden
+
+County of the Last Ladle
+
+Guild of Weapons Junkyards
+
+Sect of Creeping Moss
+
+Kingdom of Smoky Bonfires
+
+Barony of the Heavy Hand
+
+Clan of Ragged Strings
+
+Church of Eternal Rest
+
+Brotherhood of Blood Dust
