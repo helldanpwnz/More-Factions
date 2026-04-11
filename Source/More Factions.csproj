@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>MoreFactions</AssemblyName>
-    <TargetFramework>net472</TargetFramework> <!-- RimWorld 1.4 uses 4.7.2, 1.5 uses 4.8. If targeting 1.5, change to net48 -->
+    <TargetFramework>net472</TargetFramework>
     <LangVersion>latest</LangVersion>
     <OutputPath>..\1.6\Assemblies\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -10,18 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- ФИКС ОШИБКИ СБОРКИ (авто-скачивание .NET Framework библиотек) -->
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
-    <!-- Основные библиотеки RimWorld -->
     <Reference Include="Assembly-CSharp">
       <HintPath>E:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     
-    <!-- Основные библиотеки Unity -->
     <Reference Include="UnityEngine">
       <HintPath>E:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
@@ -39,7 +36,6 @@
       <Private>False</Private>
     </Reference>
 
-    <!-- Harmony (ОБЯЗАТЕЛЬНО для этого мода) -->
     <Reference Include="0Harmony">
       <HintPath>E:\SteamLibrary\steamapps\workshop\content\294100\2009463077\1.5\Assemblies\0Harmony.dll</HintPath>
       <Private>False</Private>

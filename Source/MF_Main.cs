@@ -621,8 +621,9 @@ namespace MoreFactions
             // 2. ГЕНЕРАЦИЯ ОБЪЕКТОВ (только если место уже найдено!)
             if (MoreFactionsMod.settings.showDebugLogs) Log.Message($"[MF] Место найдено ({newTile}), генерирую фракцию: {randomDef.defName}");
 
-            // АБСОЛЮТНЫЙ ФИКС ОПОВЕЩЕНИЙ: Сначала решаем, кто это будет, и прописываем статус в деф ДО генерации
-            bool isPirate = Rand.Value < (MoreFactionsMod.settings.playerRelationPermHostileChance / 100f);
+            float relRoll = Rand.Value * 100f;
+            bool isPirate = relRoll < MoreFactionsMod.settings.playerRelationPermHostileChance;
+            int startingGoodwill = isPirate ? -100 : (relRoll < MoreFactionsMod.settings.playerRelationPermHostileChance + MoreFactionsMod.settings.playerRelationNeutralChance ? 0 : -80);
             randomDef.permanentEnemy = isPirate;
 
             Faction newFaction = null;
@@ -653,25 +654,6 @@ namespace MoreFactions
                 ruinToRemove.Destroy();
             }
 
-            int startingGoodwill = 0;
-            if (newFaction.def.permanentEnemy)
-            {
-                startingGoodwill = -100;
-            }
-            else 
-            {
-                // Если не постоянный враг - бросаем шанс на нейтральность или обычную враждебность
-                float roll = Rand.Value * 100f;
-                if (roll < MoreFactionsMod.settings.playerRelationNeutralChance)
-                {
-                    startingGoodwill = 0;
-                }
-                else
-                {
-                    startingGoodwill = -80;
-                }
-            }
-            newFaction.TryAffectGoodwillWith(Faction.OfPlayer, startingGoodwill - newFaction.GoodwillWith(Faction.OfPlayer), false, false);
 
             // ТЕПЕРЬ ДОБАВЛЯЕМ В МИР (В самый конец!)
             randomDef.hidden = false;
@@ -679,6 +661,9 @@ namespace MoreFactions
             {
                 Find.FactionManager.Add(newFaction);
             }
+            
+            // Установка отношений после добавления фракции в мир
+            newFaction.TryAffectGoodwillWith(Faction.OfPlayer, startingGoodwill - newFaction.GoodwillWith(Faction.OfPlayer), false, false);
             
             // --- ГЕНЕТИЧЕСКАЯ ЭВОЛЮЦИЯ (ЗАГЛУШКИ) ---
             if (ModsConfig.BiotechActive && MoreFactionsMod.settings.generateHybrids && Rand.Value < MoreFactionsMod.settings.hybridSpawnChance / 100f)

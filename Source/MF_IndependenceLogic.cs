@@ -86,8 +86,9 @@ namespace MoreFactions
 
             FactionDef randomDef = techDefs.RandomElement();
 
-            // АБСОЛЮТНЫЙ ФИКС ОПОВЕЩЕНИЙ: Сначала решаем, кто это будет, и прописываем статус в деф ДО генерации
-            bool isPirate = Rand.Value < (MoreFactionsMod.settings.playerRelationPermHostileChance / 100f);
+            float relRoll = Rand.Value * 100f;
+            bool isPirate = relRoll < MoreFactionsMod.settings.playerRelationPermHostileChance;
+            int startingGoodwill = isPirate ? -100 : (relRoll < MoreFactionsMod.settings.playerRelationPermHostileChance + MoreFactionsMod.settings.playerRelationNeutralChance ? 0 : -80);
             randomDef.permanentEnemy = isPirate;
 
             Faction newFaction = null;
@@ -140,11 +141,11 @@ namespace MoreFactions
                 }
             }
             
-            float relRoll = Rand.Range(0f, 100f);
+            float parentRelRoll = Rand.Value * 100f;
             string relKey = "Neutral";
             int parentRelation = 0;
-            if (relRoll < MoreFactionsMod.settings.chanceRelationsHostile) { parentRelation = -80; relKey = "Hostile"; }
-            else if (relRoll < MoreFactionsMod.settings.chanceRelationsHostile + MoreFactionsMod.settings.chanceRelationsNeutral) { parentRelation = 0; relKey = "Neutral"; }
+            if (parentRelRoll < MoreFactionsMod.settings.chanceRelationsHostile) { parentRelation = -80; relKey = "Hostile"; }
+            else if (parentRelRoll < MoreFactionsMod.settings.chanceRelationsHostile + MoreFactionsMod.settings.chanceRelationsNeutral) { parentRelation = 0; relKey = "Neutral"; }
             else { parentRelation = 80; relKey = "Ally"; }
 
             // --- ОПРЕДЕЛЯЕМ СУДЬБУ ИДЕОЛОГИИ (Mode 1: Copy, Mode 2: Archetype, Mode 3: Random) ---
@@ -192,19 +193,6 @@ namespace MoreFactions
             newSettlement.Name = SettlementNameGenerator.GenerateSettlementName(newSettlement);
             Find.WorldObjects.Add(newSettlement);
 
-            // Отношения с Игроком
-            int startingGoodwill = 0;
-            if (isPirate)
-            {
-                startingGoodwill = -100;
-            }
-            else 
-            {
-                float prRoll = Rand.Value * 100f;
-                if (prRoll < MoreFactionsMod.settings.playerRelationNeutralChance) startingGoodwill = 0;
-                else startingGoodwill = -80;
-            }
-            newFaction.TryAffectGoodwillWith(Faction.OfPlayer, startingGoodwill - newFaction.GoodwillWith(Faction.OfPlayer), false, false);
 
             // Отношения с Родителем
             int currentRel = newFaction.GoodwillWith(parentFaction);
@@ -224,6 +212,9 @@ namespace MoreFactions
             {
                 Find.FactionManager.Add(newFaction);
             }
+
+            // Отношения с Игроком после добавления в мир
+            newFaction.TryAffectGoodwillWith(Faction.OfPlayer, startingGoodwill - newFaction.GoodwillWith(Faction.OfPlayer), false, false);
 
             // 5. Уведомление
             string titleKey = "MF_IndependenceLetterTitle_" + relKey;
