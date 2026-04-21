@@ -290,7 +290,7 @@ namespace MoreFactions
             {
                 nextTriggerTick = currentTick + interval;
 
-                int currentFactionsCount = Find.FactionManager.AllFactions.Count(f => f.def.defName.StartsWith("MF_") && f.def.modContentPack?.PackageId.ToLower() == "helldan.morefactions");
+                int currentFactionsCount = Find.FactionManager.AllFactions.Count(f => f.def.defName.StartsWith("MF_") && f.def.modContentPack?.PackageId.ToLower() == "helldan.morefactions" && !f.defeated);
                 if (currentFactionsCount >= MoreFactionsMod.settings.maxFactionsCount)
                 {
                     if (MoreFactionsMod.settings.showDebugLogs) Log.Message($"[MF] Спавн отменен: достигнут лимит фракций ({currentFactionsCount}/{MoreFactionsMod.settings.maxFactionsCount})");
