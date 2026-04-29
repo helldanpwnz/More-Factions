@@ -37,7 +37,7 @@ namespace MoreFactions
 
         public static void Randomize(Faction faction, XenotypeSet inheritFrom = null, bool? fixedPermEnemy = null)
         {
-            if (faction == null || faction.def == null || !faction.def.defName.StartsWith("MF_") || faction.def.modContentPack?.PackageId.ToLower() != "helldan.morefactions") return;
+            if (faction == null || faction.def == null || !faction.def.defName.StartsWith("MF_") || faction.def.modContentPack?.PackageId.ToLower().StartsWith("helldan.morefactions") != true) return;
 
             var templates = DefDatabase<FactionDef>.AllDefs
                 .Where(d => d.techLevel == faction.def.techLevel && 
