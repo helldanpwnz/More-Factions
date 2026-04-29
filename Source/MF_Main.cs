@@ -26,7 +26,7 @@ namespace MoreFactions
     {
         static MF_VEF_Fixer()
         {
-            foreach (var def in DefDatabase<FactionDef>.AllDefs.Where(d => d.defName.StartsWith("MF_") && d.modContentPack?.PackageId.ToLower() == "helldan.morefactions"))
+            foreach (var def in DefDatabase<FactionDef>.AllDefs.Where(d => d.defName.StartsWith("MF_") && d.modContentPack?.PackageId.ToLower().StartsWith("helldan.morefactions") == true))
             {
                 def.hidden = true;
                 def.requiredCountAtGameStart = 0;
@@ -188,7 +188,7 @@ namespace MoreFactions
             
             // КРИТИЧЕСКИЙ СБРОС: Перед восстановлением нужно сбросить ВСЕ дефы в дефолтное состояние (скрытые).
             // Это решает проблему "утечки" данных из прошлого сейва в текущую сессию RAM.
-            foreach (var def in DefDatabase<FactionDef>.AllDefs.Where(d => d.defName.StartsWith("MF_") && d.modContentPack?.PackageId.ToLower() == "helldan.morefactions"))
+            foreach (var def in DefDatabase<FactionDef>.AllDefs.Where(d => d.defName.StartsWith("MF_") && d.modContentPack?.PackageId.ToLower().StartsWith("helldan.morefactions") == true))
             {
                 def.hidden = true;
             }
@@ -200,7 +200,7 @@ namespace MoreFactions
             var settlements = Find.WorldObjects.Settlements;
             foreach (var faction in Find.FactionManager.AllFactions)
             {
-                if (faction.def != null && faction.def.defName.StartsWith("MF_") && faction.def.modContentPack?.PackageId.ToLower() == "helldan.morefactions")
+                if (faction.def != null && faction.def.defName.StartsWith("MF_") && faction.def.modContentPack?.PackageId.ToLower().StartsWith("helldan.morefactions") == true)
                 {
                     // Если у фракции есть хоть одно поселение - раскрываем её тип в базе
                     if (settlements.Any(s => s.Faction == faction))
@@ -251,7 +251,7 @@ namespace MoreFactions
                         var ignoreMethod = AccessTools.Method(spawningStateType, "Ignore", new Type[] { typeof(IEnumerable<FactionDef>) });
                         if (ignoreMethod != null)
                         {
-                            var mfDefs = DefDatabase<FactionDef>.AllDefs.Where(d => d.defName.StartsWith("MF_") && d.modContentPack?.PackageId.ToLower() == "helldan.morefactions");
+                            var mfDefs = DefDatabase<FactionDef>.AllDefs.Where(d => d.defName.StartsWith("MF_") && d.modContentPack?.PackageId.ToLower().StartsWith("helldan.morefactions") == true);
                             ignoreMethod.Invoke(component, new object[] { mfDefs });
                         }
                     }
@@ -290,7 +290,7 @@ namespace MoreFactions
             {
                 nextTriggerTick = currentTick + interval;
 
-                int currentFactionsCount = Find.FactionManager.AllFactions.Count(f => f.def.defName.StartsWith("MF_") && f.def.modContentPack?.PackageId.ToLower() == "helldan.morefactions" && !f.defeated);
+                int currentFactionsCount = Find.FactionManager.AllFactions.Count(f => f.def.defName.StartsWith("MF_") && f.def.modContentPack?.PackageId.ToLower().StartsWith("helldan.morefactions") == true && !f.defeated);
                 if (currentFactionsCount >= MoreFactionsMod.settings.maxFactionsCount)
                 {
                     if (MoreFactionsMod.settings.showDebugLogs) Log.Message($"[MF] Спавн отменен: достигнут лимит фракций ({currentFactionsCount}/{MoreFactionsMod.settings.maxFactionsCount})");
@@ -405,12 +405,12 @@ namespace MoreFactions
             ResetPlaceholders();
 
             allHiddenFactionDefs = DefDatabase<FactionDef>.AllDefs
-                .Where(d => d.defName.StartsWith("MF_") && d.modContentPack?.PackageId.ToLower() == "helldan.morefactions" && d.maxConfigurableAtWorldCreation == 0).ToList();
+                .Where(d => d.defName.StartsWith("MF_") && d.modContentPack?.PackageId.ToLower().StartsWith("helldan.morefactions") == true && d.maxConfigurableAtWorldCreation == 0).ToList();
 
             // Проверяем лидеров и инициализируем данные для всех фракций мода
             foreach (var faction in Find.FactionManager.AllFactions)
             {
-                if (faction.def != null && faction.def.defName.StartsWith("MF_") && faction.def.modContentPack?.PackageId.ToLower() == "helldan.morefactions")
+                if (faction.def != null && faction.def.defName.StartsWith("MF_") && faction.def.modContentPack?.PackageId.ToLower().StartsWith("helldan.morefactions") == true)
                 {
                     MF_FactionRandomizer.EnsureLeader(faction);
                     
@@ -765,7 +765,7 @@ namespace MoreFactions
 
                 // Повторная инициализация списков дефов
                 allHiddenFactionDefs = DefDatabase<FactionDef>.AllDefs
-                    .Where(d => d.defName.StartsWith("MF_") && d.modContentPack?.PackageId.ToLower() == "helldan.morefactions" && d.maxConfigurableAtWorldCreation == 0)
+                    .Where(d => d.defName.StartsWith("MF_") && d.modContentPack?.PackageId.ToLower().StartsWith("helldan.morefactions") == true && d.maxConfigurableAtWorldCreation == 0)
                     .ToList();
                 
                 if (activePool == null) activePool = new List<FactionDef>();
@@ -773,12 +773,12 @@ namespace MoreFactions
 
                 // КРИТИЧЕСКИЙ ФИКС: раскрываем фракции ПРЯМО ТУТ, не дожидаясь FinalizeInit
                 // Это фиксит исчезновение фракций из списка при загрузке
-                foreach (var def in DefDatabase<FactionDef>.AllDefs.Where(d => d.defName.StartsWith("MF_") && d.modContentPack?.PackageId.ToLower() == "helldan.morefactions")) def.hidden = true;
+                foreach (var def in DefDatabase<FactionDef>.AllDefs.Where(d => d.defName.StartsWith("MF_") && d.modContentPack?.PackageId.ToLower().StartsWith("helldan.morefactions") == true)) def.hidden = true;
                 
                 var settlements = Find.WorldObjects.Settlements;
                 foreach (var faction in Find.FactionManager.AllFactions)
                 {
-                    if (faction.def != null && faction.def.defName.StartsWith("MF_") && faction.def.modContentPack?.PackageId.ToLower() == "helldan.morefactions")
+                    if (faction.def != null && faction.def.defName.StartsWith("MF_") && faction.def.modContentPack?.PackageId.ToLower().StartsWith("helldan.morefactions") == true)
                     {
                         if (settlements.Any(s => s.Faction == faction))
                         {

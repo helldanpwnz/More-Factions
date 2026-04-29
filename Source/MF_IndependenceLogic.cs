@@ -13,7 +13,7 @@ namespace MoreFactions
         public static void CheckAndSpawn(MoreFactionsManager manager)
         {
             // ПРОВЕРКА ЛИМИТА: Если уже слишком много активных фракций от мода, расколы не происходят
-            int currentMFCount = Find.FactionManager.AllFactions.Count(f => f.def.defName.StartsWith("MF_") && f.def.modContentPack?.PackageId.ToLower() == "helldan.morefactions" && !f.defeated);
+            int currentMFCount = Find.FactionManager.AllFactions.Count(f => f.def.defName.StartsWith("MF_") && f.def.modContentPack?.PackageId.ToLower().StartsWith("helldan.morefactions") == true && !f.defeated);
             if (currentMFCount >= MoreFactionsMod.settings.maxFactionsCount) return;
 
             // Проверка шанса (взята из настроек)
@@ -114,7 +114,7 @@ namespace MoreFactions
 
             // Если родитель - тоже MF_ фракция, берем её мутированные гены, иначе базовые
             XenotypeSet parentXenos = parentFaction.def.xenotypeSet;
-            if (parentFaction.def.defName.StartsWith("MF_") && parentFaction.def.modContentPack?.PackageId.ToLower() == "helldan.morefactions" && manager.mutatedXenos.TryGetValue(parentFaction.loadID, out var saved))
+            if (parentFaction.def.defName.StartsWith("MF_") && parentFaction.def.modContentPack?.PackageId.ToLower().StartsWith("helldan.morefactions") == true && manager.mutatedXenos.TryGetValue(parentFaction.loadID, out var saved))
             {
                 parentXenos = saved.ToSet();
             }

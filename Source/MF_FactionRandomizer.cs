@@ -41,7 +41,7 @@ namespace MoreFactions
 
             var templates = DefDatabase<FactionDef>.AllDefs
                 .Where(d => d.techLevel == faction.def.techLevel && 
-                            !(d.defName.StartsWith("MF_") && d.modContentPack?.PackageId.ToLower() == "helldan.morefactions") && 
+                            !(d.defName.StartsWith("MF_") && d.modContentPack?.PackageId.ToLower().StartsWith("helldan.morefactions") == true) && 
                             d.defName != "Empire" && 
                             d.pawnGroupMakers != null &&
                             !d.isPlayer && !d.hidden &&
